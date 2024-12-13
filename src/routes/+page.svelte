@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+    import {getWikiEntry} from "../wiktionary_handler.js";
+    let name = "default";
+    let input = "Kissa";
+
+</script>
+
+<form onsubmit={() => name = getWikiEntry(input)}>
+    <input bind:value={input}>
+    <button type="submit">Look up</button>
+</form>
+
+<p>this is {name}</p>
