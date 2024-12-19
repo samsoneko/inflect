@@ -78,12 +78,12 @@
 
 </script>
 
-<div class="main-panel panel">
+<div class="panel-level-1">
     <!-- HTML Form to take input from the user -->
     <form on:submit|preventDefault={fetchData}>
         <label for="query">Search Query:</label>
-        <input type="text" id="query" bind:value={query} placeholder="Enter search term" />
-        <button type="submit">Search</button>
+        <input class="panel-level-2" type="text" id="query" bind:value={query} placeholder="Enter search term" />
+        <button class="panel-level-2" type="submit">Search</button>
     </form>
 
     <!-- Conditionally display the result or an error message -->
