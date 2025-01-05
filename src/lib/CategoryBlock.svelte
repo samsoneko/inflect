@@ -2,23 +2,25 @@
 	let { name = "Category", color = "green", href = "/"} = $props();
 </script>
 
-<div class="panel-level-2" style="--color:{color}">
+<div class="category" style="--color:{color}">
     <p>{name}</p>
     <a href={href}>Start</a>
 </div>
 
 <style>
-    div {
-        height: 100px;
-        width: 100px;
-        padding: 0px;
-        margin: 8px;
+    .category {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
         background-color: var(--color);
-        display: inline-block;
+        text-align: center;
+        border-radius: 10px;
     }
 
-    p {
+    p, a {
         margin: 0px;
         padding: 8px;
+        text-shadow: 2px 2px 2px black;
     }
 </style>

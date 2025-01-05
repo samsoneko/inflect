@@ -1,16 +1,30 @@
 <script>
     let {children} = $props();
+
+    function navigateToHome() {
+        window.location.href = '/';
+    }
+
+    function navigateToSettings() {
+        window.location.href = '/settings';
+    }
 </script>
 
 <div class="app-frame">
-    <nav class="navigation-bar panel-level-1">
-        <a class="panel-level-2" href="/">🏠</a>
-        <select class="panel-level-2" name="practise-language-select" id="practise-language-select">
-            <option value="fi">🇫🇮Finnish</option>
+    <nav class="navbar">
+        <button class="default-element" on:click={() => navigateToHome()}>
+            <i class="fas fa-home"></i>
+        </button>
+        <select class="default-element" name="practise-language-select" id="practise-language-select">
+            <option value="fi">Finnish</option>
         </select>
-        <a class="panel-level-2" href="/settings">⛭</a>
+        <button class="default-element" on:click={() => navigateToSettings()}>
+            <i class="fas fa-cog"></i>
+        </button>
     </nav>
-    <slot />
+    <div class="app-content">
+        <slot />
+    </div>
 </div>
 
 <style>
@@ -25,52 +39,67 @@
 }
 
 .app-frame {
-    width: 500px;
-    min-height: 800px;
+    width: 400px;
+    min-height: 700px;
     /* height: 800px; */
-    border-radius: 10px; /* rounded corners for a modern mobile look */
-    background: rgba(62, 62, 62, 0.5);
+    border-radius: 10px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border: 1px solid #7c7c7c; /* optional border for emphasis */
-    box-shadow: 1px 1px 16px rgba(73, 73, 73, 0.6);
-    overflow-y: auto
+    border: 2px solid rgb(74, 74, 74);
+    overflow-y: auto;
 }
+
 .app-frame::-webkit-scrollbar {
   display: none;
 }
 
+.app-content {
+    padding: 10px 10px 0px 10px;
+}
+
 :global(.inflection-table) {
+    background-color: rgb(22, 22, 22);
     border-collapse: collapse;
-    margin: 25px 0;
     font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+    border-radius: 10px;
 }
 
 :global(a) {
     color: lightskyblue;
+    text-decoration: none;
 }
 
-:global(.panel-level-1) {
-    background: rgba(62, 62, 62, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.3px);
-    -webkit-backdrop-filter: blur(7.3px);
-    border: 1px solid rgb(74, 74, 74);
-    border-radius: 10px;
-    padding: 10px;
+:global(.navbar) {
+    background-color: rgb(22, 22, 22);
     text-align: center;
-    margin: 10px 10px 0px 10px;
+    padding: 10px;
 }
 
-:global(.panel-level-2) {
+:global(.search-panel) {
+    text-align: center;
+}
+
+:global(.learn-panel) {
+    
+}
+
+:global(.default-element) {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid rgb(74, 74, 74);
     background-color: rgb(48, 48, 48);
     color: white;
+}
+
+:global(button, form) {
+    display: inline;
+}
+
+:global(.icon) {
+    width: 3em;
+    height: 3em;
 }
 </style>
