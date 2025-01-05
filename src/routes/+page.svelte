@@ -1,4 +1,5 @@
 <script>
+    import CategoryBlock from "$lib/CategoryBlock.svelte";
 
     let query = '';
     let result = null;
@@ -94,4 +95,11 @@
         <p class="error">{errorMessage}</p>
     {/if}
 
+</div>
+
+<div class="panel-level-1">
+    <h1>Learn</h1>
+    <CategoryBlock name={"Flection"} color={"#42b883"} href="learn/fi/flection"/>
+    <CategoryBlock name={"Rections"} color={"#347474"} href="learn/fi/rections"/>
+    <CategoryBlock name={"Time"} color={"#35495e"} href="learn/fi/time"/>
 </div>
