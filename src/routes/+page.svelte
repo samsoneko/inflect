@@ -7,6 +7,9 @@
 
     async function fetchData() {
         try {
+        if (query == "") {
+            return
+        }
         // Define the API endpoint and append the form query as a parameter
         const apiUrl = "https://en.wiktionary.org/w/api.php?";
 
@@ -86,12 +89,12 @@
 <div class="search-panel">
     <form on:submit|preventDefault={fetchData}>
         <input class="default-element" type="text" id="query" bind:value={query} placeholder="Enter search term" />
-        <button class="default-element" type="submit">
+        <button class="default-element style-button" type="submit">
             <i class="fas fa-magnifying-glass"></i>
         </button>
     </form>
 
-    <button class="default-element" on:click={() => deleteResults()}>
+    <button class="default-element style-button" on:click={() => deleteResults()}>
         <i class="fas fa-xmark"></i>
     </button>
 

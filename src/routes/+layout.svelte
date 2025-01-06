@@ -12,13 +12,13 @@
 
 <div class="app-frame">
     <nav class="navbar">
-        <button class="default-element" on:click={() => navigateToHome()}>
+        <button class="default-element style-button" on:click={() => navigateToHome()}>
             <i class="fas fa-home"></i>
         </button>
         <select class="default-element" name="practise-language-select" id="practise-language-select">
             <option value="fi">Finnish</option>
         </select>
-        <button class="default-element" on:click={() => navigateToSettings()}>
+        <button class="default-element style-button" on:click={() => navigateToSettings()}>
             <i class="fas fa-cog"></i>
         </button>
     </nav>
@@ -96,6 +96,11 @@
 
 :global(button, form) {
     display: inline;
+}
+
+:global(.style-button) {
+    background-color: #003366;
+    border: 1px solid #004080;
 }
 
 :global(.icon) {
