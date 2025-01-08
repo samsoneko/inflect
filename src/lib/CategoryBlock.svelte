@@ -16,6 +16,7 @@
         background-color: var(--color);
         text-align: center;
         border-radius: 10px;
+        box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.6);
     }
 
     p, a {

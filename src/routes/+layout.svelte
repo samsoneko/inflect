@@ -46,8 +46,9 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border: 2px solid rgb(74, 74, 74);
+    border: 2px solid rgba(255, 255, 255, 0.05);
     overflow-y: auto;
+    background-color: #07111c;
 }
 
 .app-frame::-webkit-scrollbar {
@@ -73,7 +74,7 @@
 }
 
 :global(.navbar) {
-    background-color: rgb(22, 22, 22);
+    background-color: rgba(255, 255, 255, 0.09);
     text-align: center;
     padding: 10px;
 }
@@ -89,9 +90,10 @@
 :global(.default-element) {
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid rgb(74, 74, 74);
-    background-color: rgb(48, 48, 48);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
     color: white;
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.6);
 }
 
 :global(button, form) {
