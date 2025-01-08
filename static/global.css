@@ -1,0 +1,124 @@
+:root {
+    --background-color: black;
+    --layer-1: #07111c;
+    --layer-2: rgba(255, 255, 255, 0.10);
+    --border-radius: 10px;
+    --border: 1px solid rgba(255, 255, 255, 0.10);
+    --text-color: white;
+    --primary-color: #003366;
+    --primary-border: 1px solid #004080;
+    --link-color: lightskyblue;
+}
+
+.light-theme {
+    --background-color: white;
+    --layer-1: #97b2cf;
+    --layer-2: rgba(0, 0, 0, 0.10);
+    --border-radius: 10px;
+    --border: 1px solid rgba(0, 0, 0, 0.10);
+    --text-color: black;
+    --primary-color: #006fdf;
+    --primary-border: 1px solid #005bb6;
+    --link-color: darkblue;
+}
+
+body {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-frame {
+    width: 400px;
+    height: 800px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: var(--border);
+    overflow-y: auto;
+    background-color: var(--layer-1);
+}
+
+.app-frame::-webkit-scrollbar {
+    display: none;
+}
+
+.app-content {
+    padding: 10px 10px 0px 10px;
+}
+
+.inflection-table {
+    background-color: var(--layer-2);
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: var(--layer-2);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-panel {
+    text-align: center;
+}
+
+.learn-panel {
+    
+}
+
+.default-element {
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: var(--border);
+    background-color: var(--layer-2);
+    color: var(--text-color);
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.6);
+}
+
+button, form {
+    display: inline;
+}
+
+.style-button {
+    background-color: var(--primary-color);
+    border: var(--primary-border);
+}
+
+.icon {
+    width: 3em;
+    height: 3em;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: inline;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.button-image {
+    height: 1.5rem;
+}
+
+.image-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
