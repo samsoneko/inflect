@@ -2,5 +2,7 @@
     import ThemeSwitcher from "$lib/ThemeSwitcher.svelte";
 </script>
 
-<p>settings</p>
-<ThemeSwitcher/>
+<h1>Settings</h1>
+<!-- <ThemeSwitcher/> -->
+<p>Sabercards v0.4</p>
+<p>©2025 Anton Caesar</p>

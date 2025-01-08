@@ -14,6 +14,6 @@
     }
 </script>
   
-<button on:click={toggleTheme}>
-    {lightMode ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+<button class="default-element" on:click={toggleTheme}>
+    {lightMode ? '🎨Switch to Dark Mode' : '🎨Switch to Light Mode'}
 </button>

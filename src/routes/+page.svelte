@@ -87,16 +87,18 @@
 </script>
 
 <div class="search-panel">
+    <h1>Search</h1>
     <form on:submit|preventDefault={fetchData}>
-        <input class="default-element" type="text" id="query" bind:value={query} placeholder="Enter search term" />
-        <button class="default-element style-button" type="submit">
+        <input class="layer-1-element search-bar" type="text" id="query" bind:value={query} placeholder="Enter search term" />
+        <button class="layer-1-element search-button" aria-label="Search" type="submit">
             <i class="fas fa-magnifying-glass"></i>
         </button>
     </form>
-
-    <button class="default-element style-button" on:click={() => deleteResults()}>
-        <i class="fas fa-xmark"></i>
-    </button>
+    {#if result}
+        <button class="layer-1-element style-button warn-color" aria-label="Clear" on:click={() => deleteResults()}>
+            <i class="fas fa-xmark"></i>
+        </button>
+    {/if}
 
     <!-- Conditionally display the result or an error message -->
     {#if result}
@@ -109,14 +111,14 @@
 </div>
 
 <div class="learn-panel">
+    <h1>Learn</h1>
     <div>
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" id="flag-icons-fi" viewBox="0 0 640 480">
-            <path fill="#fff" d="M0 0h640v480H0z"/>
-            <path fill="#002f6c" d="M0 174.5h640v131H0z"/>
-            <path fill="#002f6c" d="M175.5 0h130.9v480h-131z"/>
-        </svg>
-        <CategoryBlock name={"Flection"} color={"#42b883"} href="learn/fi/flection"/>
-        <CategoryBlock name={"Rections"} color={"#347474"} href="learn/fi/rections"/>
-        <CategoryBlock name={"Time"} color={"#35495e"} href="learn/fi/time"/>
+        <CategoryBlock name={"Flection"} color={"#264569"} href="learn/fi/flection"/>
+        <CategoryBlock name={"Rections"} color={"#2e6187"} href="learn/fi/rections"/>
+        <CategoryBlock name={"Time"} color={"#397822"} href="learn/fi/time"/>
+        <CategoryBlock name={"Placeholder"} color={"#706d1f"} href="learn/fi/time"/>
+        <CategoryBlock name={"Placeholder"} color={"#7a5227"} href="learn/fi/time"/>
+        <CategoryBlock name={"Placeholder"} color={"#70261f"} href="learn/fi/time"/>
+        <CategoryBlock name={"Placeholder"} color={"#4a2469"} href="learn/fi/time"/>
     </div>
 </div>
