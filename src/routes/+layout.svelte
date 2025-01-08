@@ -60,7 +60,7 @@
 }
 
 :global(.inflection-table) {
-    background-color: rgb(22, 22, 22);
+    background-color: rgba(255, 255, 255, 0.05);
     border-collapse: collapse;
     font-size: 0.9em;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
