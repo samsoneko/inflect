@@ -12,13 +12,13 @@
 
 <div class="app-frame">
     <nav class="navbar">
-        <button class="default-element style-button" on:click={() => navigateToHome()}>
+        <button class="icon-button" aria-label="Home" onclick={() => navigateToHome()}>
             <i class="fas fa-home"></i>
         </button>
-        <select class="default-element" name="practise-language-select" id="practise-language-select">
-            <option value="fi">Finnish</option>
-        </select>
-        <button class="default-element style-button" on:click={() => navigateToSettings()}>
+        <button class="image-button" aria-label="Home">
+            <img src="/fi.svg" alt="Language" class="button-image"/>
+        </button>
+        <button class="icon-button" aria-label="Settings" onclick={() => navigateToSettings()}>
             <i class="fas fa-cog"></i>
         </button>
     </nav>
@@ -40,8 +40,7 @@
 
 .app-frame {
     width: 400px;
-    min-height: 700px;
-    /* height: 800px; */
+    height: 800px;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -75,8 +74,9 @@
 
 :global(.navbar) {
     background-color: rgba(255, 255, 255, 0.09);
-    text-align: center;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 :global(.search-panel) {
@@ -108,5 +108,25 @@
 :global(.icon) {
     width: 3em;
     height: 3em;
+}
+
+:global(.icon-button) {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: inline;
+    align-items: center;
+    color: white;
+}
+
+:global(.button-image) {
+    height: 1.5rem;
+}
+
+.image-button {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 </style>
