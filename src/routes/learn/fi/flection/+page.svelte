@@ -3,7 +3,7 @@
     import adjectives from '$lib/learn/fi/adjectives.json';
 
     let cases = ["nominative", "partitive", "genitive", "illative", "inessive", "elative", "allative", "adessive", "ablative"]
-    let case_descriptions = ["nominative", "partitive", "genitive", "illative ((in)to / -hVn, -Vh, seen)", "inessive (in / -ssa, -ssä)", "elative (from / -sta, -stä)", "allative (to, outside / -lle)", "adessive (at, on / -lla, -llä)", "ablative (from / -lta, ltä)"]
+    let case_descriptions = ["nominative", "partitive", "genitive", "illative (-hVn, -Vh, seen)", "inessive (-ssa, -ssä)", "elative (-sta, -stä)", "allative (-lle)", "adessive (-lla, -llä)", "ablative (-lta, -ltä)"]
     let classes = ["singular", "plural"]
 
     let current_word = $state("");
