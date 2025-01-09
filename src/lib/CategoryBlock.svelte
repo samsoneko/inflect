@@ -24,11 +24,13 @@
         margin: 4px;
         padding: 8px;
         font-size: 1.4em;
+        color: white;
     }
 
     a {
         padding: 6px;
         font-size: 1.2em;
         border-radius: 12px;
+        color: white;
     }
 </style>

@@ -113,10 +113,10 @@
 <div class="center-text">
     <h1>Learn</h1>
     <div>
-        <CategoryBlock name={"Flection"} color={"#264569"} href="learn/fi/flection"/>
-        <CategoryBlock name={"Rections"} color={"#2e6187"} href="learn/fi/rections"/>
-        <CategoryBlock name={"Time"} color={"#397822"} href="learn/fi/time"/>
-        <CategoryBlock name={"Placeholder"} color={"#706d1f"} href="learn/fi/time"/>
+        <CategoryBlock name={"Declination"} color={"#264569"} href="learn/fi/declination"/>
+        <CategoryBlock name={"Conjugation"} color={"#2e6187"} href="learn/fi/conjugation"/>
+        <CategoryBlock name={"Rections"} color={"#397822"} href="learn/fi/rections"/>
+        <CategoryBlock name={"Time"} color={"#706d1f"} href="learn/fi/time"/>
         <CategoryBlock name={"Placeholder"} color={"#7a5227"} href="learn/fi/time"/>
         <CategoryBlock name={"Placeholder"} color={"#70261f"} href="learn/fi/time"/>
         <CategoryBlock name={"Placeholder"} color={"#4a2469"} href="learn/fi/time"/>
