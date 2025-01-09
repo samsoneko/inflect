@@ -3,10 +3,12 @@
     import adjectives from '$lib/learn/fi/adjectives.json';
 
     let cases = ["nominative", "partitive", "genitive", "illative", "inessive", "elative", "allative", "adessive", "ablative"]
+    let case_descriptions = ["nominative", "partitive", "genitive", "illative ((in)to / -hVn, -Vh, seen)", "inessive (in / -ssa, -ssä)", "elative (from / -sta, -stä)", "allative (to, outside / -lle)", "adessive (at, on / -lla, -llä)", "ablative (from / -lta, ltä)"]
     let classes = ["singular", "plural"]
 
     let current_word = $state("");
     let current_case = $state("");
+    let current_case_description = $state("");
     let current_class = $state("");
     let current_solution = $state("");
     
@@ -26,8 +28,10 @@
       index = Math.floor(Math.random() * 50);
       current_word = adjectives[index]["word"];
 
-      current_case = cases[Math.floor(Math.random() * (cases.length-1))];
-      current_class = classes[Math.floor(Math.random() * (classes.length-1))];
+      let case_index = Math.floor(Math.random() * cases.length)
+      current_case = cases[case_index];
+      current_case_description = case_descriptions[case_index];
+      current_class = classes[Math.floor(Math.random() * classes.length)];
       current_solution = adjectives[index]["declination"][current_case][current_class];
     }
 
@@ -40,13 +44,14 @@
     }
 </script>
 
+<div class="center-text">
+  <h1>Flection</h1>
+</div>
+
 <div class="layer-1-element flashcard center-text">
   <h1>{current_word}</h1>
   <p>{current_class}</p>
-  <p>{current_case}</p>
-</div>
-
-<div class="answer-div center-text">
+  <p>{current_case_description}</p>
   <form onsubmit={checkSolution}>
     <input class="layer-1-element search-bar" type="text" id="query" bind:value={answer} placeholder="Enter your answer" />
     <button class="layer-1-element check-button" aria-label="Search" type="submit">
@@ -75,12 +80,8 @@
     border-radius: var(--border-radius);
   }
 
-  .answer-div {
-    margin-top: 40px;
-  }
-
   .check-button {
-    border-radius: 0px 30px 30px 0px;
+    border-radius: var(--border-radius);
     background-color: darkolivegreen;
   }
 
