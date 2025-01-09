@@ -1,5 +1,6 @@
 {
-    "uusi": {
+    "0": {
+        "word": "uusi",
         "translation": "new",
         "declination": {
             "nominative": {
@@ -43,7 +44,8 @@
             }
         }
     },
-    "oma": {
+    "1": {
+        "word": "oma",
         "translation": "own",
         "declination": {
             "nominative": {
@@ -87,7 +89,8 @@
             }
         }
     },
-    "hyvä": {
+    "2": {
+        "word": "hyvä",
         "translation": "good",
         "declination": {
             "nominative": {
@@ -131,7 +134,8 @@
             }
         }
     },
-    "suuri": {
+    "3": {
+        "word": "suuri",
         "translation": "large",
         "declination": {
             "nominative": {
@@ -175,7 +179,8 @@
             }
         }
     },
-    "koko": {
+    "4": {
+        "word": "koko",
         "translation": "entire",
         "declination": {
             "nominative": {
@@ -216,7 +221,8 @@
             }
         }
     },
-    "ensimmäinen": {
+    "5": {
+        "word": "ensimmäinen",
         "translation": "first",
         "declination": {
             "nominative": {
@@ -260,7 +266,8 @@
             }
         }
     },
-    "eri": {
+    "6": {
+        "word": "eri",
         "translation": "different",
         "declination": {
             "nominative": {
@@ -301,7 +308,8 @@
             }
         }
     },
-    "suomalainen": {
+    "7": {
+        "word": "suomalainen",
         "translation": "finnish",
         "declination": {
             "nominative": {
@@ -345,7 +353,8 @@
             }
         }
     },
-    "pieni": {
+    "9": {
+        "word": "pieni",
         "translation": "small",
         "declination": {
             "nominative": {
@@ -389,7 +398,8 @@
             }
         }
     },
-    "nuori": {
+    "10": {
+        "word": "nuori",
         "translation": "young",
         "declination": {
             "nominative": {
@@ -433,7 +443,8 @@
             }
         }
     },
-    "tärkeä": {
+    "11": {
+        "word": "tärkeä",
         "translation": "important",
         "declination": {
             "nominative": {
@@ -484,7 +495,8 @@
             }
         }
     },
-    "seuraava": {
+    "12": {
+        "word": "seuraava",
         "translation": "next",
         "declination": {
             "nominative": {
@@ -528,7 +540,8 @@
             }
         }
     },
-    "vanha": {
+    "13": {
+        "word": "vanha",
         "translation": "old",
         "declination": {
             "nominative": {
@@ -572,7 +585,8 @@
             }
         }
     },
-    "mahdollinen": {
+    "14": {
+        "word": "mahdollinen",
         "translation": "possible",
         "declination": {
             "nominative": {
@@ -616,7 +630,8 @@
             }
         }
     },
-    "usea": {
+    "15": {
+        "word": "usea",
         "translation": "many",
         "declination": {
             "nominative": {
@@ -667,7 +682,8 @@
             }
         }
     },
-    "erilainen": {
+    "16": {
+        "word": "erilainen",
         "translation": "different",
         "declination": {
             "nominative": {
@@ -711,7 +727,8 @@
             }
         }
     },
-    "sellainen": {
+    "17": {
+        "word": "sellainen",
         "translation": "such",
         "declination": {
             "nominative": {
@@ -755,7 +772,8 @@
             }
         }
     },
-    "asiaton": {
+    "18": {
+        "word": "asiaton",
         "translation": "inappropriate",
         "declination": {
             "nominative": {
@@ -799,7 +817,8 @@
             }
         }
     },
-    "oikea": {
+    "19": {
+        "word": "oikea",
         "translation": "right",
         "declination": {
             "nominative": {
@@ -850,7 +869,8 @@
             }
         }
     },
-    "viimeinen": {
+    "21": {
+        "word": "viimeinen",
         "translation": "last",
         "declination": {
             "nominative": {
@@ -894,7 +914,8 @@
             }
         }
     },
-    "nykyinen": {
+    "22": {
+        "word": "nykyinen",
         "translation": "current",
         "declination": {
             "nominative": {
@@ -938,7 +959,8 @@
             }
         }
     },
-    "pitkä": {
+    "23": {
+        "word": "pitkä",
         "translation": "long",
         "declination": {
             "nominative": {
@@ -982,7 +1004,8 @@
             }
         }
     },
-    "entinen": {
+    "24": {
+        "word": "entinen",
         "translation": "former",
         "declination": {
             "nominative": {
@@ -1026,7 +1049,8 @@
             }
         }
     },
-    "kansainvälinen": {
+    "25": {
+        "word": "kansainvälinen",
         "translation": "international",
         "declination": {
             "nominative": {
@@ -1070,7 +1094,8 @@
             }
         }
     },
-    "iso": {
+    "26": {
+        "word": "iso",
         "translation": "big",
         "declination": {
             "nominative": {
@@ -1111,7 +1136,8 @@
             }
         }
     },
-    "yhteinen": {
+    "27": {
+        "word": "yhteinen",
         "translation": "common",
         "declination": {
             "nominative": {
@@ -1155,7 +1181,8 @@
             }
         }
     },
-    "vaikea": {
+    "28": {
+        "word": "vaikea",
         "translation": "difficult",
         "declination": {
             "nominative": {
@@ -1206,7 +1233,8 @@
             }
         }
     },
-    "korkea": {
+    "29": {
+        "word": "korkea",
         "translation": "high",
         "declination": {
             "nominative": {
@@ -1257,7 +1285,8 @@
             }
         }
     },
-    "edellinen": {
+    "30": {
+        "word": "edellinen",
         "translation": "previous",
         "declination": {
             "nominative": {
@@ -1301,7 +1330,8 @@
             }
         }
     },
-    "tällainen": {
+    "31": {
+        "word": "tällainen",
         "translation": "",
         "declination": {
             "nominative": {
@@ -1345,7 +1375,8 @@
             }
         }
     },
-    "julkinen": {
+    "32": {
+        "word": "julkinen",
         "translation": "public",
         "declination": {
             "nominative": {
@@ -1389,7 +1420,8 @@
             }
         }
     },
-    "valmis": {
+    "33": {
+        "word": "valmis",
         "translation": "ready",
         "declination": {
             "nominative": {
@@ -1437,7 +1469,8 @@
             }
         }
     },
-    "helppo": {
+    "34": {
+        "word": "helppo",
         "translation": "easy",
         "declination": {
             "nominative": {
@@ -1478,7 +1511,8 @@
             }
         }
     },
-    "yleinen": {
+    "35": {
+        "word": "yleinen",
         "translation": "general",
         "declination": {
             "nominative": {
@@ -1522,7 +1556,8 @@
             }
         }
     },
-    "kolmas": {
+    "36": {
+        "word": "kolmas",
         "translation": "third",
         "declination": {
             "nominative": {
@@ -1563,7 +1598,8 @@
             }
         }
     },
-    "välinen": {
+    "37": {
+        "word": "välinen",
         "translation": "",
         "declination": {
             "nominative": {
@@ -1607,7 +1643,8 @@
             }
         }
     },
-    "kova": {
+    "38": {
+        "word": "kova",
         "translation": "hard",
         "declination": {
             "nominative": {
@@ -1651,7 +1688,8 @@
             }
         }
     },
-    "mukainen": {
+    "39": {
+        "word": "mukainen",
         "translation": "",
         "declination": {
             "nominative": {
@@ -1695,7 +1733,8 @@
             }
         }
     },
-    "tuleva": {
+    "40": {
+        "word": "tuleva",
         "translation": "future",
         "declination": {
             "nominative": {
@@ -1739,7 +1778,8 @@
             }
         }
     },
-    "merkittävä": {
+    "41": {
+        "word": "merkittävä",
         "translation": "significant",
         "declination": {
             "nominative": {
@@ -1783,7 +1823,8 @@
             }
         }
     },
-    "ainoa": {
+    "42": {
+        "word": "ainoa",
         "translation": "only",
         "declination": {
             "nominative": {
@@ -1834,7 +1875,8 @@
             }
         }
     },
-    "huono": {
+    "43": {
+        "word": "huono",
         "translation": "bad",
         "declination": {
             "nominative": {
@@ -1875,7 +1917,8 @@
             }
         }
     },
-    "keskeinen": {
+    "44": {
+        "word": "keskeinen",
         "translation": "pivotal",
         "declination": {
             "nominative": {
@@ -1919,7 +1962,8 @@
             }
         }
     },
-    "taloudellinen": {
+    "45": {
+        "word": "taloudellinen",
         "translation": "economic",
         "declination": {
             "nominative": {
@@ -1963,7 +2007,8 @@
             }
         }
     },
-    "erityinen": {
+    "46": {
+        "word": "erityinen",
         "translation": "special",
         "declination": {
             "nominative": {
@@ -2007,7 +2052,8 @@
             }
         }
     },
-    "laaja": {
+    "47": {
+        "word": "laaja",
         "translation": "wide",
         "declination": {
             "nominative": {
@@ -2051,7 +2097,8 @@
             }
         }
     },
-    "paikallinen": {
+    "48": {
+        "word": "paikallinen",
         "translation": "local",
         "declination": {
             "nominative": {
@@ -2095,7 +2142,8 @@
             }
         }
     },
-    "tekninen": {
+    "49": {
+        "word": "tekninen",
         "translation": "technical",
         "declination": {
             "nominative": {
@@ -2139,7 +2187,8 @@
             }
         }
     },
-    "selvä": {
+    "50": {
+        "word": "selvä",
         "translation": "clear",
         "declination": {
             "nominative": {
@@ -2183,7 +2232,8 @@
             }
         }
     },
-    "todellinen": {
+    "51": {
+        "word": "todellinen",
         "translation": "real",
         "declination": {
             "nominative": {
@@ -2227,7 +2277,8 @@
             }
         }
     },
-    "vapaa": {
+    "52": {
+        "word": "vapaa",
         "translation": "free",
         "declination": {
             "nominative": {
@@ -2274,7 +2325,8 @@
             }
         }
     },
-    "poliittinen": {
+    "53": {
+        "word": "poliittinen",
         "translation": "political",
         "declination": {
             "nominative": {
@@ -2318,7 +2370,8 @@
             }
         }
     },
-    "yksityinen": {
+    "54": {
+        "word": "yksityinen",
         "translation": "private",
         "declination": {
             "nominative": {
@@ -2362,7 +2415,8 @@
             }
         }
     },
-    "tavallinen": {
+    "55": {
+        "word": "tavallinen",
         "translation": "usual",
         "declination": {
             "nominative": {
@@ -2406,7 +2460,8 @@
             }
         }
     },
-    "vahva": {
+    "56": {
+        "word": "vahva",
         "translation": "strong",
         "declination": {
             "nominative": {
@@ -2450,7 +2505,8 @@
             }
         }
     },
-    "varsinainen": {
+    "57": {
+        "word": "varsinainen",
         "translation": "actual",
         "declination": {
             "nominative": {
@@ -2494,7 +2550,8 @@
             }
         }
     },
-    "tuttu": {
+    "58": {
+        "word": "tuttu",
         "translation": "familiar",
         "declination": {
             "nominative": {
@@ -2535,7 +2592,8 @@
             }
         }
     },
-    "sosiaalinen": {
+    "59": {
+        "word": "sosiaalinen",
         "translation": "social",
         "declination": {
             "nominative": {
@@ -2579,7 +2637,8 @@
             }
         }
     },
-    "paha": {
+    "61": {
+        "word": "paha",
         "translation": "evil",
         "declination": {
             "nominative": {
@@ -2620,7 +2679,8 @@
             }
         }
     },
-    "riittävä": {
+    "63": {
+        "word": "riittävä",
         "translation": "sufficient",
         "declination": {
             "nominative": {
@@ -2664,7 +2724,8 @@
             }
         }
     },
-    "perinteinen": {
+    "64": {
+        "word": "perinteinen",
         "translation": "traditional",
         "declination": {
             "nominative": {
@@ -2708,7 +2769,8 @@
             }
         }
     },
-    "vastaava": {
+    "65": {
+        "word": "vastaava",
         "translation": "",
         "declination": {
             "nominative": {
@@ -2752,7 +2814,8 @@
             }
         }
     },
-    "turha": {
+    "66": {
+        "word": "turha",
         "translation": "useless",
         "declination": {
             "nominative": {
@@ -2796,7 +2859,8 @@
             }
         }
     },
-    "kyseinen": {
+    "67": {
+        "word": "kyseinen",
         "translation": "",
         "declination": {
             "nominative": {
@@ -2840,7 +2904,8 @@
             }
         }
     },
-    "nopea": {
+    "68": {
+        "word": "nopea",
         "translation": "fast",
         "declination": {
             "nominative": {
@@ -2891,7 +2956,8 @@
             }
         }
     },
-    "tietty": {
+    "69": {
+        "word": "tietty",
         "translation": "certain",
         "declination": {
             "nominative": {
@@ -2932,7 +2998,8 @@
             }
         }
     },
-    "anonyymi": {
+    "70": {
+        "word": "anonyymi",
         "translation": "anonymous",
         "declination": {
             "nominative": {
@@ -2973,7 +3040,8 @@
             }
         }
     },
-    "normaali": {
+    "71": {
+        "word": "normaali",
         "translation": "normal",
         "declination": {
             "nominative": {
@@ -3021,7 +3089,8 @@
             }
         }
     },
-    "kansallinen": {
+    "72": {
+        "word": "kansallinen",
         "translation": "national",
         "declination": {
             "nominative": {
@@ -3065,7 +3134,8 @@
             }
         }
     },
-    "henkilökohtainen": {
+    "73": {
+        "word": "henkilökohtainen",
         "translation": "personal",
         "declination": {
             "nominative": {
@@ -3109,7 +3179,8 @@
             }
         }
     },
-    "erillinen": {
+    "74": {
+        "word": "erillinen",
         "translation": "separate",
         "declination": {
             "nominative": {
@@ -3153,7 +3224,8 @@
             }
         }
     },
-    "ilmainen": {
+    "75": {
+        "word": "ilmainen",
         "translation": "free",
         "declination": {
             "nominative": {
@@ -3197,7 +3269,8 @@
             }
         }
     },
-    "hieno": {
+    "76": {
+        "word": "hieno",
         "translation": "fine",
         "declination": {
             "nominative": {
@@ -3238,7 +3311,8 @@
             }
         }
     },
-    "monipuolinen": {
+    "77": {
+        "word": "monipuolinen",
         "translation": "versatile",
         "declination": {
             "nominative": {
@@ -3282,7 +3356,8 @@
             }
         }
     },
-    "sisäinen": {
+    "78": {
+        "word": "sisäinen",
         "translation": "internal",
         "declination": {
             "nominative": {
@@ -3326,7 +3401,8 @@
             }
         }
     },
-    "kotimainen": {
+    "79": {
+        "word": "kotimainen",
         "translation": "domestic",
         "declination": {
             "nominative": {
@@ -3370,7 +3446,8 @@
             }
         }
     },
-    "venäläinen": {
+    "80": {
+        "word": "venäläinen",
         "translation": "russian",
         "declination": {
             "nominative": {
@@ -3414,7 +3491,8 @@
             }
         }
     },
-    "sopiva": {
+    "81": {
+        "word": "sopiva",
         "translation": "suitable",
         "declination": {
             "nominative": {
@@ -3458,7 +3536,8 @@
             }
         }
     },
-    "yksittäinen": {
+    "82": {
+        "word": "yksittäinen",
         "translation": "single",
         "declination": {
             "nominative": {
@@ -3502,7 +3581,8 @@
             }
         }
     },
-    "tunnettu": {
+    "83": {
+        "word": "tunnettu",
         "translation": "known",
         "declination": {
             "nominative": {
@@ -3543,7 +3623,8 @@
             }
         }
     },
-    "millainen": {
+    "84": {
+        "word": "millainen",
         "translation": "what kind",
         "declination": {
             "nominative": {
@@ -3587,7 +3668,8 @@
             }
         }
     },
-    "avoin": {
+    "85": {
+        "word": "avoin",
         "translation": "open",
         "declination": {
             "nominative": {
@@ -3631,7 +3713,8 @@
             }
         }
     },
-    "mukava": {
+    "86": {
+        "word": "mukava",
         "translation": "nice",
         "declination": {
             "nominative": {
@@ -3675,7 +3758,8 @@
             }
         }
     },
-    "musta": {
+    "87": {
+        "word": "musta",
         "translation": "black",
         "declination": {
             "nominative": {
@@ -3719,7 +3803,8 @@
             }
         }
     },
-    "varma": {
+    "88": {
+        "word": "varma",
         "translation": "sure",
         "declination": {
             "nominative": {
@@ -3763,7 +3848,8 @@
             }
         }
     },
-    "suora": {
+    "89": {
+        "word": "suora",
         "translation": "direct",
         "declination": {
             "nominative": {
@@ -3807,7 +3893,8 @@
             }
         }
     },
-    "pelkkä": {
+    "90": {
+        "word": "pelkkä",
         "translation": "mere",
         "declination": {
             "nominative": {
@@ -3851,7 +3938,8 @@
             }
         }
     },
-    "reilu": {
+    "91": {
+        "word": "reilu",
         "translation": "fair",
         "declination": {
             "nominative": {
@@ -3892,7 +3980,8 @@
             }
         }
     },
-    "vihreä": {
+    "92": {
+        "word": "vihreä",
         "translation": "green",
         "declination": {
             "nominative": {
@@ -3943,7 +4032,8 @@
             }
         }
     },
-    "tyytyväinen": {
+    "93": {
+        "word": "tyytyväinen",
         "translation": "pleased",
         "declination": {
             "nominative": {
@@ -3987,7 +4077,8 @@
             }
         }
     },
-    "jatkuva": {
+    "94": {
+        "word": "jatkuva",
         "translation": "continuous",
         "declination": {
             "nominative": {
@@ -4031,7 +4122,8 @@
             }
         }
     },
-    "virallinen": {
+    "95": {
+        "word": "virallinen",
         "translation": "official",
         "declination": {
             "nominative": {
@@ -4075,7 +4167,8 @@
             }
         }
     },
-    "neljäs": {
+    "96": {
+        "word": "neljäs",
         "translation": "fourth",
         "declination": {
             "nominative": {
@@ -4116,7 +4209,8 @@
             }
         }
     },
-    "turvallinen": {
+    "97": {
+        "word": "turvallinen",
         "translation": "safe",
         "declination": {
             "nominative": {
@@ -4160,7 +4254,8 @@
             }
         }
     },
-    "väärä": {
+    "98": {
+        "word": "väärä",
         "translation": "wrong",
         "declination": {
             "nominative": {
@@ -4204,7 +4299,8 @@
             }
         }
     },
-    "valtakunnallinen": {
+    "99": {
+        "word": "valtakunnallinen",
         "translation": "",
         "declination": {
             "nominative": {
@@ -4248,7 +4344,8 @@
             }
         }
     },
-    "tyhjä": {
+    "100": {
+        "word": "tyhjä",
         "translation": "blank",
         "declination": {
             "nominative": {
@@ -4292,7 +4389,8 @@
             }
         }
     },
-    "kallis": {
+    "101": {
+        "word": "kallis",
         "translation": "expensive",
         "declination": {
             "nominative": {
@@ -4340,7 +4438,8 @@
             }
         }
     },
-    "samanlainen": {
+    "102": {
+        "word": "samanlainen",
         "translation": "similar",
         "declination": {
             "nominative": {
@@ -4384,7 +4483,8 @@
             }
         }
     },
-    "punainen": {
+    "103": {
+        "word": "punainen",
         "translation": "red",
         "declination": {
             "nominative": {
@@ -4428,7 +4528,8 @@
             }
         }
     },
-    "selkeä": {
+    "104": {
+        "word": "selkeä",
         "translation": "clear",
         "declination": {
             "nominative": {
@@ -4479,7 +4580,8 @@
             }
         }
     },
-    "alkuperäinen": {
+    "105": {
+        "word": "alkuperäinen",
         "translation": "original",
         "declination": {
             "nominative": {
@@ -4523,7 +4625,8 @@
             }
         }
     },
-    "positiivinen": {
+    "106": {
+        "word": "positiivinen",
         "translation": "positive",
         "declination": {
             "nominative": {
@@ -4567,7 +4670,8 @@
             }
         }
     },
-    "saksalainen": {
+    "107": {
+        "word": "saksalainen",
         "translation": "german",
         "declination": {
             "nominative": {

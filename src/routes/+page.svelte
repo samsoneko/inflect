@@ -86,7 +86,7 @@
 
 </script>
 
-<div class="search-panel">
+<div class="search-panel center-text">
     <h1>Search</h1>
     <form on:submit|preventDefault={fetchData}>
         <input class="layer-1-element search-bar" type="text" id="query" bind:value={query} placeholder="Enter search term" />
@@ -110,7 +110,7 @@
 
 </div>
 
-<div class="learn-panel">
+<div class="center-text">
     <h1>Learn</h1>
     <div>
         <CategoryBlock name={"Flection"} color={"#264569"} href="learn/fi/flection"/>
