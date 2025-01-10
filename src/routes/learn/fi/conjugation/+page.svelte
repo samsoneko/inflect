@@ -1,6 +1,7 @@
 <script>
     import { onMount, tick } from 'svelte';
     import verbs from '$lib/learn/fi/verbs.json';
+    import AccuracyDisplay from '$lib/AccuracyDisplay.svelte';
 
     let tenses = ["present", "imperfect", "perfect", "pluperfect"]
     let persons = ["1st sing.", "2nd sing.", "3rd sing.", "1st plur.", "2nd plur.", "3rd plur."]
@@ -15,11 +16,19 @@
     
     let answer = $state("");
     let correct_answer = $state("unanswered");
+
+    let answer_count = $state(0);
+    let correct_answer_count = $state(0);
+    let accuracy = $derived(correct_answer_count / answer_count);
+    let accuracy_color = $state("green");
   
     onMount(() => {
       // Your function to execute on page load
       console.log("Page has loaded!");
       nextCard();
+      answer_count = 0;
+      correct_answer_count = 0;
+      accuracy_color = "green";
     });
 
     let index = $state(0)
@@ -45,18 +54,37 @@
     function checkSolution() {
       if (answer == current_solution) {
         correct_answer = "correct";
+        answer_count += 1;
+        correct_answer_count += 1;
+        calculateAccuracy();
         tick();
         loadNextButton.focus();
       } else {
         correct_answer = "wrong";
         inputField.focus();
+        answer_count += 1;
+        calculateAccuracy();
+      }
+    }
+
+    function calculateAccuracy() {
+      if (correct_answer_count / answer_count >= 0.66) {
+        accuracy_color = "green";
+      }
+      else if (correct_answer_count / answer_count >= 0.33) {
+        accuracy_color = "yellow";
+      }
+      else {
+        accuracy_color = "red";
       }
     }
 </script>
 
 <div class="center-text">
-  <h1>Verb Conjugation</h1>
+  <h1 class="title">Verb Conjugation</h1>
 </div>
+
+<AccuracyDisplay accuracy={accuracy} color={accuracy_color}/>
 
 <div class="layer-1-element flashcard center-text">
   <h1 class="word">{current_word}</h1>
@@ -65,7 +93,7 @@
   <p>{current_person}</p>
   <p>{current_polarity}</p>
   <form onsubmit={checkSolution}>
-    <input class="layer-1-element search-bar" type="text" bind:this={inputField} id="query" bind:value={answer} placeholder="Enter your answer"/>
+    <input class="layer-1-element search-input" type="text" bind:this={inputField} id="query" bind:value={answer} placeholder="Enter your answer"/>
     <button class="layer-1-element check-button" aria-label="Search" type="submit">
       <i class="fas fa-check"></i>
     </button>

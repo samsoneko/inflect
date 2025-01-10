@@ -1,11 +1,11 @@
 <script>
-	let {accuracy = 0.5} = $props();
+	let {accuracy = 0.5, color = "green"} = $props();
 </script>
 
 <div class="layer-1-element accuracy-panel">
-    <h4 class="accuracy-title center-text">Current Accuracy</h4>
+    <h4 class="accuracy-title center-text"><i class="fas fa-bolt"></i> Current Accuracy</h4>
     <div class="accuracy-bar-frame">
-        <div class="accuracy-bar-content" style="--accuracy:{accuracy}"></div>
+        <div class="accuracy-bar-content" style="--accuracy:{accuracy}; --color:{color}"></div>
     </div>
 </div>
 
@@ -30,6 +30,6 @@
         width: calc(var(--accuracy) * 100%);
         height: 10px;
         border-radius: 12px;
-        background-color: green;
+        background-color: var(--color);
     }
 </style>

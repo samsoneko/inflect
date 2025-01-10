@@ -26,12 +26,18 @@
 </script>
 
 <div class="app-frame">
+    <div class="app-content">
+        <slot />
+    </div>
+
     <nav class="navbar">
         <button class="icon-button" aria-label="Home" onclick={() => navigateToHome()}>
             <i class="fas fa-home"></i>
+            <!-- <p class="icon-button-label">Home</p> -->
         </button>
         <button class="image-button" aria-label="Home">
             <img src="/fi.svg" alt="Language" class="button-image"/>
+            <!-- <p class="icon-button-label">Language</p> -->
         </button>
         <button class="icon-button" onclick={() => toggleTheme()}>
             {#if lightMode}
@@ -39,12 +45,11 @@
             {:else}
                 <i class="fas fa-sun"></i>
             {/if}
+            <!-- <p class="icon-button-label">Theme</p> -->
         </button>
         <button class="icon-button" aria-label="Settings" onclick={() => navigateToSettings()}>
             <i class="fas fa-cog"></i>
+            <!-- <p class="icon-button-label">Settings</p> -->
         </button>
     </nav>
-    <div class="app-content">
-        <slot />
-    </div>
 </div>

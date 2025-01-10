@@ -1,36 +1,56 @@
 <script>
-	let { name = "Category", color = "green", href = "/"} = $props();
+	let { name = "Category", color = "green", href = "/", description = "Description"} = $props();
 </script>
 
-<div class="category" style="--category-color:{color}">
-    <p>{name}</p>
-    <a class="layer-1-element" href={href}>Start</a>
+<div class="category-panel" style="--category-color:{color}">
+    <p class="category-title">{name}</p>
+    <p class="category-description">{description}</p>
+    <div class="category-button-wrapper">
+        <a class="category-button" href={href}>Practise<i class="fas fa-play"></i></a>
+        <a class="category-button"><i class="fas fa-gear"></i></a>
+    </div>
 </div>
 
 <style>
-    .category {
-        width: 46%;
-        padding: 2px 6px 16px 6px;
+    .category-panel {
+        padding: 12px;
         box-sizing: border-box;
-        margin: 6px 4px;
+        height: 120px;
+        /* margin: 6px 4px; */
         background-color: var(--category-color);
-        text-align: center;
+        /* text-align: center; */
         border-radius: var(--border-radius);
-        box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.6);
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
         display: inline-block;
+        position: relative;
     }
 
-    p {
-        margin: 4px;
-        padding: 8px;
+    .category-title {
+        margin: 0px;
+        padding: 0px;
         font-size: 1.4em;
-        color: white;
+        font-weight: bold;
+        color: black;
     }
 
-    a {
+    .category-description {
+        padding: 0px;
+        margin: 4px 0px 0px 0px;
+        font-size: 0.8em;
+        color: black;
+    }
+
+    .category-button {
         padding: 6px;
-        font-size: 1.2em;
+        font-size: 1em;
         border-radius: 12px;
         color: white;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .category-button-wrapper {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 18px;
     }
 </style>

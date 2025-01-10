@@ -86,19 +86,23 @@
 
 </script>
 
-<div class="search-panel center-text">
-    <h1>Search</h1>
-    <form on:submit|preventDefault={fetchData}>
-        <input class="layer-1-element search-bar" type="text" id="query" bind:value={query} placeholder="Enter search term" />
-        <button class="layer-1-element search-button" aria-label="Search" type="submit">
-            <i class="fas fa-magnifying-glass"></i>
-        </button>
-    </form>
-    {#if result}
-        <button class="layer-1-element style-button warn-color" aria-label="Clear" on:click={() => deleteResults()}>
-            <i class="fas fa-xmark"></i>
-        </button>
-    {/if}
+<h1 class="title">Hyvää Päivää!</h1>
+
+<div class="search-panel">
+    <h2><i class="fas fa-magnifying-glass"></i> Search</h2>
+    <div class="search-wrapper">
+        <form class="search-form" on:submit|preventDefault={fetchData}>
+            <input class="layer-1-element search-input" type="text" id="query" bind:value={query} placeholder="Enter search term" />
+            <button class="layer-1-element search-button" aria-label="Search" type="submit">
+                <i class="fas fa-magnifying-glass"></i>
+            </button>
+        </form>
+        {#if result}
+            <button class="layer-1-element clear-button warn-color" aria-label="Clear" on:click={() => deleteResults()}>
+                <i class="fas fa-xmark"></i>
+            </button>
+        {/if}
+    </div>
 
     <!-- Conditionally display the result or an error message -->
     {#if result}
@@ -110,15 +114,13 @@
 
 </div>
 
-<div class="center-text">
-    <h1>Learn</h1>
-    <div>
-        <CategoryBlock name={"Declination"} color={"#264569"} href="learn/fi/declination"/>
-        <CategoryBlock name={"Conjugation"} color={"#2e6187"} href="learn/fi/conjugation"/>
-        <CategoryBlock name={"Rections"} color={"#397822"} href="learn/fi/rections"/>
-        <CategoryBlock name={"Time"} color={"#706d1f"} href="learn/fi/time"/>
-        <CategoryBlock name={"Placeholder"} color={"#7a5227"} href="learn/fi/time"/>
-        <CategoryBlock name={"Placeholder"} color={"#70261f"} href="learn/fi/time"/>
-        <CategoryBlock name={"Placeholder"} color={"#4a2469"} href="learn/fi/time"/>
+<div class="learn-panel">
+    <h2><i class="fas fa-book"></i> Learn</h2>
+    <div class="category-div">
+        <CategoryBlock name={"Declination"} color={"#fdde67"} href="learn/fi/declination" description={"Practise the declination of nouns and adjectives"}/>
+        <CategoryBlock name={"Conjugation"} color={"#ff9b61"} href="learn/fi/conjugation" description={"Practise the conjugation of verbs"}/>
+        <CategoryBlock name={"Rections"} color={"#b6f36b"} href="learn/fi/rections" description={"Practise the rections for a variety of different verbs"}/>
+        <CategoryBlock name={"Time"} color={"#c8a0ff"} href="learn/fi/time" description={"Practise different ways of expressing time"}/>
+        <!-- <CategoryBlock name={"Placeholder"} color={"#95dbfa"} href="learn/fi/time"/> -->
     </div>
 </div>
