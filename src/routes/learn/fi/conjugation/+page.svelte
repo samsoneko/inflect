@@ -109,13 +109,13 @@
 
   .correct-answer-div {
     border-radius: var(--border-radius);
-    margin-top: 40px;
+    margin-top: 16px;
     background-color: darkolivegreen;
   }
 
   .wrong-answer-div {
     border-radius: var(--border-radius);
-    margin-top: 40px;
+    margin-top: 16px;
     background-color: rgb(73, 4, 4);
   }
 

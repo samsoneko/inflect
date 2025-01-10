@@ -1,6 +1,7 @@
 <script>
     import { onMount, tick } from 'svelte';
     import nouns from '$lib/learn/fi/nouns.json';
+    import AccuracyDisplay from '$lib/AccuracyDisplay.svelte';
 
     let cases = ["nominative", "partitive", "genitive", "illative", "inessive", "elative", "allative", "adessive", "ablative"]
     let case_descriptions = ["nominative", "partitive", "genitive", "illative (-hVn, -Vh, seen)", "inessive (-ssa, -ssä)", "elative (-sta, -stä)", "allative (-lle)", "adessive (-lla, -llä)", "ablative (-lta, -ltä)"]
@@ -15,11 +16,17 @@
     
     let answer = $state("");
     let correct_answer = $state("unanswered");
+
+    let answer_count = $state(0);
+    let correct_answer_count = $state(0);
+    let accuracy = $derived(correct_answer_count / answer_count);
   
     onMount(() => {
       // Your function to execute on page load
       console.log("Page has loaded!");
       nextCard();
+      answer_count = 0;
+      correct_answer_count = 0;
     });
 
     let index = $state(0)
@@ -45,11 +52,15 @@
     function checkSolution() {
       if (answer == current_solution) {
         correct_answer = "correct";
+        answer_count += 1;
+        correct_answer_count += 1;
         tick();
         loadNextButton.focus();
-      } else {
+      }
+      else {
         correct_answer = "wrong";
         inputField.focus();
+        answer_count += 1;
       }
     }
 </script>
@@ -57,6 +68,8 @@
 <div class="center-text">
   <h1>Noun Declination</h1>
 </div>
+
+<AccuracyDisplay accuracy={accuracy}/>
 
 <div class="layer-1-element flashcard center-text">
   <h1 class="word">{current_word}</h1>
@@ -108,13 +121,13 @@
 
   .correct-answer-div {
     border-radius: var(--border-radius);
-    margin-top: 40px;
+    margin-top: 16px;
     background-color: darkolivegreen;
   }
 
   .wrong-answer-div {
     border-radius: var(--border-radius);
-    margin-top: 40px;
+    margin-top: 16px;
     background-color: rgb(73, 4, 4);
   }
 
