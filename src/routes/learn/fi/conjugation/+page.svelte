@@ -93,7 +93,7 @@
   <p>{current_person}</p>
   <p>{current_polarity}</p>
   <form onsubmit={checkSolution}>
-    <input class="layer-1-element search-input" type="text" bind:this={inputField} id="query" bind:value={answer} placeholder="Enter your answer"/>
+    <input class="layer-1-element answer-input" type="text" bind:this={inputField} id="query" bind:value={answer} placeholder="Enter your answer"/>
     <button class="layer-1-element check-button" aria-label="Search" type="submit">
       <i class="fas fa-check"></i>
     </button>

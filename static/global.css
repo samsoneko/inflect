@@ -1,7 +1,7 @@
 :root {
     --background-color: black;
-    --layer-1: #121212;
-    --layer-2: rgba(255, 255, 255, 0.1);
+    --layer-1: #222531;
+    --layer-2: #323645;
     --border-radius: 20px;
     /* --border: 1px solid rgba(255, 255, 255, 0.10); */
     --border: none;
@@ -11,13 +11,13 @@
     /* --primary-border: 1px solid #004080; */
     --primary-border: none;
     --link-color: lightskyblue;
-    --box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.2);
+    --box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.15);
     --icon-color: white;
 }
 
 .light-theme {
-    --layer-1: #e7e7e7;
-    --layer-2: rgba(0, 0, 0, 0.2);
+    --layer-1: #e5e7f6;
+    --layer-2: white;
     --border-radius: 16px;
     /* --border: 1px solid rgba(255, 255, 255, 0.30); */
     --border: none;
@@ -56,8 +56,8 @@ body {
 }
 
 .app-content {
-    height: calc(100% - 80px);
-    padding: 0px 16px 0px 16px;
+    /* height: calc(100% - 80px); */
+    padding: 0px 16px 80px 16px;
     overflow-y: auto;
 }
 
@@ -79,12 +79,13 @@ a {
     background-color: var(--layer-2);
     display: flex;
     justify-content: space-around;
-    border-radius: 0px 0px 35px 35px;
+    border-radius: 35px;
     bottom: 0px;
     position: absolute;
-    width: 392px;
+    width: 388px;
     height: 72px;
-    margin: 4px;
+    margin: 6px;
+    box-shadow: var(--box-shadow);
 }
 
 .title {
@@ -109,13 +110,19 @@ a {
 }
 
 .search-input {
-    border-radius: var(--border-radius);
+    border-radius: 15px;
     flex: 1;
     /* width: 200px; */
 }
 
+.answer-input {
+    border-radius: 15px;
+    flex: 1;
+    background-color: var(--layer-1)!important;
+}
+
 .search-button, .clear-button {
-    border-radius: var(--border-radius);
+    border-radius: 15px;
     margin-left: 6px;
 }
 
