@@ -136,19 +136,19 @@
   }
 
   .correct-answer-div {
+    border: 8px solid darkolivegreen;
     border-radius: var(--border-radius);
     margin-top: 16px;
-    background-color: darkolivegreen;
   }
 
   .wrong-answer-div {
+    border: 8px solid rgb(73, 4, 4);
     border-radius: var(--border-radius);
     margin-top: 16px;
-    background-color: rgb(73, 4, 4);
   }
 
   .next-card-button {
     border-radius: var(--border-radius);
-    background-color: darkgreen;
+    background-color: darkolivegreen;
   }
 </style>
