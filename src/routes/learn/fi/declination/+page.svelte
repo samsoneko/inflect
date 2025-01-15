@@ -40,7 +40,7 @@
       inputField.focus();
       answer = "";
       correct_answer = "unanswered";
-      index = Math.floor(Math.random() * 50);
+      index = Math.floor(Math.random() * Object.keys(nouns).length);
       current_word = nouns[index]["word"];
       current_translation = nouns[index]["translation"];
 
