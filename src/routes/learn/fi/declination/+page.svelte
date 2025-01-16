@@ -12,7 +12,7 @@
     let current_case = $state("");
     let current_case_description = $state("");
     let current_class = $state("");
-    let current_solution = $state("");
+    let current_solution = $state([]);
     
     let answer = $state("");
     let correct_answer = $state("unanswered");
@@ -36,6 +36,8 @@
     let inputField;
     let loadNextButton;
 
+    let alternatives = $state(false);
+
     function nextCard() {
       inputField.focus();
       answer = "";
@@ -48,11 +50,20 @@
       current_case = cases[case_index];
       current_case_description = case_descriptions[case_index];
       current_class = classes[Math.floor(Math.random() * classes.length)];
-      current_solution = nouns[index]["declination"][current_case][current_class];
+
+      let solution_entry = String(nouns[index]["declination"][current_case][current_class]);
+      
+      if (solution_entry.indexOf(',') != -1) {
+        current_solution = String(solution_entry).split(',');
+        alternatives = true;
+      } else {
+        current_solution = [solution_entry];
+        alternatives = false;
+      }
     }
 
     function checkSolution() {
-      if (answer == current_solution) {
+      if (current_solution.includes(answer)) {
         correct_answer = "correct";
         answer_count += 1;
         correct_answer_count += 1;
@@ -103,6 +114,10 @@
 {#if correct_answer == "correct"}
   <div class="layer-1-element correct-answer-div center-text">
     <h2>Correct!</h2>
+    {#if alternatives == true}
+      <p>All variants of this word are:</p>
+      <h3>{current_solution}</h3>
+    {/if}
     <button class="layer-1-element next-card-button" aria-label="Search" bind:this={loadNextButton} onclick={() => nextCard()} autofocus>
       <i class="fas fa-arrow-right"></i>
     </button>

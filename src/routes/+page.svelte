@@ -82,6 +82,7 @@
 
     function deleteResults() {
         result = "";
+        query = "";
     }
 
 </script>
