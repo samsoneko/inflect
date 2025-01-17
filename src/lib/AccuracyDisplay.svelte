@@ -1,6 +1,19 @@
 <script>
-	let {accuracy = 0.5, color = "green"} = $props();
+	let {total_answer_count = 0, correct_answer_count = 0} = $props();
+    let accuracy = $derived(correct_answer_count / total_answer_count);
     let percentage = $derived(Math.round(accuracy*100));
+    
+    let color = $derived.by(() => {
+        if (correct_answer_count / total_answer_count >= 0.66) {
+            return "green";
+        }
+        else if (correct_answer_count / total_answer_count >= 0.33) {
+            return "yellow";
+        }
+        else {
+            return "red";
+        }
+    });
 </script>
 
 <div class="layer-1-element accuracy-panel">

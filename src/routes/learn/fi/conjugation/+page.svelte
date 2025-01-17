@@ -15,20 +15,17 @@
     let current_solution = $state("");
     
     let answer = $state("");
-    let correct_answer = $state("unanswered");
+    let answer_state = $state("unanswered");
 
-    let answer_count = $state(0);
+    let total_answer_count = $state(0);
     let correct_answer_count = $state(0);
-    let accuracy = $derived(correct_answer_count / answer_count);
-    let accuracy_color = $state("green");
   
     onMount(() => {
       // Your function to execute on page load
       console.log("Page has loaded!");
       nextCard();
-      answer_count = 0;
+      total_answer_count = 0;
       correct_answer_count = 0;
-      accuracy_color = "green";
     });
 
     let index = $state(0)
@@ -39,7 +36,7 @@
     function nextCard() {
       inputField.focus();
       answer = "";
-      correct_answer = "unanswered";
+      answer_state = "unanswered";
       index = Math.floor(Math.random() * Object.keys(verbs).length);
       current_word = verbs[index]["word"];
       current_translation = verbs[index]["translation"];
@@ -53,38 +50,25 @@
 
     function checkSolution() {
       if (answer == current_solution) {
-        correct_answer = "correct";
-        answer_count += 1;
+        answer_state = "correct";
+        total_answer_count += 1;
         correct_answer_count += 1;
-        calculateAccuracy();
         tick();
         loadNextButton.focus();
       } else {
-        correct_answer = "wrong";
+        answer_state = "wrong";
         inputField.focus();
-        answer_count += 1;
-        calculateAccuracy();
+        total_answer_count += 1;
       }
     }
 
-    function calculateAccuracy() {
-      if (correct_answer_count / answer_count >= 0.66) {
-        accuracy_color = "green";
-      }
-      else if (correct_answer_count / answer_count >= 0.33) {
-        accuracy_color = "yellow";
-      }
-      else {
-        accuracy_color = "red";
-      }
-    }
 </script>
 
 <div class="center-text">
   <h1 class="title">Verb Conjugation</h1>
 </div>
 
-<AccuracyDisplay accuracy={accuracy} color={accuracy_color}/>
+<AccuracyDisplay total_answer_count={total_answer_count} correct_answer_count={correct_answer_count}/>
 
 <div class="layer-1-element flashcard center-text">
   <h1 class="word">{current_word}</h1>
@@ -100,14 +84,14 @@
   </form>
 </div>
 
-{#if correct_answer == "correct"}
+{#if answer_state == "correct"}
   <div class="layer-1-element correct-answer-div center-text">
     <h2>Correct!</h2>
     <button class="layer-1-element next-card-button" aria-label="Search" bind:this={loadNextButton} onclick={() => nextCard()} autofocus>
       <i class="fas fa-arrow-right"></i>
     </button>
   </div>
-{:else if correct_answer == "wrong"}
+{:else if answer_state == "wrong"}
   <div class="layer-1-element wrong-answer-div center-text">
     <h2>Wrong!</h2>
     <p>The right answer would have been:</p>
