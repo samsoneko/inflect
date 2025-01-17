@@ -5,18 +5,18 @@
     
     let color = $derived.by(() => {
         if (correct_answer_count / total_answer_count >= 0.66) {
-            return "green";
+            return "var(--green-color)";
         }
         else if (correct_answer_count / total_answer_count >= 0.33) {
-            return "yellow";
+            return "var(--yellow-color)";
         }
         else {
-            return "red";
+            return "var(--red-color)";
         }
     });
 </script>
 
-<div class="layer-1-element accuracy-panel">
+<div class="page-section-panel accuracy-panel">
     <h4 class="accuracy-title center-text"><i class="fas fa-bolt"></i> Current Accuracy</h4>
     <div class="accuracy-bar-frame">
         <div class="accuracy-bar-background">
@@ -28,7 +28,6 @@
 
 <style>
     .accuracy-panel {
-      border-radius: var(--border-radius);
       margin-bottom: 16px;
     }
 
@@ -42,7 +41,7 @@
     }
 
     .accuracy-bar-frame {
-        background-color: var(--layer-2);
+        background-color: var(--layer-1);
         border-radius: 16px;
         padding: 2px;
     }
@@ -51,7 +50,7 @@
         width: 100%;
         height: 20px;
         border-radius: 8px;
-        background-color: var(--layer-1);
+        background-color: var(--layer-0);
     }
 
     .accuracy-bar-content {

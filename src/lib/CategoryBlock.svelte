@@ -6,7 +6,7 @@
     <p class="category-title">{name}</p>
     <p class="category-description">{description}</p>
     <div class="category-button-wrapper">
-        <a class="category-button" href={href}>Practise<i class="fas fa-play"></i></a>
+        <a class="category-button" href={href}>Study<i class="fas fa-play"></i></a>
         <a class="category-button"><i class="fas fa-gear"></i></a>
     </div>
 </div>
@@ -16,11 +16,9 @@
         padding: 12px;
         box-sizing: border-box;
         height: 120px;
-        /* margin: 6px 4px; */
         background-color: var(--category-color);
-        /* text-align: center; */
         border-radius: var(--border-radius);
-        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+        box-shadow: var(--box-shadow);
         display: inline-block;
         position: relative;
     }
