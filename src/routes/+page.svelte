@@ -116,12 +116,12 @@
 </div>
 
 <div class="learn-panel">
-    <h2><i class="fas fa-book"></i> Learn</h2>
+    <h2><i class="fas fa-book"></i> Study</h2>
     <div class="category-div">
-        <CategoryBlock name={"Declination"} color={"#fdde67"} href="learn/fi/declination" description={"Practise the declination of nouns and adjectives"}/>
-        <CategoryBlock name={"Conjugation"} color={"#ff9b61"} href="learn/fi/conjugation" description={"Practise the conjugation of verbs"}/>
-        <CategoryBlock name={"Rections"} color={"#b6f36b"} href="learn/fi/rections" description={"Practise the rections for a variety of different verbs"}/>
-        <CategoryBlock name={"Time"} color={"#c8a0ff"} href="learn/fi/time" description={"Practise different ways of expressing time"}/>
+        <CategoryBlock name={"Declination"} color={"#fdde67"} href="study/fi/declination" description={"Practise the declination of nouns and adjectives"}/>
+        <CategoryBlock name={"Conjugation"} color={"#ff9b61"} href="study/fi/conjugation" description={"Practise the conjugation of verbs"}/>
+        <CategoryBlock name={"Rections"} color={"#b6f36b"} href="study/fi/rections" description={"Practise the rections for a variety of different verbs"}/>
+        <CategoryBlock name={"Time"} color={"#c8a0ff"} href="study/fi/time" description={"Practise different ways of expressing time"}/>
         <!-- <CategoryBlock name={"Placeholder"} color={"#95dbfa"} href="learn/fi/time"/> -->
     </div>
 </div>

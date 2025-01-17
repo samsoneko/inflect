@@ -1,6 +1,6 @@
 <script>
     import { onMount, tick } from 'svelte';
-    import nouns from '$lib/learn/fi/nouns.json';
+    import nouns from '$lib/study/fi/nouns.json';
     import AccuracyDisplay from '$lib/AccuracyDisplay.svelte';
 
     let cases = ["nominative", "partitive", "genitive", "illative", "inessive", "elative", "allative", "adessive", "ablative"]

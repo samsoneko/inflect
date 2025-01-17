@@ -1,6 +1,6 @@
 <script>
     import { onMount, tick } from 'svelte';
-    import verbs from '$lib/learn/fi/verbs.json';
+    import verbs from '$lib/study/fi/verbs.json';
     import AccuracyDisplay from '$lib/AccuracyDisplay.svelte';
 
     let tenses = ["present", "imperfect", "perfect", "pluperfect"]

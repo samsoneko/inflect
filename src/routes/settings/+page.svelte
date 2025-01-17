@@ -8,5 +8,5 @@
 <!-- <ThemeSwitcher/> -->
 <p>More settings will soon be added.</p>
 <h2><i class="fas fa-info"></i> Information</h2>
-<p>Sabercards v0.5.9</p>
+<p>Sabercards v0.6.0</p>
 <p>©2025 Anton Caesar</p>
