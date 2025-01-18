@@ -1,21 +1,21 @@
 <script>
-    let lightMode = $state(false);
+    let isLightMode = $state(false);
 
     // Load the saved theme from localStorage
     if (typeof window !== 'undefined') {
-        lightMode = localStorage.getItem('theme') === 'light';
-        document.body.classList.toggle('light-theme', lightMode);
+        isLightMode = localStorage.getItem('theme') === 'light';
+        document.body.classList.toggle('light-theme', isLightMode);
     }
   
     function toggleTheme() {
-        lightMode = !lightMode;
-        document.body.classList.toggle('light-theme', lightMode);
-        localStorage.setItem('theme', lightMode ? 'light' : 'dark');
+        isLightMode = !isLightMode;
+        document.body.classList.toggle('light-theme', isLightMode);
+        localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
     }
 </script>
   
 <button class="default-element" onclick={() => toggleTheme()}>
-    {lightMode ? '🎨Switch to Dark Mode' : '🎨Switch to Light Mode'}
+    {isLightMode ? '🎨Switch to Dark Mode' : '🎨Switch to Light Mode'}
 </button>
 
 <!-- <button class="icon-button" onclick={() => toggleTheme()}>

@@ -5,8 +5,8 @@
     import AccuracyDisplay from '$lib/AccuracyDisplay.svelte';
     import { page } from '$app/stores';
 
-    let language = $state();
-    let lesson = $state();
+    let language = $state("");
+    let lesson = $state("");
 
     let data = nouns;
     let data_name = $state();
@@ -16,8 +16,11 @@
 
     $effect(() => {
         const searchParams = $page.url.searchParams;
-        language = searchParams.get('lang');
-        lesson = searchParams.get('lesson');
+        if (language == "" && lesson == "") {
+          
+          language = searchParams.get('lang');
+          lesson = searchParams.get('lesson');
+        }
 
         if (lesson == "decl" && language == "fi") {
 

@@ -1,21 +1,21 @@
-export async function fetchWikiTableData(query) {
-    if (query == "") {
+export async function fetchWikiTableData(searchQuery) {
+    if (searchQuery == "") {
         return
     }
     // Define the API endpoint and append the form query as a parameter
     const apiUrl = "https://en.wiktionary.org/w/api.php?";
 
-    let params = {
+    let articleParams = {
         action : "parse",
         prop : "wikitext",
-        page : query.toLowerCase(),
+        page : searchQuery.toLowerCase(),
         format : "json",
         origin : "*"
     };
 
-    let queryString = apiUrl + new URLSearchParams(params).toString();
+    let articleQueryString = apiUrl + new URLSearchParams(articleParams).toString();
     // Send GET request using fetch
-    const response = await fetch(queryString);
+    const response = await fetch(articleQueryString);
     
     // Check if the request was successful
     if (!response.ok) {
@@ -23,8 +23,8 @@ export async function fetchWikiTableData(query) {
     }
 
     // Parse the response as JSON
-    let jsonResponse = await response.json();
-    let wikitext = jsonResponse.parse.wikitext["*"];
+    let articleJsonResponse = await response.json();
+    let wikitext = articleJsonResponse.parse.wikitext["*"];
     let lines = wikitext.split(/\r?\n|\r|\n/g);
 
     let command = '';
@@ -35,9 +35,7 @@ export async function fetchWikiTableData(query) {
         }
     }
 
-    const apiUrl2 = "https://en.wiktionary.org/w/api.php?";
-
-    let params2 = {
+    let tableParams = {
         action : "parse",
         text : command,
         prop : "text",
@@ -45,24 +43,24 @@ export async function fetchWikiTableData(query) {
         origin : "*"
     };
 
-    let queryString2 = apiUrl2 + new URLSearchParams(params2).toString();
+    let tableQueryString = apiUrl + new URLSearchParams(tableParams).toString();
     // Send GET request using fetch
-    const response2 = await fetch(queryString2);
+    const response2 = await fetch(tableQueryString);
 
     if (!response2.ok) {
         throw new Error('Network response was not ok');
     }
 
     // Parse the response as JSON
-    let jsonResponse2 = await response2.json();
-    let inflectionTable = jsonResponse2.parse.text["*"];
+    let tableJsonResponse = await response2.json();
+    let inflectionTable = tableJsonResponse.parse.text["*"];
 
-    let temp = document.createElement('div');
-    temp.innerHTML = inflectionTable;
+    let tempDiv = document.createElement('div');
+    tempDiv.innerHTML = inflectionTable;
 
-    let table = temp.getElementsByClassName('inflection-table')[0];
+    let preTable = tempDiv.getElementsByClassName('inflection-table')[0];
 
-    let result = table.outerHTML;
+    let table = preTable.outerHTML;
 
-    return result;
+    return table;
 }

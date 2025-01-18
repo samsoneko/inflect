@@ -16,12 +16,12 @@
         window.location.href = '/settings';
     }
     
-    let lightMode = $state(false);
+    let isLightMode = $state(false);
 
     // Load the saved theme from localStorage
     if (typeof window !== 'undefined') {
-        lightMode = localStorage.getItem('theme') === 'light';
-        document.body.classList.toggle('light-theme', lightMode);
+        isLightMode = localStorage.getItem('theme') === 'light';
+        document.body.classList.toggle('light-theme', isLightMode);
     }
 
 </script>
