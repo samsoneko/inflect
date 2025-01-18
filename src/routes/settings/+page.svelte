@@ -7,9 +7,14 @@
 <div class="page-section">
     <h2><i class="fas fa-gears"></i> General</h2>
     <div class="page-section-panel">
-        <!-- <ThemeSwitcher/> -->
+        <ThemeSwitcher/>
         <p>More settings will soon be added.</p>
     </div>
+    
+    <!-- <button class="image-button" aria-label="Language">
+        <img src="/fi.svg" alt="Language" class="button-image"/>
+        <p class="icon-button-label">Language</p>
+    </button> -->
 </div>
 
 <div class="page-section">
