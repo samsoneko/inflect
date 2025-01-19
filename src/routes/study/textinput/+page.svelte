@@ -1,56 +1,18 @@
 <script>
-    import { onMount, tick } from 'svelte';
-    import nouns from '$lib/study/fi/nouns.json';
-    import verbs from '$lib/study/fi/verbs.json';
-    import AccuracyDisplay from '$lib/AccuracyDisplay.svelte';
-    import { page } from '$app/stores';
+    import { onMount, tick } from "svelte";
+    import nouns from "$lib/study/fi/nouns.json";
+    import verbs from "$lib/study/fi/verbs.json";
+    import lesson_conf from "$lib/textinput/lesson_conf.json";
+    import AccuracyDisplay from "$lib/AccuracyDisplay.svelte";
+    import { page } from "$app/stores";
 
-    let language = $state("");
-    let lesson = $state("");
+    let languageParam = $state("");
+    let lessonParam = $state("");
 
-    let data = nouns;
-    let data_name = $state();
-    let categories = $state();
-    let category_data = $state();
-    let category_desc = $state();
+    let lesson_data = nouns;
+    let current_lesson_conf = $state(lesson_conf["decl"]);
 
-    $effect(() => {
-        const searchParams = $page.url.searchParams;
-        if (language == "" && lesson == "") {
-          
-          language = searchParams.get('lang');
-          lesson = searchParams.get('lesson');
-        }
-
-        if (lesson == "decl" && language == "fi") {
-
-            data = nouns;
-            data_name = "declination";
-            categories = ["cases", "classes"]
-            category_data = [["nominative", "partitive", "genitive", "illative", "inessive", "elative", "allative", "adessive", "ablative"],
-            ["singular", "plural"]]
-
-            category_desc = [["nominative", "partitive", "genitive", "illative (-hVn, -Vh, seen)", "inessive (-ssa, -ssä)", "elative (-sta, -stä)", "allative (-lle)", "adessive (-lla, -llä)", "ablative (-lta, -ltä)"],
-            ["singular", "plural"]]
-        }
-        else if (lesson == "conj" && language == "fi") {
-
-            data = verbs;
-            data_name = "conjugation";
-            categories = ["tense", "person", "polarity"]
-            category_data = [["present", "imperfect", "perfect", "pluperfect"],
-            ["1st sing.", "2nd sing.", "3rd sing.", "1st plur.", "2nd plur.", "3rd plur."],
-            ["positive", "negative"]]
-
-            category_desc = [["present", "imperfect", "perfect", "pluperfect"],
-            ["1. person singular", "2. person singular", "3. person singular", "1. person plural", "1. person plural", "1. person plural"],
-            ["positive", "negative"]]
-        }
-        else {
-            window.location.href = '/';
-        }
-    });
-
+    // Variables holding information about the current question
     let current_word = $state("");
     let current_translation = $state("");
 
@@ -58,150 +20,194 @@
     let current_category_desc = $state([]);
 
     let current_solution = $state([]);
-    
 
-    let answer = $state("");
+    // Variables holding information about the current answer
+    let current_answer = $state("");
     let answer_state = $state("unanswered");
 
     let total_answer_count = $state(0);
     let correct_answer_count = $state(0);
-  
+
+    // On page load, initialize data and load first question
     onMount(() => {
-      // Your function to execute on page load
-      console.log("Page has loaded!");
-      nextCard();
-      total_answer_count = 0;
-      correct_answer_count = 0;
+        loadLessonData();
+        nextQuestion();
     });
 
-    let index = $state(0)
+    // Load the data for the current lesson based on the url parameters
+    async function loadLessonData() {
+        const searchParams = $page.url.searchParams;
+        if (languageParam == "" && lessonParam == "") {
+            languageParam = searchParams.get("lang");
+            lessonParam = searchParams.get("lesson");
+        }
 
-    let inputField;
-    let loadNextButton;
-
-    let alternatives = $state(false);
-
-    function nextCard() {
-      inputField.focus();
-      answer = "";
-      answer_state = "unanswered";
-      index = Math.floor(Math.random() * Object.keys(data).length);
-      current_word = data[index]["word"];
-      current_translation = data[index]["translation"];
-      current_categories = [];
-      current_category_desc = [];
-      
-      for (let i = 0; i < categories.length; i++) {
-        let category_index = Math.floor(Math.random() * category_data[i].length);
-        current_categories.push(category_data[i][category_index]);
-        current_category_desc.push(category_desc[i][category_index]);
-      }
-
-      let solution_entry = data[index][data_name];
-      for (let i = 0; i < current_categories.length; i++) {
-        solution_entry = solution_entry[current_categories[i]];
-      }
-      solution_entry = String(solution_entry);
-      
-      if (solution_entry.indexOf(',') != -1) {
-        current_solution = String(solution_entry).split(',');
-        alternatives = true;
-      } else {
-        current_solution = [solution_entry];
-        alternatives = false;
-      }
+        if (
+            (lessonParam == "decl" && languageParam == "fi") ||
+            (lessonParam == "conj" && languageParam == "fi")
+        ) {
+            lesson_data = nouns;
+            current_lesson_conf = lesson_conf[lessonParam];
+            current_lesson_conf.category_data =
+                JSON.parse(
+                    localStorage.getItem(
+                        current_lesson_conf.lesson_type + "Config",
+                    ),
+                ) || lesson_conf[lessonParam].category_data;
+        } else {
+            window.location.href = "/";
+        }
     }
 
-    function checkSolution() {
-      if (current_solution.includes(answer)) {
-        answer_state = "correct";
-        total_answer_count += 1;
-        correct_answer_count += 1;
-        tick();
-        loadNextButton.focus();
-      }
-      else {
-        answer_state = "wrong";
-        inputField.focus();
-        total_answer_count += 1;
-      }
+    // Variables for handling the input and confirm button
+    let answerInputField;
+    let nextQuestionButton;
+
+    // Loading the next question based on a random index
+    function nextQuestion() {
+        answerInputField.focus();
+        current_answer = "";
+        answer_state = "unanswered";
+        let index = Math.floor(Math.random() * Object.keys(lesson_data).length);
+        current_word = lesson_data[index]["word"];
+        current_translation = lesson_data[index]["translation"];
+        current_categories = [];
+        current_category_desc = [];
+
+        for (let i = 0; i < current_lesson_conf.categories.length; i++) {
+            let category_index = Math.floor(
+                Math.random() * current_lesson_conf.category_data[i].length,
+            );
+            current_categories.push(
+                current_lesson_conf.category_data[i][category_index],
+            );
+            current_category_desc.push(
+                current_lesson_conf.category_desc[
+                    current_lesson_conf.category_data[i][category_index]
+                ],
+            );
+        }
+
+        let solution_entry =
+            lesson_data[index][current_lesson_conf.lesson_type];
+        for (let i = 0; i < current_categories.length; i++) {
+            solution_entry = solution_entry[current_categories[i]];
+        }
+        solution_entry = String(solution_entry);
+
+        if (solution_entry.indexOf(",") != -1) {
+            current_solution = String(solution_entry).split(",");
+        } else {
+            current_solution = [solution_entry];
+        }
     }
 
+    // Check if the answer is correct
+    function checkAnswer() {
+        if (current_solution.includes(current_answer)) {
+            answer_state = "correct";
+            total_answer_count += 1;
+            correct_answer_count += 1;
+            tick();
+            nextQuestionButton.focus();
+        } else {
+            answer_state = "wrong";
+            answerInputField.focus();
+            total_answer_count += 1;
+        }
+    }
 </script>
 
 <div class="center-text">
-  <h1 class="page-title">Noun Declination</h1>
+    <h1 class="page-title">Noun Declination</h1>
 </div>
 
-<AccuracyDisplay total_answer_count={total_answer_count} correct_answer_count={correct_answer_count}/>
+<AccuracyDisplay {total_answer_count} {correct_answer_count} />
 
 <div class="page-section-panel flashcard center-text">
-  <h1 class="word">{current_word}</h1>
-  <p class="translation">{current_translation}</p>
-  {#each current_category_desc as category_entry}
-    <p>{category_entry}</p>
-  {/each}
-  <form onsubmit={checkSolution}>
-    <input class="default-element answer-input" type="text" bind:this={inputField} id="query" bind:value={answer} placeholder="Enter your answer"/>
-    <button class="default-element check-button" aria-label="Search" type="submit">
-      <i class="fas fa-check"></i>
-    </button>
-  </form>
+    <h1 class="word">{current_word}</h1>
+    <p class="translation">{current_translation}</p>
+    {#each current_category_desc as category_entry}
+        <p>{category_entry}</p>
+    {/each}
+    <form onsubmit={checkAnswer}>
+        <input
+            class="default-element answer-input"
+            type="text"
+            bind:this={answerInputField}
+            id="query"
+            bind:value={current_answer}
+            placeholder="Enter your answer"
+        />
+        <button
+            class="default-element check-button"
+            aria-label="Search"
+            type="submit"
+        >
+            <i class="fas fa-check"></i>
+        </button>
+    </form>
 </div>
 
 {#if answer_state == "correct"}
-  <div class="page-section-panel correct-answer-div center-text">
-    <h2>Correct!</h2>
-    {#if alternatives == true}
-      <p>All variants of this word are:</p>
-      <h3>{current_solution}</h3>
-    {/if}
-    <button class="default-element next-card-button" aria-label="Search" bind:this={loadNextButton} onclick={() => nextCard()} autofocus>
-      <i class="fas fa-arrow-right"></i>
-    </button>
-  </div>
+    <div class="page-section-panel correct-answer-div center-text">
+        <h2>Correct!</h2>
+        {#if current_solution.length > 1}
+            <p>All variants of this word are:</p>
+            <h3>{current_solution}</h3>
+        {/if}
+        <button
+            class="default-element next-card-button"
+            aria-label="Search"
+            bind:this={nextQuestionButton}
+            onclick={() => nextQuestion()}
+            autofocus
+        >
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
 {:else if answer_state == "wrong"}
-  <div class="page-section-panel wrong-answer-div center-text">
-    <h2>Wrong!</h2>
-    <p>The right answer would have been:</p>
-    <h3>{current_solution}</h3>
-  </div>
+    <div class="page-section-panel wrong-answer-div center-text">
+        <h2>Wrong!</h2>
+        <p>The right answer would have been:</p>
+        <h3>{current_solution}</h3>
+    </div>
 {/if}
 
 <style>
-  .flashcard {
-    border-radius: var(--border-radius);
-  }
+    .flashcard {
+        border-radius: var(--border-radius);
+    }
 
-  .word {
-    margin-bottom: 0px;
-  }
+    .word {
+        margin-bottom: 0px;
+    }
 
-  .translation {
-    color: grey;
-    margin-top: 0px;
-    margin-bottom: 30px;
-  }
+    .translation {
+        color: grey;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
 
-  .check-button {
-    background-color: var(--green-color);
-  }
+    .check-button {
+        background-color: var(--green-color);
+    }
 
-  .correct-answer-div {
-    border: 8px solid var(--green-color);
-  }
+    .correct-answer-div {
+        border: 8px solid var(--green-color);
+    }
 
-  .wrong-answer-div {
-    border: 8px solid var(--red-color);
-  }
+    .wrong-answer-div {
+        border: 8px solid var(--red-color);
+    }
 
-  .next-card-button {
-    background-color: var(--green-color);
-  }
+    .next-card-button {
+        background-color: var(--green-color);
+    }
 
-  .answer-input {
-    border-radius: 15px;
-    flex: 1;
-    background-color: var(--layer-0);
-  }
+    .answer-input {
+        border-radius: 15px;
+        flex: 1;
+        background-color: var(--layer-0);
+    }
 </style>

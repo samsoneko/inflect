@@ -1,13 +1,13 @@
 <script>
-	let { name = "Category", color = "green", href = "/", description = "Description"} = $props();
+	let { name = "Category", color = "green", lesson_path = "/", settings_path= "/", description = "Description"} = $props();
 </script>
 
 <div class="category-panel" style="--category-color:{color}">
     <p class="category-title">{name}</p>
     <p class="category-description">{description}</p>
     <div class="category-button-wrapper">
-        <a class="category-button" href={href}>Study<i class="fas fa-play"></i></a>
-        <a class="category-button"><i class="fas fa-gear"></i></a>
+        <a class="category-button" href={lesson_path} aria-label="Study">Study<i class="fas fa-play"></i></a>
+        <a class="category-button" href={settings_path} aria-label="Settings"><i class="fas fa-gear"></i></a>
     </div>
 </div>
 

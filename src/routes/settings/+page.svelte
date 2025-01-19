@@ -20,7 +20,7 @@
 <div class="page-section">
     <h2><i class="fas fa-info"></i> Information</h2>
     <div class="page-section-panel">
-        <p>Sabercards v0.6.7</p>
+        <p>Sabercards v0.7.0</p>
         <p>©2025 Anton Caesar</p>
     </div>
 </div>

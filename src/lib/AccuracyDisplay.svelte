@@ -23,7 +23,11 @@
             <div class="accuracy-bar-content" style="--accuracy:{accuracy}; --color:{color}"></div>
         </div>
     </div>
-    <p class="accuracy-percentage center-text">{percentage}%</p>
+    {#if percentage > 0}
+        <p class="accuracy-percentage center-text">{percentage}%</p>
+    {:else}
+    <p class="accuracy-percentage center-text">0%</p>
+    {/if}
 </div>
 
 <style>
