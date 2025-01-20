@@ -5,12 +5,20 @@
 <h1 class="page-title">Hyvää Päivää!</h1>
 
 <div class="page-section">
+    <h2><i class="fas fa-triangle-exclamation"></i> Disclaimer</h2>
+    <div class="default-element">
+        <p>This application is still in early development.</p>
+        <p>Although basic functions do exist, no guarantee for the correctness of information can be given.</p>
+    </div>
+</div>
+
+<div class="page-section">
     <h2><i class="fas fa-book"></i> Study</h2>
     <div class="category-div">
         <CategoryBlock name={"Declination"} color={"var(--blue-color)"} lesson_path="study/textinput?lang=fi&lesson=decl" settings_path="study/textinput/settings?lang=fi&lesson=decl" description={"Practise the declination of nouns and adjectives"}/>
         <CategoryBlock name={"Conjugation"} color={"var(--red-color)"} lesson_path="study/textinput?lang=fi&lesson=conj" settings_path="study/textinput/settings?lang=fi&lesson=conj" description={"Practise the conjugation of verbs"}/>
-        <CategoryBlock name={"Rections"} color={"var(--green-color)"} lesson_path="study/fi/rections" description={"Practise the rections for a variety of different verbs"}/>
-        <CategoryBlock name={"Time"} color={"var(--purple-color)"} lesson_path="study/fi/time" description={"Practise different ways of expressing time"}/>
+        <!-- <CategoryBlock name={"Rections"} color={"var(--green-color)"} lesson_path="study/fi/rections" description={"Practise the rections for a variety of different verbs"}/>
+        <CategoryBlock name={"Time"} color={"var(--purple-color)"} lesson_path="study/fi/time" description={"Practise different ways of expressing time"}/> -->
     </div>
 </div>
 
