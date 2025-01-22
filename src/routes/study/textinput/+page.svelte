@@ -42,11 +42,17 @@
             lessonParam = searchParams.get("lesson");
         }
 
-        if (
-            (lessonParam == "decl" && languageParam == "fi") ||
-            (lessonParam == "conj" && languageParam == "fi")
-        ) {
+        if (lessonParam == "decl" && languageParam == "fi") {
             lesson_data = nouns;
+            current_lesson_conf = lesson_conf[lessonParam];
+            current_lesson_conf.category_data =
+                JSON.parse(
+                    localStorage.getItem(
+                        current_lesson_conf.lesson_type + "Config",
+                    ),
+                ) || lesson_conf[lessonParam].category_data;
+        } else if (lessonParam == "conj" && languageParam == "fi") {
+            lesson_data = verbs;
             current_lesson_conf = lesson_conf[lessonParam];
             current_lesson_conf.category_data =
                 JSON.parse(
@@ -75,21 +81,12 @@
         current_category_desc = [];
 
         for (let i = 0; i < current_lesson_conf.categories.length; i++) {
-            let category_index = Math.floor(
-                Math.random() * current_lesson_conf.category_data[i].length,
-            );
-            current_categories.push(
-                current_lesson_conf.category_data[i][category_index],
-            );
-            current_category_desc.push(
-                current_lesson_conf.category_desc[
-                    current_lesson_conf.category_data[i][category_index]
-                ],
-            );
+            let category_index = Math.floor(Math.random() * current_lesson_conf.category_data[i].length,);
+            current_categories.push(current_lesson_conf.category_data[i][category_index],);
+            current_category_desc.push(current_lesson_conf.category_desc[current_lesson_conf.category_data[i][category_index]],);
         }
 
-        let solution_entry =
-            lesson_data[index][current_lesson_conf.lesson_type];
+        let solution_entry = lesson_data[index][current_lesson_conf.lesson_type];
         for (let i = 0; i < current_categories.length; i++) {
             solution_entry = solution_entry[current_categories[i]];
         }
@@ -156,13 +153,7 @@
             <p>All variants of this word are:</p>
             <h3>{current_solution}</h3>
         {/if}
-        <button
-            class="default-element next-card-button"
-            aria-label="Search"
-            bind:this={nextQuestionButton}
-            onclick={() => nextQuestion()}
-            autofocus
-        >
+        <button class="default-element next-card-button" aria-label="Search" bind:this={nextQuestionButton} onclick={() => nextQuestion()} autofocus>
             <i class="fas fa-arrow-right"></i>
         </button>
     </div>
@@ -173,6 +164,12 @@
         <h3>{current_solution}</h3>
     </div>
 {/if}
+<div class="center-text">
+    <button class="default-element next-card-button" aria-label="Search" onclick={() => nextQuestion()}>
+        Skip Question
+    </button>
+</div>
+
 
 <style>
     .flashcard {
