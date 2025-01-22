@@ -1,20 +1,4 @@
 <script lang="ts">
-
-    function navigateToHome() {
-        window.location.href = '/';
-    }
-
-    function navigateToSearch() {
-        window.location.href = '/search';
-    }
-
-    function navigateToMaterial() {
-        window.location.href = '/material';
-    }
-
-    function navigateToSettings() {
-        window.location.href = '/settings';
-    }
     
     let isLightMode = $state(false);
 
@@ -32,21 +16,29 @@
     </div>
 
     <nav class="navbar">
-        <button class="icon-button" aria-label="Home" onclick={() => navigateToHome()}>
-            <i class="fas fa-home"></i>
+        <button class="icon-button" aria-label="Home">
+            <a class="navbar-icon" href="/" aria-label="Home"><i class="fas fa-home"></i></a>
             <!-- <p class="icon-button-label">Home</p> -->
         </button>
-        <button class="icon-button" aria-label="Search" onclick={() => navigateToSearch()}>
-            <i class="fas fa-magnifying-glass"></i>
+        <button class="icon-button" aria-label="Search">
+            <a class="navbar-icon" href="/search" aria-label="Search"><i class="fas fa-magnifying-glass"></i></a>
             <!-- <p class="icon-button-label">Search</p> -->
         </button>
-        <button class="icon-button" aria-label="Settings" onclick={() => navigateToMaterial()}>
-            <i class="fas fa-book"></i>
+        <button class="icon-button" aria-label="Material">
+            <a class="navbar-icon" href="/material" aria-label="Material"><i class="fas fa-book"></i></a>
             <!-- <p class="icon-button-label">Material</p> -->
         </button>
-        <button class="icon-button" aria-label="Settings" onclick={() => navigateToSettings()}>
-            <i class="fas fa-cog"></i>
+        <button class="icon-button" aria-label="Settings">
+            <a class="navbar-icon" href="/settings" aria-label="Settings"><i class="fas fa-cog"></i></a>
             <!-- <p class="icon-button-label">Settings</p> -->
         </button>
     </nav>
 </div>
+
+<style>
+    .navbar-icon {
+        color: var(--color);
+        width: 100%;
+        height: 100%;
+    }
+</style>
