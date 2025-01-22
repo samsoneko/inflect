@@ -45,7 +45,7 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Arial", sans-serif;
     background-color: black;
     color: var(--text-color);
     display: flex;
@@ -104,8 +104,8 @@ button, form {
 .page-title {
     margin-top: 30px;
     margin-bottom: 30px;
-    font-size: 2.5em;
-    font-family: Merriweather, serif;
+    font-size: 2.2em;
+    font-family: 'Merriweather', serif;
     text-align: center;
 }
 
@@ -168,8 +168,9 @@ button, form {
 @media screen and (max-width: 600px) {
 
 
-    body {
+    html, body {
         margin: 0px!important;
+        height: 100%;
     }
 
     .app-frame {
