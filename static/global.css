@@ -2,7 +2,7 @@
     --layer-0: #181a20;
     --layer-1: #292b33;
 
-    --border-radius: 20px;
+    --border-radius: 15px;
     --border: none;
     --primary-border: none;
     --box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.15);
@@ -68,7 +68,7 @@ button, form {
     .app-frame {
         width: 400px;
         height: 800px;
-        border-radius: 40px;;
+        border-radius: 30px;;
         overflow: hidden;
         display: flex;
         flex-direction: column;
