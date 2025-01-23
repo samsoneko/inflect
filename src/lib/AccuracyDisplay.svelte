@@ -16,7 +16,7 @@
     });
 </script>
 
-<div class="page-section-panel accuracy-panel">
+<div class="saber-panel-default accuracy-panel">
     <h4 class="accuracy-title center-text"><i class="fas fa-bolt"></i> Current Accuracy</h4>
     <div class="accuracy-bar-frame">
         <div class="accuracy-bar-background">

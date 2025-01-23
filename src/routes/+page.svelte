@@ -1,16 +1,19 @@
 <script>
     import CategoryBlock from "$lib/CategoryBlock.svelte";
+    import WiktionarySearch from "$lib/WiktionarySearch.svelte";
 </script>
 
-<h1 class="page-title">Hyvää Päivää!</h1>
+<h1 class="homepage-title">Hyvää Päivää!☀️</h1>
 
 <div class="page-section">
-    <h2><i class="fas fa-triangle-exclamation"></i> Disclaimer</h2>
-    <div class="default-element">
+    <div class="saber-panel-default saber-border-warn disclaimer center-text">
+        <h3><i class="fas fa-triangle-exclamation"></i> Disclaimer</h3>
         <p>This application is still in early development.</p>
         <p>Although basic functions do exist, no guarantee for the correctness of information can be given.</p>
     </div>
 </div>
+
+<WiktionarySearch/>
 
 <div class="page-section">
     <h2><i class="fas fa-book"></i> Study</h2>
@@ -29,5 +32,12 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 10px;
         row-gap: 10px;
+    }
+
+    .homepage-title {
+        margin-top: 32px;
+        margin-bottom: 48px;
+        font-size: 2.2em;
+        text-align: center;
     }
 </style>

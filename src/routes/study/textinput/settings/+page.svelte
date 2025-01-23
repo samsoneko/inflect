@@ -74,9 +74,9 @@
     viable configuration.
 </div>
 
-<div class="default-element">
+<div class="saber-panel-default">
     {#each available_categories as category, i}
-        <h2>{capitalize(category)}</h2>
+        <h2 class="section-title">{capitalize(category)}</h2>
         {#each available_category_data[i] as category_data}
             <div>
                 <input
@@ -93,7 +93,7 @@
 
 <div class="center-text bottom-buttons">
     {#if viableConfiguration}
-        <button class="default-element" aria-label="Save" onclick={saveConfig}>
+        <button class="saber-button-default saber-color-confirm" aria-label="Save" onclick={saveConfig}>
             <i class="fas fa-floppy-disk"></i> Save Config
         </button>
     {:else}
@@ -101,7 +101,7 @@
     {/if}
 
     <button
-        class="default-element"
+        class="saber-button-default saber-color-error"
         aria-label="Reset Selection"
         onclick={resetSelection}
     >

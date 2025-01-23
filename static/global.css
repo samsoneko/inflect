@@ -1,13 +1,14 @@
 :root {
-    --layer-0: #181a20;
-    --layer-1: #292b33;
+    --layer-0: #181920;
+    --layer-1: #24252b;
 
-    --border-radius: 15px;
+    --border-radius: 16px;
     --border: none;
     --primary-border: none;
     --box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.15);
 
     --text-color: white;
+    --subtle-text-color: #7d7f85;
     --icon-color: white;
     
     --primary-color: #bb86fc;
@@ -25,7 +26,7 @@
     --layer-0: #e5e7f6;
     --layer-1: white;
 
-    --border-radius: 20px;
+    --border-radius: 16px;
     --border: none;
     --primary-border: none;
     --box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.25);
@@ -68,7 +69,7 @@ button, form {
     .app-frame {
         width: 400px;
         height: 800px;
-        border-radius: 30px;;
+        border-radius: 32px;;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -101,29 +102,24 @@ button, form {
 
 /*CSS for the overarching design of the app elements*/
 
-.page-title {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 2.2em;
-    font-family: 'Merriweather', serif;
+h1 {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-size: 2em;
     text-align: center;
 }
 
+h2 {
+    font-size: 1.1em;
+    font-weight: normal;
+    color: var(--subtle-text-color);
+}
+
 .page-section {
-    margin-top: 50px;
-    margin-bottom: 10px;
+
 }
 
-.default-element {
-    padding: 16px;
-    border: var(--border);
-    background-color: var(--layer-1);
-    color: var(--text-color);
-    box-shadow: var(--box-shadow);
-    border-radius: var(--border-radius);
-}
-
-.page-section-panel {
+.saber-panel-default {
     padding: 16px;
     border: var(--border);
     background-color: var(--layer-1);
@@ -133,8 +129,67 @@ button, form {
     margin-bottom: 16px;
 }
 
+.saber-button-default {
+    padding: 16px;
+    border: var(--border);
+    background-color: var(--layer-1);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.saber-input-default {
+    padding: 16px;
+    border: var(--border);
+    background-color: var(--layer-1);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.saber-color-confirm {
+    background-color: var(--green-color);
+    color: black;
+}
+
+.saber-color-warn {
+    background-color: var(--yellow-color);
+    color: black;
+}
+
+.saber-color-error {
+    background-color: var(--red-color);
+    color: black;
+}
+
+.saber-color-info {
+    background-color: var(--blue-color);
+    color: black;
+}
+
+.saber-border-confirm {
+    border: 4px solid var(--green-color);
+}
+
+.saber-border-warn {
+    border: 4px solid var(--yellow-color);
+}
+
+.saber-border-error {
+    border: 4px solid var(--red-color);
+}
+
+.saber-border-info {
+    border: 4px solid var(--blue-color);
+}
+
 .center-text {
     text-align: center;
+}
+
+.disclaimer {
+    font-size: 0.9em;
+    padding: 8px;
 }
 
 /*CSS for icon and image buttons*/
@@ -152,7 +207,7 @@ button, form {
 .icon-button-label {
     margin: 0px;
     font-size: 0.6em;
-    color: gray;
+    color: var(--subtle-text-color);
 }
 
 .button-image {

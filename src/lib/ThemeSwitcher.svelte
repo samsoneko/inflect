@@ -14,7 +14,7 @@
     }
 </script>
   
-<button class="default-element" onclick={() => toggleTheme()}>
+<button class="saber-button-default" onclick={() => toggleTheme()}>
     {isLightMode ? '🎨Switch to Dark Mode' : '🎨Switch to Light Mode'}
 </button>
 

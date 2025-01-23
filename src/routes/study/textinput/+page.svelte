@@ -121,7 +121,7 @@
 
 <AccuracyDisplay {total_answer_count} {correct_answer_count} />
 
-<div class="page-section-panel flashcard center-text">
+<div class="saber-panel-default flashcard center-text">
     <h1 class="word">{current_word}</h1>
     <p class="translation">{current_translation}</p>
     {#each current_category_desc as category_entry}
@@ -129,7 +129,7 @@
     {/each}
     <form onsubmit={checkAnswer}>
         <input
-            class="default-element answer-input"
+            class="saber-input-default answer-input"
             type="text"
             bind:this={answerInputField}
             id="query"
@@ -137,36 +137,38 @@
             placeholder="Enter your answer"
         />
         <button
-            class="default-element check-button"
+            class="saber-button-default saber-color-confirm"
             aria-label="Search"
             type="submit"
         >
+            Check
             <i class="fas fa-check"></i>
         </button>
     </form>
 </div>
 
 {#if answer_state == "correct"}
-    <div class="page-section-panel correct-answer-div center-text">
+    <div class="saber-panel-default saber-border-confirm center-text">
         <h2>Correct!</h2>
         {#if current_solution.length > 1}
             <p>All variants of this word are:</p>
             <h3>{current_solution}</h3>
         {/if}
-        <button class="default-element next-card-button" aria-label="Search" bind:this={nextQuestionButton} onclick={() => nextQuestion()} autofocus>
+        <button class="saber-button-default saber-color-confirm" aria-label="Search" bind:this={nextQuestionButton} onclick={() => nextQuestion()} autofocus>
             <i class="fas fa-arrow-right"></i>
         </button>
     </div>
 {:else if answer_state == "wrong"}
-    <div class="page-section-panel wrong-answer-div center-text">
+    <div class="saber-panel-default saber-border-error center-text">
         <h2>Wrong!</h2>
         <p>The right answer would have been:</p>
         <h3>{current_solution}</h3>
     </div>
 {/if}
 <div class="center-text">
-    <button class="default-element next-card-button" aria-label="Search" onclick={() => nextQuestion()}>
+    <button class="saber-button-default saber-color-warn" aria-label="Search" onclick={() => nextQuestion()}>
         Skip Question
+        <i class="fas fa-forward"></i>
     </button>
 </div>
 
@@ -181,29 +183,13 @@
     }
 
     .translation {
-        color: grey;
+        color: var(--subtle-text-color);
         margin-top: 0px;
         margin-bottom: 30px;
     }
 
-    .check-button {
-        background-color: var(--green-color);
-    }
-
-    .correct-answer-div {
-        border: 8px solid var(--green-color);
-    }
-
-    .wrong-answer-div {
-        border: 8px solid var(--red-color);
-    }
-
-    .next-card-button {
-        background-color: var(--green-color);
-    }
-
     .answer-input {
-        border-radius: 15px;
+        border-radius: var(--border-radius);
         flex: 1;
         background-color: var(--layer-0);
     }
