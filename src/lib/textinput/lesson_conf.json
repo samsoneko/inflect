@@ -19,6 +19,26 @@
             "plural": "plural"
         }
     },
+    "adjective-declination" : {
+        "data_file" : "adjectives.json",
+        "lesson_type" : "adjective-declination",
+        "categories" : ["cases", "classes"],
+        "category_data" : [["nominative", "partitive", "genitive", "illative", "inessive", "elative", "allative", "adessive", "ablative"],
+        ["singular", "plural"]],
+        "category_desc" : {
+            "nominative": "nominative",
+            "partitive": "partitive",
+            "genitive" : "genitive",
+            "illative": "illative (-hVn, -Vh, seen)",
+            "inessive": "inessive (-ssa, -ssä)",
+            "elative": "elative (-sta, -stä)",
+            "allative": "allative (-lle)",
+            "adessive": "adessive (-lla, -llä)",
+            "ablative": "ablative (-lta, -ltä)",
+            "singular": "singular",
+            "plural": "plural"
+        }
+    },
     "conj" : {
         "data_file" : "verbs.json",
         "lesson_type" : "conjugation",
@@ -39,6 +59,23 @@
             "3rd plur.": "1. person plural",
             "positive": "positive",
             "negative": "negative"
+        }
+    },
+    "pronoun-declination" : {
+        "data_file" : "pronouns.json",
+        "lesson_type" : "pronoun-declination",
+        "categories" : ["cases"],
+        "category_data" : [["nominative", "partitive", "genitive", "illative", "inessive", "elative", "allative", "adessive", "ablative"]],
+        "category_desc" : {
+            "nominative": "nominative",
+            "partitive": "partitive",
+            "genitive" : "genitive",
+            "illative": "illative (-hVn, -Vh, seen)",
+            "inessive": "inessive (-ssa, -ssä)",
+            "elative": "elative (-sta, -stä)",
+            "allative": "allative (-lle)",
+            "adessive": "adessive (-lla, -llä)",
+            "ablative": "ablative (-lta, -ltä)"
         }
     }
 }

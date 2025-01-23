@@ -2,7 +2,7 @@
     "0": {
         "word": "olla",
         "translation": "to be",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "olen",
@@ -112,7 +112,7 @@
     "1": {
         "word": "voida",
         "translation": "can",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "voin",
@@ -222,7 +222,7 @@
     "2": {
         "word": "saada",
         "translation": "to get",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "saan",
@@ -332,7 +332,7 @@
     "3": {
         "word": "tulla",
         "translation": "to become",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "tulen",
@@ -442,7 +442,7 @@
     "4": {
         "word": "tehdä",
         "translation": "to make",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "teen",
@@ -552,7 +552,7 @@
     "5": {
         "word": "pitää",
         "translation": "to keep",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "pidän",
@@ -662,7 +662,7 @@
     "6": {
         "word": "käyttää",
         "translation": "to use",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "käytän",
@@ -772,7 +772,7 @@
     "7": {
         "word": "kertoa",
         "translation": "to tell",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "kerron",
@@ -882,7 +882,7 @@
     "8": {
         "word": "ottaa",
         "translation": "to take",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "otan",
@@ -992,7 +992,7 @@
     "9": {
         "word": "antaa",
         "translation": "to give",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "annan",
@@ -1102,7 +1102,7 @@
     "10": {
         "word": "sanoa",
         "translation": "to say",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "sanon",
@@ -1212,7 +1212,7 @@
     "11": {
         "word": "toimia",
         "translation": "act",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "toimin",
@@ -1322,7 +1322,7 @@
     "12": {
         "word": "haluta",
         "translation": "to want",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "haluan",
@@ -1432,7 +1432,7 @@
     "13": {
         "word": "alkaa",
         "translation": "start",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "alan",
@@ -1542,7 +1542,7 @@
     "14": {
         "word": "tarvita",
         "translation": "to need",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "tarvitsen",
@@ -1652,7 +1652,7 @@
     "15": {
         "word": "käydä",
         "translation": "to visit",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "käyn",
@@ -1762,7 +1762,7 @@
     "16": {
         "word": "jäädä",
         "translation": "to stay",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "jään",
@@ -1872,7 +1872,7 @@
     "17": {
         "word": "maksaa",
         "translation": "to pay",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "maksan",
@@ -1982,7 +1982,7 @@
     "18": {
         "word": "mennä",
         "translation": "go",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "menen",
@@ -2092,7 +2092,7 @@
     "19": {
         "word": "nähdä",
         "translation": "to see",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "näen",
@@ -2202,7 +2202,7 @@
     "20": {
         "word": "katsoa",
         "translation": "to look",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "katson",
@@ -2312,7 +2312,7 @@
     "21": {
         "word": "esittää",
         "translation": "present",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "esitän",
@@ -2422,7 +2422,7 @@
     "22": {
         "word": "vastata",
         "translation": "to answer",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "vastaan",
@@ -2532,7 +2532,7 @@
     "23": {
         "word": "joutua",
         "translation": "to get",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "joudun",
@@ -2642,7 +2642,7 @@
     "24": {
         "word": "lisätä",
         "translation": "to add",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "lisään",
@@ -2752,7 +2752,7 @@
     "25": {
         "word": "nousta",
         "translation": "to rise",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "nousen",
@@ -2862,7 +2862,7 @@
     "26": {
         "word": "päättää",
         "translation": "to decide",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "päätän",
@@ -2972,7 +2972,7 @@
     "27": {
         "word": "järjestää",
         "translation": "to arrange",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "järjestän",
@@ -3082,7 +3082,7 @@
     "28": {
         "word": "lähteä",
         "translation": "go",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "lähden",
@@ -3210,7 +3210,7 @@
     "29": {
         "word": "valita",
         "translation": "to choose",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "valitsen",
@@ -3320,7 +3320,7 @@
     "30": {
         "word": "vaatia",
         "translation": "to demand",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "vaadin",
@@ -3430,7 +3430,7 @@
     "31": {
         "word": "tapahtua",
         "translation": "to happen",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "tapahdun",
@@ -3540,7 +3540,7 @@
     "32": {
         "word": "koskea",
         "translation": "concern",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "kosken",
@@ -3650,7 +3650,7 @@
     "33": {
         "word": "lukea",
         "translation": "to read",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "luen",
@@ -3760,7 +3760,7 @@
     "34": {
         "word": "tietää",
         "translation": "to know",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "tiedän",
@@ -3960,7 +3960,7 @@
     "35": {
         "word": "näyttää",
         "translation": "to show",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "näytän",
@@ -4070,7 +4070,7 @@
     "36": {
         "word": "vaikuttaa",
         "translation": "to influence",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "vaikutan",
@@ -4180,7 +4180,7 @@
     "37": {
         "word": "saattaa",
         "translation": "walk",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "saatan",
@@ -4290,7 +4290,7 @@
     "38": {
         "word": "kasvaa",
         "translation": "to grow",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "kasvan",
@@ -4400,7 +4400,7 @@
     "39": {
         "word": "tuoda",
         "translation": "to bring",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "tuon",
@@ -4510,7 +4510,7 @@
     "40": {
         "word": "tarkoittaa",
         "translation": "to mean",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "tarkoitan",
@@ -4620,7 +4620,7 @@
     "41": {
         "word": "todeta",
         "translation": "note",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "totean",
@@ -4730,7 +4730,7 @@
     "42": {
         "word": "syntyä",
         "translation": "to be born",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "synnyn",
@@ -4840,7 +4840,7 @@
     "43": {
         "word": "aloittaa",
         "translation": "to start",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "aloitan",
@@ -4950,7 +4950,7 @@
     "44": {
         "word": "tarjota",
         "translation": "to offer",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "tarjoan",
@@ -5060,7 +5060,7 @@
     "45": {
         "word": "aiheuttaa",
         "translation": "to cause",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "aiheutan",
@@ -5170,7 +5170,7 @@
     "46": {
         "word": "puhua",
         "translation": "to talk",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "puhun",
@@ -5280,7 +5280,7 @@
     "47": {
         "word": "jättää",
         "translation": "to leave",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "jätän",
@@ -5390,7 +5390,7 @@
     "48": {
         "word": "kirjoittaa",
         "translation": "to write",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "kirjoitan",
@@ -5500,7 +5500,7 @@
     "49": {
         "word": "pystyä",
         "translation": "to can",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "pystyn",
@@ -5610,7 +5610,7 @@
     "50": {
         "word": "laskea",
         "translation": "drop",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "lasken",
@@ -5720,7 +5720,7 @@
     "51": {
         "word": "osallistua",
         "translation": "participate",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "osallistun",
@@ -5830,7 +5830,7 @@
     "52": {
         "word": "uskoa",
         "translation": "to believe",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "uskon",
@@ -5940,7 +5940,7 @@
     "53": {
         "word": "rakentaa",
         "translation": "to build",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "rakennan",
@@ -6050,7 +6050,7 @@
     "54": {
         "word": "ostaa",
         "translation": "to buy",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "ostan",
@@ -6160,7 +6160,7 @@
     "55": {
         "word": "muuttaa",
         "translation": "change",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "muutan",
@@ -6270,7 +6270,7 @@
     "56": {
         "word": "arvioida",
         "translation": "to estimate",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "arvioin",
@@ -6380,7 +6380,7 @@
     "57": {
         "word": "ilmoittaa",
         "translation": "notify",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "ilmoitan",
@@ -6490,7 +6490,7 @@
     "58": {
         "word": "johtaa",
         "translation": "to lead",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "johdan",
@@ -6600,7 +6600,7 @@
     "59": {
         "word": "ajaa",
         "translation": "to drive",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "ajan",
@@ -6710,7 +6710,7 @@
     "60": {
         "word": "hyväksyä",
         "translation": "to accept",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "hyväksyn",
@@ -6820,7 +6820,7 @@
     "61": {
         "word": "riittää",
         "translation": "do",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "riitän",
@@ -6930,7 +6930,7 @@
     "62": {
         "word": "odottaa",
         "translation": "expect",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "odotan",
@@ -7040,7 +7040,7 @@
     "63": {
         "word": "jatkaa",
         "translation": "to continue",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "jatkan",
@@ -7150,7 +7150,7 @@
     "64": {
         "word": "muuttua",
         "translation": "alter",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "muutun",
@@ -7260,7 +7260,7 @@
     "65": {
         "word": "kehittää",
         "translation": "to develop",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "kehitän",
@@ -7370,7 +7370,7 @@
     "66": {
         "word": "pyrkiä",
         "translation": "to strive",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "pyrin",
@@ -7480,7 +7480,7 @@
     "67": {
         "word": "tuottaa",
         "translation": "to produce",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "tuotan",
@@ -7590,7 +7590,7 @@
     "68": {
         "word": "jatkua",
         "translation": "to continue",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "jatkun",
@@ -7700,7 +7700,7 @@
     "69": {
         "word": "näkyä",
         "translation": "to be visible",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "näyn",
@@ -7810,7 +7810,7 @@
     "70": {
         "word": "seurata",
         "translation": "to follow",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "seuraan",
@@ -7920,7 +7920,7 @@
     "71": {
         "word": "toteuttaa",
         "translation": "implement",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "toteutan",
@@ -8030,7 +8030,7 @@
     "72": {
         "word": "viedä",
         "translation": "to take",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "vien",
@@ -8140,7 +8140,7 @@
     "73": {
         "word": "suorittaa",
         "translation": "run",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "suoritan",
@@ -8250,7 +8250,7 @@
     "74": {
         "word": "nostaa",
         "translation": "to lift",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "nostan",
@@ -8360,7 +8360,7 @@
     "75": {
         "word": "yrittää",
         "translation": "to try",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "yritän",
@@ -8470,7 +8470,7 @@
     "76": {
         "word": "löytää",
         "translation": "to find",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "löydän",
@@ -8580,7 +8580,7 @@
     "77": {
         "word": "voittaa",
         "translation": "to win",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "voitan",
@@ -8690,7 +8690,7 @@
     "78": {
         "word": "sisältää",
         "translation": "to contain",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "sisällän",
@@ -8800,7 +8800,7 @@
     "79": {
         "word": "hakea",
         "translation": "fetch",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "haen",
@@ -8910,7 +8910,7 @@
     "80": {
         "word": "tukea",
         "translation": "to support",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "tuen",
@@ -9020,7 +9020,7 @@
     "81": {
         "word": "sijaita",
         "translation": "be located",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "sijaitsen",
@@ -9130,7 +9130,7 @@
     "82": {
         "word": "myydä",
         "translation": "to sell",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "myyn",
@@ -9240,7 +9240,7 @@
     "83": {
         "word": "ymmärtää",
         "translation": "understand",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "ymmärrän",
@@ -9350,7 +9350,7 @@
     "84": {
         "word": "käsitellä",
         "translation": "deal with",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "käsittelen",
@@ -9460,7 +9460,7 @@
     "85": {
         "word": "julkaista",
         "translation": "to publish",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "julkaisen",
@@ -9570,7 +9570,7 @@
     "86": {
         "word": "jakaa",
         "translation": "to share",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "jaan",
@@ -9680,7 +9680,7 @@
     "87": {
         "word": "auttaa",
         "translation": "to help",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "autan",
@@ -9790,7 +9790,7 @@
     "88": {
         "word": "lähettää",
         "translation": "to send",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "lähetän",
@@ -9900,7 +9900,7 @@
     "89": {
         "word": "osata",
         "translation": "to know",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "osaan",
@@ -10010,7 +10010,7 @@
     "90": {
         "word": "siirtyä",
         "translation": "to move",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "siirryn",
@@ -10120,7 +10120,7 @@
     "91": {
         "word": "onnistua",
         "translation": "succeed",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "onnistun",
@@ -10230,7 +10230,7 @@
     "92": {
         "word": "perustaa",
         "translation": "to establish",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "perustan",
@@ -10340,7 +10340,7 @@
     "93": {
         "word": "kestää",
         "translation": "take",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "kestän",
@@ -10450,7 +10450,7 @@
     "94": {
         "word": "asua",
         "translation": "to live",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "asun",
@@ -10560,7 +10560,7 @@
     "95": {
         "word": "luoda",
         "translation": "to create",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "luon",
@@ -10670,7 +10670,7 @@
     "96": {
         "word": "pysyä",
         "translation": "to stay",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "pysyn",
@@ -10780,7 +10780,7 @@
     "97": {
         "word": "myöntää",
         "translation": "admit",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "myönnän",
@@ -10890,7 +10890,7 @@
     "98": {
         "word": "suunnitella",
         "translation": "to design",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "suunnittelen",
@@ -11000,7 +11000,7 @@
     "99": {
         "word": "mainita",
         "translation": "to mention",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "mainitsen",
@@ -11110,7 +11110,7 @@
     "100": {
         "word": "edellyttää",
         "translation": "to require",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "edellytän",
@@ -11220,7 +11220,7 @@
     "101": {
         "word": "laittaa",
         "translation": "to put",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "laitan",
@@ -11330,7 +11330,7 @@
     "102": {
         "word": "asettaa",
         "translation": "set",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "asetan",
@@ -11440,7 +11440,7 @@
     "103": {
         "word": "tuntea",
         "translation": "to feel",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "tunnen",
@@ -11550,7 +11550,7 @@
     "104": {
         "word": "muistaa",
         "translation": "to remember",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "muistan",
@@ -11660,7 +11660,7 @@
     "105": {
         "word": "elää",
         "translation": "to live",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "elän",
@@ -11770,7 +11770,7 @@
     "106": {
         "word": "päättyä",
         "translation": "to end",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "päätyn",
@@ -11880,7 +11880,7 @@
     "107": {
         "word": "täyttää",
         "translation": "to fill",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "täytän",
@@ -11990,7 +11990,7 @@
     "108": {
         "word": "toimittaa",
         "translation": "deliver",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "toimitan",
@@ -12100,7 +12100,7 @@
     "109": {
         "word": "kokea",
         "translation": "to experience",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "koen",
@@ -12210,7 +12210,7 @@
     "110": {
         "word": "pyytää",
         "translation": "to request",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "pyydän",
@@ -12338,7 +12338,7 @@
     "111": {
         "word": "kysyä",
         "translation": "to ask",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "kysyn",
@@ -12448,7 +12448,7 @@
     "112": {
         "word": "kuulla",
         "translation": "to hear",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "kuulen",
@@ -12558,7 +12558,7 @@
     "113": {
         "word": "verrata",
         "translation": "to compare",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "vertaan",
@@ -12668,7 +12668,7 @@
     "114": {
         "word": "merkitä",
         "translation": "to subscribe",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "merkitsen",
@@ -12778,7 +12778,7 @@
     "115": {
         "word": "ajatella",
         "translation": "to think",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "ajattelen",
@@ -12888,7 +12888,7 @@
     "116": {
         "word": "esitellä",
         "translation": "to introduce",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "esittelen",
@@ -12998,7 +12998,7 @@
     "117": {
         "word": "kuvata",
         "translation": "to describe",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "kuvaan",
@@ -13108,7 +13108,7 @@
     "118": {
         "word": "tutustua",
         "translation": "to meet",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "tutustun",
@@ -13218,7 +13218,7 @@
     "119": {
         "word": "kuolla",
         "translation": "to die",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "kuolen",
@@ -13328,7 +13328,7 @@
     "120": {
         "word": "valmistaa",
         "translation": "prepare",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "valmistan",
@@ -13438,7 +13438,7 @@
     "121": {
         "word": "etsiä",
         "translation": "to search",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "etsin",
@@ -13548,7 +13548,7 @@
     "122": {
         "word": "huomata",
         "translation": "note",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "huomaan",
@@ -13658,7 +13658,7 @@
     "123": {
         "word": "avata",
         "translation": "to open",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "avaan",
@@ -13768,7 +13768,7 @@
     "124": {
         "word": "siirtää",
         "translation": "to transfer",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "siirrän",
@@ -13878,7 +13878,7 @@
     "125": {
         "word": "vahvistaa",
         "translation": "confirm",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "vahvistan",
@@ -13988,7 +13988,7 @@
     "126": {
         "word": "omistaa",
         "translation": "to own",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "omistan",
@@ -14098,7 +14098,7 @@
     "127": {
         "word": "vähentää",
         "translation": "reduce",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "vähennän",
@@ -14208,7 +14208,7 @@
     "128": {
         "word": "kutsua",
         "translation": "to invite",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "kutsun",
@@ -14318,7 +14318,7 @@
     "129": {
         "word": "aikoa",
         "translation": "to intend to",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "aion",
@@ -14428,7 +14428,7 @@
     "130": {
         "word": "kerätä",
         "translation": "to collect",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "kerään",
@@ -14538,7 +14538,7 @@
     "131": {
         "word": "puuttua",
         "translation": "to intervene",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "puutun",
@@ -14648,7 +14648,7 @@
     "132": {
         "word": "valmistua",
         "translation": "to graduate",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "valmistun",
@@ -14758,7 +14758,7 @@
     "133": {
         "word": "parantaa",
         "translation": "to improve",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "parannan",
@@ -14868,7 +14868,7 @@
     "134": {
         "word": "toivoa",
         "translation": "wish",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "toivon",
@@ -14978,7 +14978,7 @@
     "135": {
         "word": "edustaa",
         "translation": "to represent",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "edustan",
@@ -15088,7 +15088,7 @@
     "136": {
         "word": "palata",
         "translation": "to return",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "palaan",
@@ -15198,7 +15198,7 @@
     "137": {
         "word": "poistaa",
         "translation": "to remove",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "poistan",
@@ -15308,7 +15308,7 @@
     "138": {
         "word": "noudattaa",
         "translation": "follow",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "noudatan",
@@ -15418,7 +15418,7 @@
     "139": {
         "word": "vetää",
         "translation": "to pull",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "vedän",
@@ -15528,7 +15528,7 @@
     "140": {
         "word": "lisääntyä",
         "translation": "to increase",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "lisäännyn",
@@ -15638,7 +15638,7 @@
     "141": {
         "word": "syödä",
         "translation": "to eat",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "syön",
@@ -15748,7 +15748,7 @@
     "142": {
         "word": "keskittyä",
         "translation": "to to concentrate",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "keskityn",
@@ -15858,7 +15858,7 @@
     "143": {
         "word": "vaihtaa",
         "translation": "to change",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "vaihdan",
@@ -15968,7 +15968,7 @@
     "144": {
         "word": "saapua",
         "translation": "to arrive",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "saavun",
@@ -16078,7 +16078,7 @@
     "145": {
         "word": "estää",
         "translation": "to prevent",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "estän",
@@ -16188,7 +16188,7 @@
     "146": {
         "word": "liikkua",
         "translation": "to move",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "liikun",
@@ -16298,7 +16298,7 @@
     "147": {
         "word": "soittaa",
         "translation": "call",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "soitan",
@@ -16408,7 +16408,7 @@
     "148": {
         "word": "lopettaa",
         "translation": "to stop",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "lopetan",
@@ -16518,7 +16518,7 @@
     "149": {
         "word": "hankkia",
         "translation": "to acquire",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "hankin",
@@ -16628,7 +16628,7 @@
     "150": {
         "word": "saavuttaa",
         "translation": "to reach",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "saavutan",
@@ -16738,7 +16738,7 @@
     "151": {
         "word": "korostaa",
         "translation": "highlight",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "korostan",
@@ -16848,7 +16848,7 @@
     "152": {
         "word": "työskennellä",
         "translation": "to work",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "työskentelen",
@@ -16958,7 +16958,7 @@
     "153": {
         "word": "muodostua",
         "translation": "to form",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "muodostun",
@@ -17068,7 +17068,7 @@
     "154": {
         "word": "mahdollistaa",
         "translation": "enable",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "mahdollistan",
@@ -17178,7 +17178,7 @@
     "155": {
         "word": "viettää",
         "translation": "spend",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "vietän",
@@ -17288,7 +17288,7 @@
     "156": {
         "word": "sijoittaa",
         "translation": "place",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "sijoitan",
@@ -17398,7 +17398,7 @@
     "157": {
         "word": "kiinnostaa",
         "translation": "to interest",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "kiinnostan",
@@ -17508,7 +17508,7 @@
     "158": {
         "word": "ilmestyä",
         "translation": "appear",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "ilmestyn",
@@ -17618,7 +17618,7 @@
     "159": {
         "word": "riippua",
         "translation": "to depend",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "riipun",
@@ -17728,7 +17728,7 @@
     "160": {
         "word": "hallita",
         "translation": "reign",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "hallitsen",
@@ -17838,7 +17838,7 @@
     "161": {
         "word": "edistää",
         "translation": "to promote",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "edistän",
@@ -17948,7 +17948,7 @@
     "162": {
         "word": "varata",
         "translation": "book",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "varaan",
@@ -18058,7 +18058,7 @@
     "163": {
         "word": "ryhtyä",
         "translation": "start",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "ryhdyn",
@@ -18168,7 +18168,7 @@
     "164": {
         "word": "sattua",
         "translation": "occur",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "satun",
@@ -18278,7 +18278,7 @@
     "165": {
         "word": "istua",
         "translation": "to sit",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "istun",
@@ -18388,7 +18388,7 @@
     "166": {
         "word": "kiinnittää",
         "translation": "fix",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "kiinnitän",
@@ -18498,7 +18498,7 @@
     "167": {
         "word": "korvata",
         "translation": "to replace",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "korvaan",
@@ -18608,7 +18608,7 @@
     "168": {
         "word": "hyödyntää",
         "translation": "utilize",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "hyödynnän",
@@ -18718,7 +18718,7 @@
     "169": {
         "word": "taitaa",
         "translation": "to know",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "taidan",
@@ -18846,7 +18846,7 @@
     "170": {
         "word": "määritellä",
         "translation": "to define",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "määrittelen",
@@ -18956,7 +18956,7 @@
     "171": {
         "word": "painaa",
         "translation": "press",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "painan",
@@ -19066,7 +19066,7 @@
     "172": {
         "word": "havaita",
         "translation": "detect",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "havaitsen",
@@ -19176,7 +19176,7 @@
     "173": {
         "word": "loppua",
         "translation": "to end",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "lopun",
@@ -19286,7 +19286,7 @@
     "174": {
         "word": "äänestää",
         "translation": "to vote",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "äänestän",
@@ -19396,7 +19396,7 @@
     "175": {
         "word": "oppia",
         "translation": "to learn",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "opin",
@@ -19506,7 +19506,7 @@
     "176": {
         "word": "säilyä",
         "translation": "last",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "säilyn",
@@ -19616,7 +19616,7 @@
     "177": {
         "word": "epäillä",
         "translation": "suspect",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "epäilen",
@@ -19726,7 +19726,7 @@
     "178": {
         "word": "koostua",
         "translation": "to consist of",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "koostun",
@@ -19836,7 +19836,7 @@
     "179": {
         "word": "palauttaa",
         "translation": "to return",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "palautan",
@@ -19946,7 +19946,7 @@
     "180": {
         "word": "opiskella",
         "translation": "study",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "opiskelen",
@@ -20056,7 +20056,7 @@
     "181": {
         "word": "menettää",
         "translation": "to lose",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "menetän",
@@ -20166,7 +20166,7 @@
     "182": {
         "word": "toteutua",
         "translation": "be realized",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "toteudun",
@@ -20276,7 +20276,7 @@
     "183": {
         "word": "ehdottaa",
         "translation": "propose",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "ehdotan",
@@ -20386,7 +20386,7 @@
     "184": {
         "word": "tavata",
         "translation": "to meet",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "tavaan",
@@ -20496,7 +20496,7 @@
     "185": {
         "word": "kasvattaa",
         "translation": "to grow",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "kasvatan",
@@ -20606,7 +20606,7 @@
     "186": {
         "word": "korjata",
         "translation": "to fix",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "korjaan",
@@ -20716,7 +20716,7 @@
     "187": {
         "word": "väittää",
         "translation": "to claim",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "väitän",
@@ -20826,7 +20826,7 @@
     "188": {
         "word": "ohjata",
         "translation": "control",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "ohjaan",
@@ -20936,7 +20936,7 @@
     "189": {
         "word": "säilyttää",
         "translation": "to retain",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "säilytän",
@@ -21046,7 +21046,7 @@
     "190": {
         "word": "määrätä",
         "translation": "determine",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "määrään",
@@ -21156,7 +21156,7 @@
     "191": {
         "word": "kattaa",
         "translation": "to cover",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "katan",
@@ -21266,7 +21266,7 @@
     "192": {
         "word": "liittää",
         "translation": "attach",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "liitän",
@@ -21376,7 +21376,7 @@
     "193": {
         "word": "edetä",
         "translation": "proceed",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "etenen",
@@ -21486,7 +21486,7 @@
     "194": {
         "word": "ylittää",
         "translation": "to exceed",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "ylitän",
@@ -21596,7 +21596,7 @@
     "195": {
         "word": "paljastaa",
         "translation": "to reveal",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "paljastan",
@@ -21706,7 +21706,7 @@
     "196": {
         "word": "hävitä",
         "translation": "vanish",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "häviän",
@@ -21816,7 +21816,7 @@
     "197": {
         "word": "ratkaista",
         "translation": "to solve",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "ratkaisen",
@@ -21926,7 +21926,7 @@
     "198": {
         "word": "helpottaa",
         "translation": "facilitate",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "helpotan",
@@ -22036,7 +22036,7 @@
     "199": {
         "word": "luvata",
         "translation": "to promise",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "lupaan",
@@ -22146,7 +22146,7 @@
     "200": {
         "word": "kertyä",
         "translation": "accrue",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "kerryn",
@@ -22256,7 +22256,7 @@
     "201": {
         "word": "vaihdella",
         "translation": "to vary",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "vaihtelen",
@@ -22366,7 +22366,7 @@
     "202": {
         "word": "tarkistaa",
         "translation": "to check",
-        "conjugation": {
+        "data": {
             "present": {
                 "1st sing.": {
                     "positive": "tarkistan",

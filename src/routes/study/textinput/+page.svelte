@@ -2,6 +2,8 @@
     import { onMount, tick } from "svelte";
     import nouns from "$lib/study/fi/nouns.json";
     import verbs from "$lib/study/fi/verbs.json";
+    import pronouns from "$lib/study/fi/pronouns.json";
+    import adjectives from "$lib/study/fi/adjectives.json";
     import lesson_conf from "$lib/textinput/lesson_conf.json";
     import AccuracyDisplay from "$lib/AccuracyDisplay.svelte";
     import { page } from "$app/stores";
@@ -45,21 +47,19 @@
         if (lessonParam == "decl" && languageParam == "fi") {
             lesson_data = nouns;
             current_lesson_conf = lesson_conf[lessonParam];
-            current_lesson_conf.category_data =
-                JSON.parse(
-                    localStorage.getItem(
-                        current_lesson_conf.lesson_type + "Config",
-                    ),
-                ) || lesson_conf[lessonParam].category_data;
+            current_lesson_conf.category_data = JSON.parse(localStorage.getItem(current_lesson_conf.lesson_type + "Config",),) || lesson_conf[lessonParam].category_data;
+        } else if (lessonParam == "adjective-declination" && languageParam == "fi") {
+            lesson_data = adjectives;
+            current_lesson_conf = lesson_conf[lessonParam];
+            current_lesson_conf.category_data = JSON.parse(localStorage.getItem(current_lesson_conf.lesson_type + "Config",),) || lesson_conf[lessonParam].category_data;
         } else if (lessonParam == "conj" && languageParam == "fi") {
             lesson_data = verbs;
             current_lesson_conf = lesson_conf[lessonParam];
-            current_lesson_conf.category_data =
-                JSON.parse(
-                    localStorage.getItem(
-                        current_lesson_conf.lesson_type + "Config",
-                    ),
-                ) || lesson_conf[lessonParam].category_data;
+            current_lesson_conf.category_data = JSON.parse(localStorage.getItem(current_lesson_conf.lesson_type + "Config",),) || lesson_conf[lessonParam].category_data;
+        } else if (lessonParam == "pronoun-declination" && languageParam == "fi") {
+            lesson_data = pronouns;
+            current_lesson_conf = lesson_conf[lessonParam];
+            current_lesson_conf.category_data = JSON.parse(localStorage.getItem(current_lesson_conf.lesson_type + "Config",),) || lesson_conf[lessonParam].category_data;
         } else {
             window.location.href = "/";
         }
@@ -86,7 +86,7 @@
             current_category_desc.push(current_lesson_conf.category_desc[current_lesson_conf.category_data[i][category_index]],);
         }
 
-        let solution_entry = lesson_data[index][current_lesson_conf.lesson_type];
+        let solution_entry = lesson_data[index]["data"];
         for (let i = 0; i < current_categories.length; i++) {
             solution_entry = solution_entry[current_categories[i]];
         }

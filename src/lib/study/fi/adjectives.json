@@ -2,7 +2,7 @@
     "0": {
         "word": "uusi",
         "translation": "new",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "uusi",
                 "plural": "uudet"
@@ -47,7 +47,7 @@
     "1": {
         "word": "oma",
         "translation": "own",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "oma",
                 "plural": "omat"
@@ -92,7 +92,7 @@
     "2": {
         "word": "hyvä",
         "translation": "good",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "hyvä",
                 "plural": "hyvät"
@@ -137,7 +137,7 @@
     "3": {
         "word": "suuri",
         "translation": "large",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "suuri",
                 "plural": "suuret"
@@ -182,7 +182,7 @@
     "4": {
         "word": "koko",
         "translation": "entire",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "koko",
                 "plural": "ko’ot"
@@ -224,7 +224,7 @@
     "5": {
         "word": "ensimmäinen",
         "translation": "first",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ensimmäinen",
                 "plural": "ensimmäiset"
@@ -269,7 +269,7 @@
     "6": {
         "word": "eri",
         "translation": "different",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "eri",
                 "plural": "erit"
@@ -311,7 +311,7 @@
     "7": {
         "word": "suomalainen",
         "translation": "finnish",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "suomalainen",
                 "plural": "suomalaiset"
@@ -356,7 +356,7 @@
     "8": {
         "word": "pieni",
         "translation": "small",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "pieni",
                 "plural": "pienet"
@@ -401,7 +401,7 @@
     "9": {
         "word": "nuori",
         "translation": "young",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "nuori",
                 "plural": "nuoret"
@@ -446,7 +446,7 @@
     "10": {
         "word": "tärkeä",
         "translation": "important",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tärkeä",
                 "plural": "tärkeät"
@@ -498,7 +498,7 @@
     "11": {
         "word": "seuraava",
         "translation": "next",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "seuraava",
                 "plural": "seuraavat"
@@ -543,7 +543,7 @@
     "12": {
         "word": "vanha",
         "translation": "old",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vanha",
                 "plural": "vanhat"
@@ -588,7 +588,7 @@
     "13": {
         "word": "mahdollinen",
         "translation": "possible",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "mahdollinen",
                 "plural": "mahdolliset"
@@ -633,7 +633,7 @@
     "14": {
         "word": "usea",
         "translation": "many",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "usea",
                 "plural": "useat"
@@ -685,7 +685,7 @@
     "15": {
         "word": "erilainen",
         "translation": "different",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "erilainen",
                 "plural": "erilaiset"
@@ -730,7 +730,7 @@
     "16": {
         "word": "sellainen",
         "translation": "such",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sellainen",
                 "plural": "sellaiset"
@@ -775,7 +775,7 @@
     "17": {
         "word": "asiaton",
         "translation": "inappropriate",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "asiaton",
                 "plural": "asiattomat"
@@ -820,7 +820,7 @@
     "18": {
         "word": "oikea",
         "translation": "right",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "oikea",
                 "plural": "oikeat"
@@ -872,7 +872,7 @@
     "19": {
         "word": "viimeinen",
         "translation": "last",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "viimeinen",
                 "plural": "viimeiset"
@@ -917,7 +917,7 @@
     "20": {
         "word": "nykyinen",
         "translation": "current",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "nykyinen",
                 "plural": "nykyiset"
@@ -962,7 +962,7 @@
     "21": {
         "word": "pitkä",
         "translation": "long",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "pitkä",
                 "plural": "pitkät"
@@ -1007,7 +1007,7 @@
     "22": {
         "word": "entinen",
         "translation": "former",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "entinen",
                 "plural": "entiset"
@@ -1052,7 +1052,7 @@
     "23": {
         "word": "kansainvälinen",
         "translation": "international",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kansainvälinen",
                 "plural": "kansainväliset"
@@ -1097,7 +1097,7 @@
     "24": {
         "word": "iso",
         "translation": "big",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "iso",
                 "plural": "isot"
@@ -1139,7 +1139,7 @@
     "25": {
         "word": "yhteinen",
         "translation": "common",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "yhteinen",
                 "plural": "yhteiset"
@@ -1184,7 +1184,7 @@
     "26": {
         "word": "vaikea",
         "translation": "difficult",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vaikea",
                 "plural": "vaikeat"
@@ -1236,7 +1236,7 @@
     "27": {
         "word": "korkea",
         "translation": "high",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "korkea",
                 "plural": "korkeat"
@@ -1288,7 +1288,7 @@
     "28": {
         "word": "edellinen",
         "translation": "previous",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "edellinen",
                 "plural": "edelliset"
@@ -1333,7 +1333,7 @@
     "29": {
         "word": "tällainen",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tällainen",
                 "plural": "tällaiset"
@@ -1378,7 +1378,7 @@
     "30": {
         "word": "julkinen",
         "translation": "public",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "julkinen",
                 "plural": "julkiset"
@@ -1423,7 +1423,7 @@
     "31": {
         "word": "valmis",
         "translation": "ready",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "valmis",
                 "plural": "valmiit"
@@ -1472,7 +1472,7 @@
     "32": {
         "word": "helppo",
         "translation": "easy",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "helppo",
                 "plural": "helpot"
@@ -1514,7 +1514,7 @@
     "33": {
         "word": "yleinen",
         "translation": "general",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "yleinen",
                 "plural": "yleiset"
@@ -1559,7 +1559,7 @@
     "34": {
         "word": "kolmas",
         "translation": "third",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kolmas",
                 "plural": "kolmannet"
@@ -1601,7 +1601,7 @@
     "35": {
         "word": "välinen",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "välinen",
                 "plural": "väliset"
@@ -1646,7 +1646,7 @@
     "36": {
         "word": "kova",
         "translation": "hard",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kova",
                 "plural": "kovat"
@@ -1691,7 +1691,7 @@
     "37": {
         "word": "mukainen",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "mukainen",
                 "plural": "mukaiset"
@@ -1736,7 +1736,7 @@
     "38": {
         "word": "tuleva",
         "translation": "future",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tuleva",
                 "plural": "tulevat"
@@ -1781,7 +1781,7 @@
     "39": {
         "word": "merkittävä",
         "translation": "significant",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "merkittävä",
                 "plural": "merkittävät"
@@ -1826,7 +1826,7 @@
     "40": {
         "word": "ainoa",
         "translation": "only",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ainoa",
                 "plural": "ainoat"
@@ -1878,7 +1878,7 @@
     "41": {
         "word": "huono",
         "translation": "bad",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "huono",
                 "plural": "huonot"
@@ -1920,7 +1920,7 @@
     "42": {
         "word": "keskeinen",
         "translation": "pivotal",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "keskeinen",
                 "plural": "keskeiset"
@@ -1965,7 +1965,7 @@
     "43": {
         "word": "taloudellinen",
         "translation": "economic",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "taloudellinen",
                 "plural": "taloudelliset"
@@ -2010,7 +2010,7 @@
     "44": {
         "word": "erityinen",
         "translation": "special",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "erityinen",
                 "plural": "erityiset"
@@ -2055,7 +2055,7 @@
     "45": {
         "word": "laaja",
         "translation": "wide",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "laaja",
                 "plural": "laajat"
@@ -2100,7 +2100,7 @@
     "46": {
         "word": "paikallinen",
         "translation": "local",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "paikallinen",
                 "plural": "paikalliset"
@@ -2145,7 +2145,7 @@
     "47": {
         "word": "tekninen",
         "translation": "technical",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tekninen",
                 "plural": "tekniset"
@@ -2190,7 +2190,7 @@
     "48": {
         "word": "selvä",
         "translation": "clear",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "selvä",
                 "plural": "selvät"
@@ -2235,7 +2235,7 @@
     "49": {
         "word": "todellinen",
         "translation": "real",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "todellinen",
                 "plural": "todelliset"
@@ -2280,7 +2280,7 @@
     "50": {
         "word": "vapaa",
         "translation": "free",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vapaa",
                 "plural": "vapaat"
@@ -2328,7 +2328,7 @@
     "51": {
         "word": "poliittinen",
         "translation": "political",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "poliittinen",
                 "plural": "poliittiset"
@@ -2373,7 +2373,7 @@
     "52": {
         "word": "yksityinen",
         "translation": "private",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "yksityinen",
                 "plural": "yksityiset"
@@ -2418,7 +2418,7 @@
     "53": {
         "word": "tavallinen",
         "translation": "usual",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tavallinen",
                 "plural": "tavalliset"
@@ -2463,7 +2463,7 @@
     "54": {
         "word": "vahva",
         "translation": "strong",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vahva",
                 "plural": "vahvat"
@@ -2508,7 +2508,7 @@
     "55": {
         "word": "varsinainen",
         "translation": "actual",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "varsinainen",
                 "plural": "varsinaiset"
@@ -2553,7 +2553,7 @@
     "56": {
         "word": "tuttu",
         "translation": "familiar",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tuttu",
                 "plural": "tutut"
@@ -2595,7 +2595,7 @@
     "57": {
         "word": "sosiaalinen",
         "translation": "social",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sosiaalinen",
                 "plural": "sosiaaliset"
@@ -2640,7 +2640,7 @@
     "58": {
         "word": "paha",
         "translation": "evil",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "paha",
                 "plural": "—"
@@ -2682,7 +2682,7 @@
     "59": {
         "word": "riittävä",
         "translation": "sufficient",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "riittävä",
                 "plural": "riittävät"
@@ -2727,7 +2727,7 @@
     "60": {
         "word": "perinteinen",
         "translation": "traditional",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "perinteinen",
                 "plural": "perinteiset"
@@ -2772,7 +2772,7 @@
     "61": {
         "word": "vastaava",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vastaava",
                 "plural": "vastaavat"
@@ -2817,7 +2817,7 @@
     "62": {
         "word": "turha",
         "translation": "useless",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "turha",
                 "plural": "turhat"
@@ -2862,7 +2862,7 @@
     "63": {
         "word": "kyseinen",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kyseinen",
                 "plural": "kyseiset"
@@ -2907,7 +2907,7 @@
     "64": {
         "word": "nopea",
         "translation": "fast",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "nopea",
                 "plural": "nopeat"
@@ -2959,7 +2959,7 @@
     "65": {
         "word": "tietty",
         "translation": "certain",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tietty",
                 "plural": "tietyt"
@@ -3001,7 +3001,7 @@
     "66": {
         "word": "anonyymi",
         "translation": "anonymous",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "anonyymi",
                 "plural": "anonyymit"
@@ -3043,7 +3043,7 @@
     "67": {
         "word": "normaali",
         "translation": "normal",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "normaali",
                 "plural": "normaalit"
@@ -3092,7 +3092,7 @@
     "68": {
         "word": "kansallinen",
         "translation": "national",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kansallinen",
                 "plural": "kansalliset"
@@ -3137,7 +3137,7 @@
     "69": {
         "word": "henkilökohtainen",
         "translation": "personal",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "henkilökohtainen",
                 "plural": "henkilökohtaiset"
@@ -3182,7 +3182,7 @@
     "70": {
         "word": "erillinen",
         "translation": "separate",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "erillinen",
                 "plural": "erilliset"
@@ -3227,7 +3227,7 @@
     "71": {
         "word": "ilmainen",
         "translation": "free",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ilmainen",
                 "plural": "ilmaiset"
@@ -3272,7 +3272,7 @@
     "72": {
         "word": "hieno",
         "translation": "fine",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "hieno",
                 "plural": "hienot"
@@ -3314,7 +3314,7 @@
     "73": {
         "word": "monipuolinen",
         "translation": "versatile",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "monipuolinen",
                 "plural": "monipuoliset"
@@ -3359,7 +3359,7 @@
     "74": {
         "word": "sisäinen",
         "translation": "internal",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sisäinen",
                 "plural": "sisäiset"
@@ -3404,7 +3404,7 @@
     "75": {
         "word": "kotimainen",
         "translation": "domestic",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kotimainen",
                 "plural": "kotimaiset"
@@ -3449,7 +3449,7 @@
     "76": {
         "word": "venäläinen",
         "translation": "russian",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "venäläinen",
                 "plural": "venäläiset"
@@ -3494,7 +3494,7 @@
     "77": {
         "word": "sopiva",
         "translation": "suitable",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sopiva",
                 "plural": "sopivat"
@@ -3539,7 +3539,7 @@
     "78": {
         "word": "yksittäinen",
         "translation": "single",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "yksittäinen",
                 "plural": "yksittäiset"
@@ -3584,7 +3584,7 @@
     "79": {
         "word": "tunnettu",
         "translation": "known",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tunnettu",
                 "plural": "tunnetut"
@@ -3626,7 +3626,7 @@
     "80": {
         "word": "millainen",
         "translation": "what kind",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "millainen",
                 "plural": "millaiset"
@@ -3671,7 +3671,7 @@
     "81": {
         "word": "avoin",
         "translation": "open",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "avoin",
                 "plural": "avoimet"
@@ -3716,7 +3716,7 @@
     "82": {
         "word": "mukava",
         "translation": "nice",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "mukava",
                 "plural": "mukavat"
@@ -3761,7 +3761,7 @@
     "83": {
         "word": "musta",
         "translation": "black",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "musta",
                 "plural": "mustat"
@@ -3806,7 +3806,7 @@
     "84": {
         "word": "varma",
         "translation": "sure",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "varma",
                 "plural": "varmat"
@@ -3851,7 +3851,7 @@
     "85": {
         "word": "suora",
         "translation": "direct",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "suora",
                 "plural": "suorat"
@@ -3896,7 +3896,7 @@
     "86": {
         "word": "pelkkä",
         "translation": "mere",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "pelkkä",
                 "plural": "pelkät"
@@ -3941,7 +3941,7 @@
     "87": {
         "word": "reilu",
         "translation": "fair",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "reilu",
                 "plural": "reilut"
@@ -3983,7 +3983,7 @@
     "88": {
         "word": "vihreä",
         "translation": "green",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vihreä",
                 "plural": "vihreät"
@@ -4035,7 +4035,7 @@
     "89": {
         "word": "tyytyväinen",
         "translation": "pleased",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tyytyväinen",
                 "plural": "tyytyväiset"
@@ -4080,7 +4080,7 @@
     "90": {
         "word": "jatkuva",
         "translation": "continuous",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "jatkuva",
                 "plural": "jatkuvat"
@@ -4125,7 +4125,7 @@
     "91": {
         "word": "virallinen",
         "translation": "official",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "virallinen",
                 "plural": "viralliset"
@@ -4170,7 +4170,7 @@
     "92": {
         "word": "neljäs",
         "translation": "fourth",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "neljäs",
                 "plural": "neljännet"
@@ -4212,7 +4212,7 @@
     "93": {
         "word": "turvallinen",
         "translation": "safe",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "turvallinen",
                 "plural": "turvalliset"
@@ -4257,7 +4257,7 @@
     "94": {
         "word": "väärä",
         "translation": "wrong",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "väärä",
                 "plural": "väärät"
@@ -4302,7 +4302,7 @@
     "95": {
         "word": "valtakunnallinen",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "valtakunnallinen",
                 "plural": "valtakunnalliset"
@@ -4347,7 +4347,7 @@
     "96": {
         "word": "tyhjä",
         "translation": "blank",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tyhjä",
                 "plural": "tyhjät"
@@ -4392,7 +4392,7 @@
     "97": {
         "word": "kallis",
         "translation": "expensive",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kallis",
                 "plural": "kalliit"
@@ -4441,7 +4441,7 @@
     "98": {
         "word": "samanlainen",
         "translation": "similar",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "samanlainen",
                 "plural": "samanlaiset"
@@ -4486,7 +4486,7 @@
     "99": {
         "word": "punainen",
         "translation": "red",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "punainen",
                 "plural": "punaiset"
@@ -4531,7 +4531,7 @@
     "100": {
         "word": "selkeä",
         "translation": "clear",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "selkeä",
                 "plural": "selkeät"
@@ -4583,7 +4583,7 @@
     "101": {
         "word": "alkuperäinen",
         "translation": "original",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "alkuperäinen",
                 "plural": "alkuperäiset"
@@ -4628,7 +4628,7 @@
     "102": {
         "word": "positiivinen",
         "translation": "positive",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "positiivinen",
                 "plural": "positiiviset"
@@ -4673,7 +4673,7 @@
     "103": {
         "word": "saksalainen",
         "translation": "german",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "saksalainen",
                 "plural": "saksalaiset"

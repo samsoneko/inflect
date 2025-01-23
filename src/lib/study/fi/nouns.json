@@ -2,7 +2,7 @@
     "0": {
         "word": "vuosi",
         "translation": "year",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vuosi",
                 "plural": "vuodet"
@@ -47,7 +47,7 @@
     "1": {
         "word": "aika",
         "translation": "time",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "aika",
                 "plural": "ajat"
@@ -92,7 +92,7 @@
     "2": {
         "word": "asia",
         "translation": "thing",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "asia",
                 "plural": "asiat"
@@ -138,7 +138,7 @@
     "3": {
         "word": "osa",
         "translation": "part",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "osa",
                 "plural": "osat"
@@ -183,7 +183,7 @@
     "4": {
         "word": "ihminen",
         "translation": "man",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ihminen",
                 "plural": "ihmiset"
@@ -228,7 +228,7 @@
     "5": {
         "word": "euro",
         "translation": "euro",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "euro",
                 "plural": "eurot"
@@ -270,7 +270,7 @@
     "6": {
         "word": "työ",
         "translation": "work",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "työ",
                 "plural": "työt"
@@ -315,7 +315,7 @@
     "7": {
         "word": "maa",
         "translation": "land",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "maa",
                 "plural": "maat"
@@ -360,7 +360,7 @@
     "8": {
         "word": "lapsi",
         "translation": "child",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "lapsi",
                 "plural": "lapset"
@@ -405,7 +405,7 @@
     "9": {
         "word": "tieto",
         "translation": "knowledge",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tieto",
                 "plural": "tiedot"
@@ -447,7 +447,7 @@
     "10": {
         "word": "alue",
         "translation": "area",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "alue",
                 "plural": "alueet"
@@ -495,7 +495,7 @@
     "11": {
         "word": "päivä",
         "translation": "day",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "päivä",
                 "plural": "päivät"
@@ -540,7 +540,7 @@
     "12": {
         "word": "toiminta",
         "translation": "action",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "toiminta",
                 "plural": "toiminnat"
@@ -585,7 +585,7 @@
     "13": {
         "word": "käyttö",
         "translation": "use",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "käyttö",
                 "plural": "käytöt"
@@ -627,7 +627,7 @@
     "14": {
         "word": "mieli",
         "translation": "mind",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "mieli",
                 "plural": "mielet"
@@ -672,7 +672,7 @@
     "15": {
         "word": "kaupunki",
         "translation": "city",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kaupunki",
                 "plural": "kaupungit"
@@ -714,7 +714,7 @@
     "16": {
         "word": "prosentti",
         "translation": "percentage",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "prosentti",
                 "plural": "prosentit"
@@ -756,7 +756,7 @@
     "17": {
         "word": "kunta",
         "translation": "municipality",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kunta",
                 "plural": "kunnat"
@@ -801,7 +801,7 @@
     "18": {
         "word": "mies",
         "translation": "man",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "mies",
                 "plural": "miehet"
@@ -846,7 +846,7 @@
     "19": {
         "word": "yritys",
         "translation": "company",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "yritys",
                 "plural": "yritykset"
@@ -891,7 +891,7 @@
     "20": {
         "word": "paikka",
         "translation": "place",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "paikka",
                 "plural": "paikat"
@@ -936,7 +936,7 @@
     "21": {
         "word": "tapa",
         "translation": "custom",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tapa",
                 "plural": "tavat"
@@ -981,7 +981,7 @@
     "22": {
         "word": "kuva",
         "translation": "picture",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kuva",
                 "plural": "kuvat"
@@ -1026,7 +1026,7 @@
     "23": {
         "word": "maailma",
         "translation": "world",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "maailma",
                 "plural": "maailmat"
@@ -1076,7 +1076,7 @@
     "24": {
         "word": "hallitus",
         "translation": "government",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "hallitus",
                 "plural": "hallitukset"
@@ -1121,7 +1121,7 @@
     "25": {
         "word": "puoli",
         "translation": "half",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "puoli",
                 "plural": "puolet"
@@ -1166,7 +1166,7 @@
     "26": {
         "word": "viesti",
         "translation": "message",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "viesti",
                 "plural": "viestit"
@@ -1208,7 +1208,7 @@
     "27": {
         "word": "auto",
         "translation": "car",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "auto",
                 "plural": "autot"
@@ -1250,7 +1250,7 @@
     "28": {
         "word": "yhteys",
         "translation": "connection",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "yhteys",
                 "plural": "yhteydet"
@@ -1292,7 +1292,7 @@
     "29": {
         "word": "määrä",
         "translation": "amount",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "määrä",
                 "plural": "määrät"
@@ -1337,7 +1337,7 @@
     "30": {
         "word": "hinta",
         "translation": "price",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "hinta",
                 "plural": "hinnat"
@@ -1382,7 +1382,7 @@
     "31": {
         "word": "viikko",
         "translation": "week",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "viikko",
                 "plural": "viikot"
@@ -1424,7 +1424,7 @@
     "32": {
         "word": "syy",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "syy",
                 "plural": "syyt"
@@ -1469,7 +1469,7 @@
     "33": {
         "word": "raha",
         "translation": "money",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "raha",
                 "plural": "rahat"
@@ -1514,7 +1514,7 @@
     "34": {
         "word": "koulu",
         "translation": "school",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "koulu",
                 "plural": "koulut"
@@ -1556,7 +1556,7 @@
     "35": {
         "word": "nainen",
         "translation": "woman",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "nainen",
                 "plural": "naiset"
@@ -1601,7 +1601,7 @@
     "36": {
         "word": "mahdollisuus",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "mahdollisuus",
                 "plural": "mahdollisuudet"
@@ -1643,7 +1643,7 @@
     "37": {
         "word": "apu",
         "translation": "help",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "apu",
                 "plural": "avut"
@@ -1685,7 +1685,7 @@
     "38": {
         "word": "kerta",
         "translation": "time",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kerta",
                 "plural": "kerrat"
@@ -1730,7 +1730,7 @@
     "39": {
         "word": "tilanne",
         "translation": "situation",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tilanne",
                 "plural": "tilanteet"
@@ -1778,7 +1778,7 @@
     "40": {
         "word": "tulos",
         "translation": "result",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tulos",
                 "plural": "tulokset"
@@ -1823,7 +1823,7 @@
     "41": {
         "word": "alku",
         "translation": "beginning",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "alku",
                 "plural": "alut"
@@ -1865,7 +1865,7 @@
     "42": {
         "word": "tutkimus",
         "translation": "research",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tutkimus",
                 "plural": "tutkimukset"
@@ -1910,7 +1910,7 @@
     "43": {
         "word": "elämä",
         "translation": "life",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "elämä",
                 "plural": "elämät"
@@ -1955,7 +1955,7 @@
     "44": {
         "word": "tavoite",
         "translation": "target",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tavoite",
                 "plural": "tavoitteet"
@@ -2003,7 +2003,7 @@
     "45": {
         "word": "palvelu",
         "translation": "service",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "palvelu",
                 "plural": "palvelut"
@@ -2052,7 +2052,7 @@
     "46": {
         "word": "loppu",
         "translation": "end",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "loppu",
                 "plural": "loput"
@@ -2094,7 +2094,7 @@
     "47": {
         "word": "yhtiö",
         "translation": "company",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "yhtiö",
                 "plural": "yhtiöt"
@@ -2139,7 +2139,7 @@
     "48": {
         "word": "valtio",
         "translation": "state",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "valtio",
                 "plural": "valtiot"
@@ -2184,7 +2184,7 @@
     "49": {
         "word": "tehtävä",
         "translation": "mission",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tehtävä",
                 "plural": "tehtävät"
@@ -2229,7 +2229,7 @@
     "50": {
         "word": "päätös",
         "translation": "decision",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "päätös",
                 "plural": "päätökset"
@@ -2274,7 +2274,7 @@
     "51": {
         "word": "ongelma",
         "translation": "problem",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ongelma",
                 "plural": "ongelmat"
@@ -2319,7 +2319,7 @@
     "52": {
         "word": "tila",
         "translation": "state",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tila",
                 "plural": "tilat"
@@ -2364,7 +2364,7 @@
     "53": {
         "word": "henkilö",
         "translation": "person",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "henkilö",
                 "plural": "henkilöt"
@@ -2413,7 +2413,7 @@
     "54": {
         "word": "nimi",
         "translation": "name",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "nimi",
                 "plural": "nimet"
@@ -2455,7 +2455,7 @@
     "55": {
         "word": "ohjelma",
         "translation": "program",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ohjelma",
                 "plural": "ohjelmat"
@@ -2500,7 +2500,7 @@
     "56": {
         "word": "oy",
         "translation": "Ltd",
-        "declination": {
+        "data": {
             "inessive": {
                 "singular": "oy:ssä",
                 "plural": "oy:issä"
@@ -2530,7 +2530,7 @@
     "57": {
         "word": "muutos",
         "translation": "change",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "muutos",
                 "plural": "muutokset"
@@ -2575,7 +2575,7 @@
     "58": {
         "word": "koulutus",
         "translation": "training",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "koulutus",
                 "plural": "koulutukset"
@@ -2620,7 +2620,7 @@
     "59": {
         "word": "peruste",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "peruste",
                 "plural": "perusteet"
@@ -2668,7 +2668,7 @@
     "60": {
         "word": "kohta",
         "translation": "part",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kohta",
                 "plural": "kohdat"
@@ -2713,7 +2713,7 @@
     "61": {
         "word": "opiskelija",
         "translation": "student",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "opiskelija",
                 "plural": "opiskelijat"
@@ -2759,7 +2759,7 @@
     "62": {
         "word": "jäsen",
         "translation": "member",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "jäsen",
                 "plural": "jäsenet"
@@ -2804,7 +2804,7 @@
     "63": {
         "word": "kysymys",
         "translation": "question",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kysymys",
                 "plural": "kysymykset"
@@ -2849,7 +2849,7 @@
     "64": {
         "word": "talous",
         "translation": "economy",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "talous",
                 "plural": "taloudet"
@@ -2891,7 +2891,7 @@
     "65": {
         "word": "kurssi",
         "translation": "course",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kurssi",
                 "plural": "kurssit"
@@ -2933,7 +2933,7 @@
     "66": {
         "word": "kanta",
         "translation": "base",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kanta",
                 "plural": "kannat"
@@ -2978,7 +2978,7 @@
     "67": {
         "word": "hetki",
         "translation": "moment",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "hetki",
                 "plural": "hetket"
@@ -3020,7 +3020,7 @@
     "68": {
         "word": "yliopisto",
         "translation": "university",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "yliopisto",
                 "plural": "yliopistot"
@@ -3069,7 +3069,7 @@
     "69": {
         "word": "yhteistyö",
         "translation": "cooperation",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "yhteistyö",
                 "plural": "yhteistyöt"
@@ -3114,7 +3114,7 @@
     "70": {
         "word": "huomio",
         "translation": "attention",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "huomio",
                 "plural": "huomiot"
@@ -3159,7 +3159,7 @@
     "71": {
         "word": "poliisi",
         "translation": "police",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "poliisi",
                 "plural": "poliisit"
@@ -3201,7 +3201,7 @@
     "72": {
         "word": "puheenjohtaja",
         "translation": "chairman",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "puheenjohtaja",
                 "plural": "puheenjohtajat"
@@ -3246,7 +3246,7 @@
     "73": {
         "word": "tuote",
         "translation": "product",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tuote",
                 "plural": "tuotteet"
@@ -3294,7 +3294,7 @@
     "74": {
         "word": "tarkoitus",
         "translation": "meaning",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tarkoitus",
                 "plural": "tarkoitukset"
@@ -3339,7 +3339,7 @@
     "75": {
         "word": "matka",
         "translation": "trip",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "matka",
                 "plural": "matkat"
@@ -3384,7 +3384,7 @@
     "76": {
         "word": "kirja",
         "translation": "book",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kirja",
                 "plural": "kirjat"
@@ -3429,7 +3429,7 @@
     "77": {
         "word": "tapaus",
         "translation": "case",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tapaus",
                 "plural": "tapaukset"
@@ -3474,7 +3474,7 @@
     "78": {
         "word": "käytäntö",
         "translation": "practice",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "käytäntö",
                 "plural": "käytännöt"
@@ -3516,7 +3516,7 @@
     "79": {
         "word": "kuukausi",
         "translation": "month",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kuukausi",
                 "plural": "kuukaudet"
@@ -3561,7 +3561,7 @@
     "80": {
         "word": "ryhmä",
         "translation": "group",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ryhmä",
                 "plural": "ryhmät"
@@ -3606,7 +3606,7 @@
     "81": {
         "word": "kokous",
         "translation": "meeting",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kokous",
                 "plural": "kokoukset"
@@ -3651,7 +3651,7 @@
     "82": {
         "word": "kausi",
         "translation": "season",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kausi",
                 "plural": "kaudet"
@@ -3696,7 +3696,7 @@
     "83": {
         "word": "ottelu",
         "translation": "match",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ottelu",
                 "plural": "ottelut"
@@ -3745,7 +3745,7 @@
     "84": {
         "word": "taso",
         "translation": "level",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "taso",
                 "plural": "tasot"
@@ -3787,7 +3787,7 @@
     "85": {
         "word": "ala",
         "translation": "area",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ala",
                 "plural": "alat"
@@ -3832,7 +3832,7 @@
     "86": {
         "word": "oikeus",
         "translation": "right",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "oikeus",
                 "plural": "oikeudet"
@@ -3874,7 +3874,7 @@
     "87": {
         "word": "kehitys",
         "translation": "development",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kehitys",
                 "plural": "kehitykset"
@@ -3919,7 +3919,7 @@
     "88": {
         "word": "tunti",
         "translation": "hour",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tunti",
                 "plural": "tunnit"
@@ -3961,7 +3961,7 @@
     "89": {
         "word": "pari",
         "translation": "pair",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "pari",
                 "plural": "parit"
@@ -4003,7 +4003,7 @@
     "90": {
         "word": "sopimus",
         "translation": "agreement",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sopimus",
                 "plural": "sopimukset"
@@ -4048,7 +4048,7 @@
     "91": {
         "word": "kyse",
         "translation": "matter",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kyse",
                 "plural": "kyseet"
@@ -4096,7 +4096,7 @@
     "92": {
         "word": "kesä",
         "translation": "summer",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kesä",
                 "plural": "kesät"
@@ -4141,7 +4141,7 @@
     "93": {
         "word": "joukkue",
         "translation": "team",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "joukkue",
                 "plural": "joukkueet"
@@ -4189,7 +4189,7 @@
     "94": {
         "word": "maali",
         "translation": "paint",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "maali",
                 "plural": "maalit"
@@ -4231,7 +4231,7 @@
     "95": {
         "word": "tapahtuma",
         "translation": "event",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tapahtuma",
                 "plural": "tapahtumat"
@@ -4276,7 +4276,7 @@
     "96": {
         "word": "sivu",
         "translation": "page",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sivu",
                 "plural": "sivut"
@@ -4318,7 +4318,7 @@
     "97": {
         "word": "joukko",
         "translation": "troops",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "joukko",
                 "plural": "joukot"
@@ -4360,7 +4360,7 @@
     "98": {
         "word": "vesi",
         "translation": "water",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vesi",
                 "plural": "vedet"
@@ -4405,7 +4405,7 @@
     "99": {
         "word": "työntekijä",
         "translation": "worker",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "työntekijä",
                 "plural": "työntekijät"
@@ -4451,7 +4451,7 @@
     "100": {
         "word": "vaikutus",
         "translation": "effect",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vaikutus",
                 "plural": "vaikutukset"
@@ -4496,7 +4496,7 @@
     "101": {
         "word": "peli",
         "translation": "game",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "peli",
                 "plural": "pelit"
@@ -4538,7 +4538,7 @@
     "102": {
         "word": "kehittäminen",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kehittäminen",
                 "plural": "kehittämiset"
@@ -4583,7 +4583,7 @@
     "103": {
         "word": "kasvu",
         "translation": "growth",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kasvu",
                 "plural": "kasvut"
@@ -4625,7 +4625,7 @@
     "104": {
         "word": "käyttäjä",
         "translation": "user",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "käyttäjä",
                 "plural": "käyttäjät"
@@ -4670,7 +4670,7 @@
     "105": {
         "word": "asunto",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "asunto",
                 "plural": "asunnot"
@@ -4712,7 +4712,7 @@
     "106": {
         "word": "opettaja",
         "translation": "teacher",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "opettaja",
                 "plural": "opettajat"
@@ -4757,7 +4757,7 @@
     "107": {
         "word": "hoito",
         "translation": "care",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "hoito",
                 "plural": "hoidot"
@@ -4799,7 +4799,7 @@
     "108": {
         "word": "keskustelu",
         "translation": "conversation",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "keskustelu",
                 "plural": "keskustelut"
@@ -4848,7 +4848,7 @@
     "109": {
         "word": "perhe",
         "translation": "family",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "perhe",
                 "plural": "perheet"
@@ -4896,7 +4896,7 @@
     "110": {
         "word": "tie",
         "translation": "road",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tie",
                 "plural": "tiet"
@@ -4941,7 +4941,7 @@
     "111": {
         "word": "laki",
         "translation": "law",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "laki",
                 "plural": "laet"
@@ -4983,7 +4983,7 @@
     "112": {
         "word": "asiakas",
         "translation": "customer",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "asiakas",
                 "plural": "asiakkaat"
@@ -5032,7 +5032,7 @@
     "113": {
         "word": "ratkaisu",
         "translation": "solution",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ratkaisu",
                 "plural": "ratkaisut"
@@ -5081,7 +5081,7 @@
     "114": {
         "word": "tulevaisuus",
         "translation": "future",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tulevaisuus",
                 "plural": "tulevaisuudet"
@@ -5123,7 +5123,7 @@
     "115": {
         "word": "syksy",
         "translation": "autumn",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "syksy",
                 "plural": "syksyt"
@@ -5165,7 +5165,7 @@
     "116": {
         "word": "keskusta",
         "translation": "center",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "keskusta",
                 "plural": "keskustat"
@@ -5215,7 +5215,7 @@
     "117": {
         "word": "merkitys",
         "translation": "importance",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "merkitys",
                 "plural": "merkitykset"
@@ -5260,7 +5260,7 @@
     "118": {
         "word": "kulttuuri",
         "translation": "culture",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kulttuuri",
                 "plural": "kulttuurit"
@@ -5309,7 +5309,7 @@
     "119": {
         "word": "johtaja",
         "translation": "manager",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "johtaja",
                 "plural": "johtajat"
@@ -5354,7 +5354,7 @@
     "120": {
         "word": "arvo",
         "translation": "value",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "arvo",
                 "plural": "arvot"
@@ -5396,7 +5396,7 @@
     "121": {
         "word": "talo",
         "translation": "house",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "talo",
                 "plural": "talot"
@@ -5438,7 +5438,7 @@
     "122": {
         "word": "hanke",
         "translation": "project",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "hanke",
                 "plural": "hankkeet"
@@ -5486,7 +5486,7 @@
     "123": {
         "word": "kokemus",
         "translation": "experience",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kokemus",
                 "plural": "kokemukset"
@@ -5531,7 +5531,7 @@
     "124": {
         "word": "pankki",
         "translation": "bank",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "pankki",
                 "plural": "pankit"
@@ -5573,7 +5573,7 @@
     "125": {
         "word": "kansa",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kansa",
                 "plural": "kansat"
@@ -5618,7 +5618,7 @@
     "126": {
         "word": "kieli",
         "translation": "language",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kieli",
                 "plural": "kielet"
@@ -5663,7 +5663,7 @@
     "127": {
         "word": "asema",
         "translation": "status",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "asema",
                 "plural": "asemat"
@@ -5708,7 +5708,7 @@
     "128": {
         "word": "esitys",
         "translation": "presentation",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "esitys",
                 "plural": "esitykset"
@@ -5753,7 +5753,7 @@
     "129": {
         "word": "kello",
         "translation": "clock",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kello",
                 "plural": "kellot"
@@ -5795,7 +5795,7 @@
     "130": {
         "word": "pää",
         "translation": "head",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "pää",
                 "plural": "päät"
@@ -5840,7 +5840,7 @@
     "131": {
         "word": "sana",
         "translation": "word",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sana",
                 "plural": "sanat"
@@ -5885,7 +5885,7 @@
     "132": {
         "word": "tuki",
         "translation": "support",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tuki",
                 "plural": "tuet"
@@ -5927,7 +5927,7 @@
     "133": {
         "word": "osuus",
         "translation": "share",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "osuus",
                 "plural": "osuudet"
@@ -5969,7 +5969,7 @@
     "134": {
         "word": "kirkko",
         "translation": "church",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kirkko",
                 "plural": "kirkot"
@@ -6011,7 +6011,7 @@
     "135": {
         "word": "rakentaminen",
         "translation": "construction",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "rakentaminen",
                 "plural": "rakentamiset"
@@ -6056,7 +6056,7 @@
     "136": {
         "word": "vaihe",
         "translation": "stage",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vaihe",
                 "plural": "vaiheet"
@@ -6104,7 +6104,7 @@
     "137": {
         "word": "lehti",
         "translation": "leaf",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "lehti",
                 "plural": "lehdet"
@@ -6146,7 +6146,7 @@
     "138": {
         "word": "kauppa",
         "translation": "trade",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kauppa",
                 "plural": "kaupat"
@@ -6191,7 +6191,7 @@
     "139": {
         "word": "myynti",
         "translation": "sales",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "myynti",
                 "plural": "myynnit"
@@ -6233,7 +6233,7 @@
     "140": {
         "word": "pohja",
         "translation": "bottom",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "pohja",
                 "plural": "pohjat"
@@ -6278,7 +6278,7 @@
     "141": {
         "word": "ero",
         "translation": "difference",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ero",
                 "plural": "erot"
@@ -6320,7 +6320,7 @@
     "142": {
         "word": "liitto",
         "translation": "union",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "liitto",
                 "plural": "liitot"
@@ -6362,7 +6362,7 @@
     "143": {
         "word": "voitto",
         "translation": "profit",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "voitto",
                 "plural": "voitot"
@@ -6404,7 +6404,7 @@
     "144": {
         "word": "käsi",
         "translation": "hand",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "käsi",
                 "plural": "kädet"
@@ -6449,7 +6449,7 @@
     "145": {
         "word": "historia",
         "translation": "history",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "historia",
                 "plural": "historiat"
@@ -6495,7 +6495,7 @@
     "146": {
         "word": "rakennus",
         "translation": "building",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "rakennus",
                 "plural": "rakennukset"
@@ -6540,7 +6540,7 @@
     "147": {
         "word": "lauantai",
         "translation": "Saturday",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "lauantai",
                 "plural": "lauantait"
@@ -6585,7 +6585,7 @@
     "148": {
         "word": "kilpailu",
         "translation": "competition",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kilpailu",
                 "plural": "kilpailut"
@@ -6634,7 +6634,7 @@
     "149": {
         "word": "kustannus",
         "translation": "publishing",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kustannus",
                 "plural": "kustannukset"
@@ -6679,7 +6679,7 @@
     "150": {
         "word": "koti",
         "translation": "home",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "koti",
                 "plural": "kodit"
@@ -6721,7 +6721,7 @@
     "151": {
         "word": "projekti",
         "translation": "project",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "projekti",
                 "plural": "projektit"
@@ -6763,7 +6763,7 @@
     "152": {
         "word": "yhteiskunta",
         "translation": "society",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "yhteiskunta",
                 "plural": "yhteiskunnat"
@@ -6808,7 +6808,7 @@
     "153": {
         "word": "malli",
         "translation": "model",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "malli",
                 "plural": "mallit"
@@ -6850,7 +6850,7 @@
     "154": {
         "word": "johto",
         "translation": "management",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "johto",
                 "plural": "johdot"
@@ -6892,7 +6892,7 @@
     "155": {
         "word": "markka",
         "translation": "mark",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "markka",
                 "plural": "markat"
@@ -6937,7 +6937,7 @@
     "156": {
         "word": "ympäristö",
         "translation": "environment",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ympäristö",
                 "plural": "ympäristöt"
@@ -6979,7 +6979,7 @@
     "157": {
         "word": "aihe",
         "translation": "subject",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "aihe",
                 "plural": "aiheet"
@@ -7027,7 +7027,7 @@
     "158": {
         "word": "edustaja",
         "translation": "representative",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "edustaja",
                 "plural": "edustajat"
@@ -7072,7 +7072,7 @@
     "159": {
         "word": "seura",
         "translation": "company",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "seura",
                 "plural": "seurat"
@@ -7117,7 +7117,7 @@
     "160": {
         "word": "tarve",
         "translation": "need",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tarve",
                 "plural": "tarpeet"
@@ -7165,7 +7165,7 @@
     "161": {
         "word": "suhde",
         "translation": "ratio",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "suhde",
                 "plural": "suhteet"
@@ -7213,7 +7213,7 @@
     "162": {
         "word": "suunta",
         "translation": "direction",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "suunta",
                 "plural": "suunnat"
@@ -7258,7 +7258,7 @@
     "163": {
         "word": "metri",
         "translation": "meter",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "metri",
                 "plural": "metrit"
@@ -7300,7 +7300,7 @@
     "164": {
         "word": "järjestelmä",
         "translation": "system",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "järjestelmä",
                 "plural": "järjestelmät"
@@ -7345,7 +7345,7 @@
     "165": {
         "word": "sisältö",
         "translation": "contents",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sisältö",
                 "plural": "sisällöt"
@@ -7387,7 +7387,7 @@
     "166": {
         "word": "raja",
         "translation": "limit",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "raja",
                 "plural": "rajat"
@@ -7432,7 +7432,7 @@
     "167": {
         "word": "vaihtoehto",
         "translation": "option",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vaihtoehto",
                 "plural": "vaihtoehdot"
@@ -7474,7 +7474,7 @@
     "168": {
         "word": "opetus",
         "translation": "teaching",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "opetus",
                 "plural": "opetukset"
@@ -7519,7 +7519,7 @@
     "169": {
         "word": "puolue",
         "translation": "party",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "puolue",
                 "plural": "puolueet"
@@ -7567,7 +7567,7 @@
     "170": {
         "word": "palkka",
         "translation": "pay",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "palkka",
                 "plural": "palkat"
@@ -7612,7 +7612,7 @@
     "171": {
         "word": "työpaikka",
         "translation": "job",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "työpaikka",
                 "plural": "työpaikat"
@@ -7657,7 +7657,7 @@
     "172": {
         "word": "tekijä",
         "translation": "author",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tekijä",
                 "plural": "tekijät"
@@ -7703,7 +7703,7 @@
     "173": {
         "word": "sunnuntai",
         "translation": "Sunday",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sunnuntai",
                 "plural": "sunnuntait"
@@ -7748,7 +7748,7 @@
     "174": {
         "word": "etu",
         "translation": "advantage",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "etu",
                 "plural": "edut"
@@ -7790,7 +7790,7 @@
     "175": {
         "word": "tekeminen",
         "translation": "making",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tekeminen",
                 "plural": "tekemiset"
@@ -7835,7 +7835,7 @@
     "176": {
         "word": "perjantai",
         "translation": "Friday",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "perjantai",
                 "plural": "perjantait"
@@ -7880,7 +7880,7 @@
     "177": {
         "word": "juttu",
         "translation": "thing",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "juttu",
                 "plural": "jutut"
@@ -7922,7 +7922,7 @@
     "178": {
         "word": "musiikki",
         "translation": "music",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "musiikki",
                 "plural": "musiikit"
@@ -7964,7 +7964,7 @@
     "179": {
         "word": "ääni",
         "translation": "sound",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ääni",
                 "plural": "äänet"
@@ -8009,7 +8009,7 @@
     "180": {
         "word": "minuutti",
         "translation": "minute",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "minuutti",
                 "plural": "minuutit"
@@ -8051,7 +8051,7 @@
     "181": {
         "word": "toimi",
         "translation": "action",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "toimi",
                 "plural": "toimet"
@@ -8099,7 +8099,7 @@
     "182": {
         "word": "laitos",
         "translation": "institution",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "laitos",
                 "plural": "laitokset"
@@ -8144,7 +8144,7 @@
     "183": {
         "word": "sarja",
         "translation": "series",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sarja",
                 "plural": "sarjat"
@@ -8189,7 +8189,7 @@
     "184": {
         "word": "ilta",
         "translation": "evening",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ilta",
                 "plural": "illat"
@@ -8234,7 +8234,7 @@
     "185": {
         "word": "vastuu",
         "translation": "responsibility",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vastuu",
                 "plural": "vastuut"
@@ -8282,7 +8282,7 @@
     "186": {
         "word": "kevät",
         "translation": "spring",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kevät",
                 "plural": "keväät"
@@ -8330,7 +8330,7 @@
     "187": {
         "word": "poika",
         "translation": "son",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "poika",
                 "plural": "pojat"
@@ -8375,7 +8375,7 @@
     "188": {
         "word": "elokuva",
         "translation": "movie",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "elokuva",
                 "plural": "elokuvat"
@@ -8420,7 +8420,7 @@
     "189": {
         "word": "presidentti",
         "translation": "president",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "presidentti",
                 "plural": "presidentit"
@@ -8462,7 +8462,7 @@
     "190": {
         "word": "suunnittelu",
         "translation": "design",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "suunnittelu",
                 "plural": "suunnittelut"
@@ -8511,7 +8511,7 @@
     "191": {
         "word": "jatko",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "jatko",
                 "plural": "jatkot"
@@ -8553,7 +8553,7 @@
     "192": {
         "word": "ehdotus",
         "translation": "proposal",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ehdotus",
                 "plural": "ehdotukset"
@@ -8598,7 +8598,7 @@
     "193": {
         "word": "äiti",
         "translation": "mother",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "äiti",
                 "plural": "äitit"
@@ -8640,7 +8640,7 @@
     "194": {
         "word": "ulkomaa",
         "translation": "abroad",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ulkomaa",
                 "plural": "ulkomaat"
@@ -8685,7 +8685,7 @@
     "195": {
         "word": "asukas",
         "translation": "resident",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "asukas",
                 "plural": "asukkaat"
@@ -8734,7 +8734,7 @@
     "196": {
         "word": "muoto",
         "translation": "form",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "muoto",
                 "plural": "muodot"
@@ -8776,7 +8776,7 @@
     "197": {
         "word": "vara",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vara",
                 "plural": "varat"
@@ -8821,7 +8821,7 @@
     "198": {
         "word": "ruoka",
         "translation": "food",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ruoka",
                 "plural": "ruuat"
@@ -8866,7 +8866,7 @@
     "199": {
         "word": "toimitusjohtaja",
         "translation": "managing director",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "toimitusjohtaja",
                 "plural": "toimitusjohtajat"
@@ -8911,7 +8911,7 @@
     "200": {
         "word": "kohde",
         "translation": "target",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kohde",
                 "plural": "kohteet"
@@ -8959,7 +8959,7 @@
     "201": {
         "word": "vero",
         "translation": "tax",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vero",
                 "plural": "verot"
@@ -9001,7 +9001,7 @@
     "202": {
         "word": "kilometri",
         "translation": "kilometer",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kilometri",
                 "plural": "kilometrit"
@@ -9043,7 +9043,7 @@
     "203": {
         "word": "liikenne",
         "translation": "traffic",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "liikenne",
                 "plural": "liikenteet"
@@ -9091,7 +9091,7 @@
     "204": {
         "word": "markkinat",
         "translation": "fair",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "—",
                 "plural": "markkinat"
@@ -9137,7 +9137,7 @@
     "205": {
         "word": "isä",
         "translation": "father",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "isä",
                 "plural": "isät"
@@ -9182,7 +9182,7 @@
     "206": {
         "word": "ajatus",
         "translation": "thought",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ajatus",
                 "plural": "ajatukset"
@@ -9227,7 +9227,7 @@
     "207": {
         "word": "luokka",
         "translation": "class",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "luokka",
                 "plural": "luokat"
@@ -9272,7 +9272,7 @@
     "208": {
         "word": "henki",
         "translation": "spirit",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "henki",
                 "plural": "henget"
@@ -9314,7 +9314,7 @@
     "209": {
         "word": "kansalainen",
         "translation": "citizen",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kansalainen",
                 "plural": "kansalaiset"
@@ -9359,7 +9359,7 @@
     "210": {
         "word": "laatu",
         "translation": "quality",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "laatu",
                 "plural": "laadut"
@@ -9401,7 +9401,7 @@
     "211": {
         "word": "kunto",
         "translation": "condition",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kunto",
                 "plural": "kunnot"
@@ -9443,7 +9443,7 @@
     "212": {
         "word": "toimittaja",
         "translation": "supplier",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "toimittaja",
                 "plural": "toimittajat"
@@ -9488,7 +9488,7 @@
     "213": {
         "word": "pelaaja",
         "translation": "player",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "pelaaja",
                 "plural": "pelaajat"
@@ -9533,7 +9533,7 @@
     "214": {
         "word": "nousu",
         "translation": "rise",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "nousu",
                 "plural": "nousut"
@@ -9575,7 +9575,7 @@
     "215": {
         "word": "kone",
         "translation": "machine",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kone",
                 "plural": "koneet"
@@ -9623,7 +9623,7 @@
     "216": {
         "word": "koira",
         "translation": "dog",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "koira",
                 "plural": "koirat"
@@ -9668,7 +9668,7 @@
     "217": {
         "word": "osasto",
         "translation": "department",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "osasto",
                 "plural": "osastot"
@@ -9717,7 +9717,7 @@
     "218": {
         "word": "käsittely",
         "translation": "handling",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "käsittely",
                 "plural": "käsittelyt"
@@ -9766,7 +9766,7 @@
     "219": {
         "word": "lasku",
         "translation": "decrease",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "lasku",
                 "plural": "laskut"
@@ -9808,7 +9808,7 @@
     "220": {
         "word": "kirjasto",
         "translation": "library",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kirjasto",
                 "plural": "kirjastot"
@@ -9857,7 +9857,7 @@
     "221": {
         "word": "sota",
         "translation": "war",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sota",
                 "plural": "sodat"
@@ -9902,7 +9902,7 @@
     "222": {
         "word": "voima",
         "translation": "force",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "voima",
                 "plural": "voimat"
@@ -9947,7 +9947,7 @@
     "223": {
         "word": "tiistai",
         "translation": "Tuesday",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tiistai",
                 "plural": "tiistait"
@@ -9992,7 +9992,7 @@
     "224": {
         "word": "tuotanto",
         "translation": "production",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tuotanto",
                 "plural": "tuotannot"
@@ -10034,7 +10034,7 @@
     "225": {
         "word": "suunnitelma",
         "translation": "plan",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "suunnitelma",
                 "plural": "suunnitelmat"
@@ -10079,7 +10079,7 @@
     "226": {
         "word": "velka",
         "translation": "debt",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "velka",
                 "plural": "velat"
@@ -10124,7 +10124,7 @@
     "227": {
         "word": "piste",
         "translation": "point",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "piste",
                 "plural": "pisteet"
@@ -10172,7 +10172,7 @@
     "228": {
         "word": "maanantai",
         "translation": "monday",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "maanantai",
                 "plural": "maanantait"
@@ -10217,7 +10217,7 @@
     "229": {
         "word": "teksti",
         "translation": "text",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "teksti",
                 "plural": "tekstit"
@@ -10259,7 +10259,7 @@
     "230": {
         "word": "tutkija",
         "translation": "researcher",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tutkija",
                 "plural": "tutkijat"
@@ -10305,7 +10305,7 @@
     "231": {
         "word": "yhdistys",
         "translation": "association",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "yhdistys",
                 "plural": "yhdistykset"
@@ -10350,7 +10350,7 @@
     "232": {
         "word": "selvitys",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "selvitys",
                 "plural": "selvitykset"
@@ -10395,7 +10395,7 @@
     "233": {
         "word": "silmä",
         "translation": "eye",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "silmä",
                 "plural": "silmät"
@@ -10440,7 +10440,7 @@
     "234": {
         "word": "lääkäri",
         "translation": "doctor",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "lääkäri",
                 "plural": "lääkärit"
@@ -10489,7 +10489,7 @@
     "235": {
         "word": "vastaus",
         "translation": "answer",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vastaus",
                 "plural": "vastaukset"
@@ -10534,7 +10534,7 @@
     "236": {
         "word": "keino",
         "translation": "means",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "keino",
                 "plural": "keinot"
@@ -10576,7 +10576,7 @@
     "237": {
         "word": "kappale",
         "translation": "piece",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kappale",
                 "plural": "kappaleet"
@@ -10624,7 +10624,7 @@
     "238": {
         "word": "luonto",
         "translation": "nature",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "luonto",
                 "plural": "luonnot"
@@ -10666,7 +10666,7 @@
     "239": {
         "word": "tulo",
         "translation": "product",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tulo",
                 "plural": "tulot"
@@ -10708,7 +10708,7 @@
     "240": {
         "word": "torstai",
         "translation": "Thursday",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "torstai",
                 "plural": "torstait"
@@ -10753,7 +10753,7 @@
     "241": {
         "word": "oppilas",
         "translation": "pupil",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "oppilas",
                 "plural": "oppilaat"
@@ -10802,7 +10802,7 @@
     "242": {
         "word": "keskiviikko",
         "translation": "wednesday",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "keskiviikko",
                 "plural": "keskiviikot"
@@ -10844,7 +10844,7 @@
     "243": {
         "word": "laite",
         "translation": "device",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "laite",
                 "plural": "laitteet"
@@ -10892,7 +10892,7 @@
     "244": {
         "word": "media",
         "translation": "media",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "media",
                 "plural": "mediat"
@@ -10938,7 +10938,7 @@
     "245": {
         "word": "valo",
         "translation": "light",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "valo",
                 "plural": "valot"
@@ -10980,7 +10980,7 @@
     "246": {
         "word": "maksu",
         "translation": "payment",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "maksu",
                 "plural": "maksut"
@@ -11022,7 +11022,7 @@
     "247": {
         "word": "erä",
         "translation": "batch",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "erä",
                 "plural": "erät"
@@ -11067,7 +11067,7 @@
     "248": {
         "word": "kisa",
         "translation": "competition",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kisa",
                 "plural": "kisat"
@@ -11112,7 +11112,7 @@
     "249": {
         "word": "politiikka",
         "translation": "policy",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "politiikka",
                 "plural": "politiikat"
@@ -11157,7 +11157,7 @@
     "250": {
         "word": "ohje",
         "translation": "instruction",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ohje",
                 "plural": "ohjeet"
@@ -11205,7 +11205,7 @@
     "251": {
         "word": "rooli",
         "translation": "role",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "rooli",
                 "plural": "roolit"
@@ -11247,7 +11247,7 @@
     "252": {
         "word": "toukokuu",
         "translation": "may",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "toukokuu",
                 "plural": "toukokuut"
@@ -11292,7 +11292,7 @@
     "253": {
         "word": "teos",
         "translation": "work",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "teos",
                 "plural": "teokset"
@@ -11337,7 +11337,7 @@
     "254": {
         "word": "vaatimus",
         "translation": "requirement",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vaatimus",
                 "plural": "vaatimukset"
@@ -11382,7 +11382,7 @@
     "255": {
         "word": "asiantuntija",
         "translation": "expert",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "asiantuntija",
                 "plural": "asiantuntijat"
@@ -11428,7 +11428,7 @@
     "256": {
         "word": "tilaisuus",
         "translation": "opportunity",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tilaisuus",
                 "plural": "tilaisuudet"
@@ -11470,7 +11470,7 @@
     "257": {
         "word": "merkki",
         "translation": "mark",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "merkki",
                 "plural": "merkit"
@@ -11512,7 +11512,7 @@
     "258": {
         "word": "maaliskuu",
         "translation": "march",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "maaliskuu",
                 "plural": "maaliskuut"
@@ -11557,7 +11557,7 @@
     "259": {
         "word": "valtuusto",
         "translation": "council",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "valtuusto",
                 "plural": "valtuustot"
@@ -11606,7 +11606,7 @@
     "260": {
         "word": "puu",
         "translation": "tree",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "puu",
                 "plural": "puut"
@@ -11651,7 +11651,7 @@
     "261": {
         "word": "yö",
         "translation": "night",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "yö",
                 "plural": "yöt"
@@ -11696,7 +11696,7 @@
     "262": {
         "word": "työnantaja",
         "translation": "employer",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "työnantaja",
                 "plural": "työnantajat"
@@ -11741,7 +11741,7 @@
     "263": {
         "word": "esimerkki",
         "translation": "example",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "esimerkki",
                 "plural": "esimerkit"
@@ -11783,7 +11783,7 @@
     "264": {
         "word": "omistaja",
         "translation": "owner",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "omistaja",
                 "plural": "omistajat"
@@ -11828,7 +11828,7 @@
     "265": {
         "word": "seuraus",
         "translation": "consequence",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "seuraus",
                 "plural": "seuraukset"
@@ -11873,7 +11873,7 @@
     "266": {
         "word": "piiri",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "piiri",
                 "plural": "piiret"
@@ -11918,7 +11918,7 @@
     "267": {
         "word": "ansio",
         "translation": "merit",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ansio",
                 "plural": "ansiot"
@@ -11963,7 +11963,7 @@
     "268": {
         "word": "yleisö",
         "translation": "audience",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "yleisö",
                 "plural": "yleisöt"
@@ -12012,7 +12012,7 @@
     "269": {
         "word": "laji",
         "translation": "species",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "laji",
                 "plural": "lajit"
@@ -12054,7 +12054,7 @@
     "270": {
         "word": "metsä",
         "translation": "forest",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "metsä",
                 "plural": "metsät"
@@ -12099,7 +12099,7 @@
     "271": {
         "word": "valinta",
         "translation": "selection",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "valinta",
                 "plural": "valinnat"
@@ -12144,7 +12144,7 @@
     "272": {
         "word": "sairaala",
         "translation": "hospital",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sairaala",
                 "plural": "sairaalat"
@@ -12194,7 +12194,7 @@
     "273": {
         "word": "numero",
         "translation": "number",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "numero",
                 "plural": "numerot"
@@ -12243,7 +12243,7 @@
     "274": {
         "word": "tausta",
         "translation": "background",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tausta",
                 "plural": "taustat"
@@ -12288,7 +12288,7 @@
     "275": {
         "word": "aikuinen",
         "translation": "adult",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "aikuinen",
                 "plural": "aikuiset"
@@ -12333,7 +12333,7 @@
     "276": {
         "word": "huhtikuu",
         "translation": "April",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "huhtikuu",
                 "plural": "huhtikuut"
@@ -12378,7 +12378,7 @@
     "277": {
         "word": "kirjoittaja",
         "translation": "writer",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kirjoittaja",
                 "plural": "kirjoittajat"
@@ -12423,7 +12423,7 @@
     "278": {
         "word": "rahoitus",
         "translation": "funding",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "rahoitus",
                 "plural": "rahoitukset"
@@ -12468,7 +12468,7 @@
     "279": {
         "word": "näkökulma",
         "translation": "perspective",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "näkökulma",
                 "plural": "näkökulmat"
@@ -12513,7 +12513,7 @@
     "280": {
         "word": "potilas",
         "translation": "patient",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "potilas",
                 "plural": "potilaat"
@@ -12562,7 +12562,7 @@
     "281": {
         "word": "valta",
         "translation": "power",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "valta",
                 "plural": "vallat"
@@ -12607,7 +12607,7 @@
     "282": {
         "word": "virka",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "virka",
                 "plural": "virat"
@@ -12652,7 +12652,7 @@
     "283": {
         "word": "eduskunta",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "eduskunta",
                 "plural": "eduskunnat"
@@ -12697,7 +12697,7 @@
     "284": {
         "word": "kylä",
         "translation": "village",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kylä",
                 "plural": "kylät"
@@ -12742,7 +12742,7 @@
     "285": {
         "word": "elokuu",
         "translation": "august",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "elokuu",
                 "plural": "elokuut"
@@ -12787,7 +12787,7 @@
     "286": {
         "word": "energia",
         "translation": "energy",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "energia",
                 "plural": "energiat"
@@ -12833,7 +12833,7 @@
     "287": {
         "word": "professori",
         "translation": "professor",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "professori",
                 "plural": "professorit"
@@ -12882,7 +12882,7 @@
     "288": {
         "word": "tammikuu",
         "translation": "January",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tammikuu",
                 "plural": "tammikuut"
@@ -12927,7 +12927,7 @@
     "289": {
         "word": "laina",
         "translation": "loan",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "laina",
                 "plural": "lainat"
@@ -12972,7 +12972,7 @@
     "290": {
         "word": "viranomainen",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "viranomainen",
                 "plural": "viranomaiset"
@@ -13017,7 +13017,7 @@
     "291": {
         "word": "materiaali",
         "translation": "material",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "materiaali",
                 "plural": "materiaalit"
@@ -13059,7 +13059,7 @@
     "292": {
         "word": "yhteisö",
         "translation": "community",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "yhteisö",
                 "plural": "yhteisöt"
@@ -13108,7 +13108,7 @@
     "293": {
         "word": "tyttö",
         "translation": "girl",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tyttö",
                 "plural": "tytöt"
@@ -13150,7 +13150,7 @@
     "294": {
         "word": "sähköposti",
         "translation": "e-mail",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sähköposti",
                 "plural": "sähköpostit"
@@ -13192,7 +13192,7 @@
     "295": {
         "word": "lautakunta",
         "translation": "board",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "lautakunta",
                 "plural": "lautakunnat"
@@ -13237,7 +13237,7 @@
     "296": {
         "word": "henkilöstö",
         "translation": "personnel",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "henkilöstö",
                 "plural": "henkilöstöt"
@@ -13279,7 +13279,7 @@
     "297": {
         "word": "linja",
         "translation": "line",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "linja",
                 "plural": "linjat"
@@ -13324,7 +13324,7 @@
     "298": {
         "word": "pääministeri",
         "translation": "prime minister",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "pääministeri",
                 "plural": "pääministerit"
@@ -13373,7 +13373,7 @@
     "299": {
         "word": "aineisto",
         "translation": "material",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "aineisto",
                 "plural": "aineistot"
@@ -13422,7 +13422,7 @@
     "300": {
         "word": "syyskuu",
         "translation": "september",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "syyskuu",
                 "plural": "syyskuut"
@@ -13467,7 +13467,7 @@
     "301": {
         "word": "lausunto",
         "translation": "statement",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "lausunto",
                 "plural": "lausunnot"
@@ -13509,7 +13509,7 @@
     "302": {
         "word": "kiinteistö",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kiinteistö",
                 "plural": "kiinteistöt"
@@ -13558,7 +13558,7 @@
     "303": {
         "word": "etusivu",
         "translation": "front page",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "etusivu",
                 "plural": "etusivut"
@@ -13600,7 +13600,7 @@
     "304": {
         "word": "pinta",
         "translation": "surface",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "pinta",
                 "plural": "pinnat"
@@ -13645,7 +13645,7 @@
     "305": {
         "word": "ura",
         "translation": "career",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ura",
                 "plural": "urat"
@@ -13690,7 +13690,7 @@
     "306": {
         "word": "talvi",
         "translation": "winter",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "talvi",
                 "plural": "talvet"
@@ -13732,7 +13732,7 @@
     "307": {
         "word": "tarina",
         "translation": "story",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tarina",
                 "plural": "tarinat"
@@ -13778,7 +13778,7 @@
     "308": {
         "word": "maakunta",
         "translation": "province",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "maakunta",
                 "plural": "maakunnat"
@@ -13823,7 +13823,7 @@
     "309": {
         "word": "kenttä",
         "translation": "field",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kenttä",
                 "plural": "kentät"
@@ -13868,7 +13868,7 @@
     "310": {
         "word": "arvio",
         "translation": "estimate",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "arvio",
                 "plural": "arviot"
@@ -13913,7 +13913,7 @@
     "311": {
         "word": "kunnanhallitus",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kunnanhallitus",
                 "plural": "kunnanhallitukset"
@@ -13958,7 +13958,7 @@
     "312": {
         "word": "lukio",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "lukio",
                 "plural": "lukiot"
@@ -14003,7 +14003,7 @@
     "313": {
         "word": "työryhmä",
         "translation": "working group",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "työryhmä",
                 "plural": "työryhmät"
@@ -14048,7 +14048,7 @@
     "314": {
         "word": "verkko",
         "translation": "network",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "verkko",
                 "plural": "verkot"
@@ -14090,7 +14090,7 @@
     "315": {
         "word": "periaate",
         "translation": "principle",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "periaate",
                 "plural": "periaatteet"
@@ -14138,7 +14138,7 @@
     "316": {
         "word": "helmikuu",
         "translation": "February",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "helmikuu",
                 "plural": "helmikuut"
@@ -14183,7 +14183,7 @@
     "317": {
         "word": "osaaminen",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "osaaminen",
                 "plural": "osaamiset"
@@ -14228,7 +14228,7 @@
     "318": {
         "word": "hallinta",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "hallinta",
                 "plural": "hallinnat"
@@ -14273,7 +14273,7 @@
     "319": {
         "word": "yrittäjä",
         "translation": "entrepreneur",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "yrittäjä",
                 "plural": "yrittäjät"
@@ -14318,7 +14318,7 @@
     "320": {
         "word": "liite",
         "translation": "appendix",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "liite",
                 "plural": "liitteet"
@@ -14366,7 +14366,7 @@
     "321": {
         "word": "ystävä",
         "translation": "friend",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ystävä",
                 "plural": "ystävät"
@@ -14411,7 +14411,7 @@
     "322": {
         "word": "idea",
         "translation": "idea",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "idea",
                 "plural": "ideat"
@@ -14457,7 +14457,7 @@
     "323": {
         "word": "kokonaisuus",
         "translation": "whole",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kokonaisuus",
                 "plural": "kokonaisuudet"
@@ -14499,7 +14499,7 @@
     "324": {
         "word": "meno",
         "translation": "going",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "meno",
                 "plural": "menot"
@@ -14541,7 +14541,7 @@
     "325": {
         "word": "marraskuu",
         "translation": "November",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "marraskuu",
                 "plural": "marraskuut"
@@ -14586,7 +14586,7 @@
     "326": {
         "word": "hyöty",
         "translation": "benefit",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "hyöty",
                 "plural": "hyödyt"
@@ -14628,7 +14628,7 @@
     "327": {
         "word": "levy",
         "translation": "plate",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "levy",
                 "plural": "levyt"
@@ -14670,7 +14670,7 @@
     "328": {
         "word": "liike",
         "translation": "movement",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "liike",
                 "plural": "liikkeet"
@@ -14718,7 +14718,7 @@
     "329": {
         "word": "turvallisuus",
         "translation": "safety",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "turvallisuus",
                 "plural": "turvallisuudet"
@@ -14760,7 +14760,7 @@
     "330": {
         "word": "teollisuus",
         "translation": "industry",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "teollisuus",
                 "plural": "teollisuudet"
@@ -14802,7 +14802,7 @@
     "331": {
         "word": "aine",
         "translation": "substance",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "aine",
                 "plural": "aineet"
@@ -14850,7 +14850,7 @@
     "332": {
         "word": "jakso",
         "translation": "period",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "jakso",
                 "plural": "jaksot"
@@ -14892,7 +14892,7 @@
     "333": {
         "word": "artikkeli",
         "translation": "article",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "artikkeli",
                 "plural": "artikkelit"
@@ -14941,7 +14941,7 @@
     "334": {
         "word": "taito",
         "translation": "skill",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "taito",
                 "plural": "taidot"
@@ -14983,7 +14983,7 @@
     "335": {
         "word": "homma",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "homma",
                 "plural": "hommat"
@@ -15028,7 +15028,7 @@
     "336": {
         "word": "riski",
         "translation": "risk",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "riski",
                 "plural": "riskit"
@@ -15070,7 +15070,7 @@
     "337": {
         "word": "ehto",
         "translation": "condition",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ehto",
                 "plural": "ehdot"
@@ -15112,7 +15112,7 @@
     "338": {
         "word": "opiskelu",
         "translation": "study",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "opiskelu",
                 "plural": "opiskelut"
@@ -15161,7 +15161,7 @@
     "339": {
         "word": "järjestö",
         "translation": "organization",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "järjestö",
                 "plural": "järjestöt"
@@ -15210,7 +15210,7 @@
     "340": {
         "word": "sääntö",
         "translation": "rule",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sääntö",
                 "plural": "säännöt"
@@ -15252,7 +15252,7 @@
     "341": {
         "word": "ilmoitus",
         "translation": "advertisement",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ilmoitus",
                 "plural": "ilmoitukset"
@@ -15297,7 +15297,7 @@
     "342": {
         "word": "uutinen",
         "translation": "news",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "uutinen",
                 "plural": "uutiset"
@@ -15342,7 +15342,7 @@
     "343": {
         "word": "lokakuu",
         "translation": "october",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "lokakuu",
                 "plural": "lokakuut"
@@ -15387,7 +15387,7 @@
     "344": {
         "word": "kuluttaja",
         "translation": "consumer",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kuluttaja",
                 "plural": "kuluttajat"
@@ -15432,7 +15432,7 @@
     "345": {
         "word": "edellytys",
         "translation": "prerequisite",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "edellytys",
                 "plural": "edellytykset"
@@ -15477,7 +15477,7 @@
     "346": {
         "word": "vanhempi",
         "translation": "parent",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vanhempi",
                 "plural": "vanhemmat"
@@ -15522,7 +15522,7 @@
     "347": {
         "word": "arviointi",
         "translation": "evaluation",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "arviointi",
                 "plural": "arvioinnit"
@@ -15564,7 +15564,7 @@
     "348": {
         "word": "terveys",
         "translation": "health",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "terveys",
                 "plural": "terveydet"
@@ -15606,7 +15606,7 @@
     "349": {
         "word": "toteuttaminen",
         "translation": "realization",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "toteuttaminen",
                 "plural": "toteuttamiset"
@@ -15651,7 +15651,7 @@
     "350": {
         "word": "video",
         "translation": "video",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "video",
                 "plural": "videot"
@@ -15696,7 +15696,7 @@
     "351": {
         "word": "kesäkuu",
         "translation": "june",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kesäkuu",
                 "plural": "kesäkuut"
@@ -15741,7 +15741,7 @@
     "352": {
         "word": "ominaisuus",
         "translation": "quality",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ominaisuus",
                 "plural": "ominaisuudet"
@@ -15783,7 +15783,7 @@
     "353": {
         "word": "kansanedustaja",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kansanedustaja",
                 "plural": "kansanedustajat"
@@ -15828,7 +15828,7 @@
     "354": {
         "word": "työelämä",
         "translation": "working life",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "työelämä",
                 "plural": "työelämät"
@@ -15873,7 +15873,7 @@
     "355": {
         "word": "ranta",
         "translation": "shore",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ranta",
                 "plural": "rannat"
@@ -15918,7 +15918,7 @@
     "356": {
         "word": "unioni",
         "translation": "union",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "unioni",
                 "plural": "unionit"
@@ -15967,7 +15967,7 @@
     "357": {
         "word": "kotimaa",
         "translation": "homeland",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kotimaa",
                 "plural": "kotimaat"
@@ -16012,7 +16012,7 @@
     "358": {
         "word": "rakenne",
         "translation": "structure",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "rakenne",
                 "plural": "rakenteet"
@@ -16060,7 +16060,7 @@
     "359": {
         "word": "henkilökunta",
         "translation": "staff",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "henkilökunta",
                 "plural": "henkilökunnat"
@@ -16105,7 +16105,7 @@
     "360": {
         "word": "ovi",
         "translation": "door",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ovi",
                 "plural": "ovet"
@@ -16147,7 +16147,7 @@
     "361": {
         "word": "kuolema",
         "translation": "death",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kuolema",
                 "plural": "kuolemat"
@@ -16192,7 +16192,7 @@
     "362": {
         "word": "hyvinvointi",
         "translation": "well-being",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "hyvinvointi",
                 "plural": "hyvinvoinnit"
@@ -16234,7 +16234,7 @@
     "363": {
         "word": "näkemys",
         "translation": "view",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "näkemys",
                 "plural": "näkemykset"
@@ -16279,7 +16279,7 @@
     "364": {
         "word": "sektori",
         "translation": "sector",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sektori",
                 "plural": "sektorit"
@@ -16328,7 +16328,7 @@
     "365": {
         "word": "tavara",
         "translation": "goods",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tavara",
                 "plural": "tavarat"
@@ -16374,7 +16374,7 @@
     "366": {
         "word": "lista",
         "translation": "list",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "lista",
                 "plural": "listat"
@@ -16419,7 +16419,7 @@
     "367": {
         "word": "kaveri",
         "translation": "guy",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kaveri",
                 "plural": "kaverit"
@@ -16468,7 +16468,7 @@
     "368": {
         "word": "tontti",
         "translation": "plot",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tontti",
                 "plural": "tontit"
@@ -16510,7 +16510,7 @@
     "369": {
         "word": "aamu",
         "translation": "morning",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "aamu",
                 "plural": "aamut"
@@ -16552,7 +16552,7 @@
     "370": {
         "word": "luku",
         "translation": "number",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "luku",
                 "plural": "luvut"
@@ -16594,7 +16594,7 @@
     "371": {
         "word": "kierros",
         "translation": "round",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kierros",
                 "plural": "kierrokset"
@@ -16639,7 +16639,7 @@
     "372": {
         "word": "ravintola",
         "translation": "restaurant",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ravintola",
                 "plural": "ravintolat"
@@ -16685,7 +16685,7 @@
     "373": {
         "word": "kokoomus",
         "translation": "coalition",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kokoomus",
                 "plural": "kokoomukset"
@@ -16730,7 +16730,7 @@
     "374": {
         "word": "joulukuu",
         "translation": "December",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "joulukuu",
                 "plural": "joulukuut"
@@ -16775,7 +16775,7 @@
     "375": {
         "word": "toimisto",
         "translation": "office",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "toimisto",
                 "plural": "toimistot"
@@ -16824,7 +16824,7 @@
     "376": {
         "word": "väli",
         "translation": "space",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "väli",
                 "plural": "välit"
@@ -16866,7 +16866,7 @@
     "377": {
         "word": "pakko",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "pakko",
                 "plural": "pakot"
@@ -16908,7 +16908,7 @@
     "378": {
         "word": "vauhti",
         "translation": "velocity",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vauhti",
                 "plural": "vauhdit"
@@ -16950,7 +16950,7 @@
     "379": {
         "word": "toimenpide",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "toimenpide",
                 "plural": "toimenpiteet"
@@ -16998,7 +16998,7 @@
     "380": {
         "word": "dollari",
         "translation": "dollar",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "dollari",
                 "plural": "dollarit"
@@ -17047,7 +17047,7 @@
     "381": {
         "word": "käynti",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "käynti",
                 "plural": "käynnit"
@@ -17089,7 +17089,7 @@
     "382": {
         "word": "huoli",
         "translation": "worry",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "huoli",
                 "plural": "huolet"
@@ -17134,7 +17134,7 @@
     "383": {
         "word": "korko",
         "translation": "interest",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "korko",
                 "plural": "korot"
@@ -17176,7 +17176,7 @@
     "384": {
         "word": "lippu",
         "translation": "flag",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "lippu",
                 "plural": "liput"
@@ -17218,7 +17218,7 @@
     "385": {
         "word": "taho",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "taho",
                 "plural": "tahot"
@@ -17260,7 +17260,7 @@
     "386": {
         "word": "hallinto",
         "translation": "administration",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "hallinto",
                 "plural": "hallinnot"
@@ -17302,7 +17302,7 @@
     "387": {
         "word": "valmentaja",
         "translation": "coach",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "valmentaja",
                 "plural": "valmentajat"
@@ -17347,7 +17347,7 @@
     "388": {
         "word": "liikevaihto",
         "translation": "revenue",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "liikevaihto",
                 "plural": "liikevaihdot"
@@ -17389,7 +17389,7 @@
     "389": {
         "word": "toimiala",
         "translation": "industry",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "toimiala",
                 "plural": "toimialat"
@@ -17434,7 +17434,7 @@
     "390": {
         "word": "tähti",
         "translation": "star",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tähti",
                 "plural": "tähdet"
@@ -17476,7 +17476,7 @@
     "391": {
         "word": "haastattelu",
         "translation": "interview",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "haastattelu",
                 "plural": "haastattelut"
@@ -17525,7 +17525,7 @@
     "392": {
         "word": "puhe",
         "translation": "speech",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "puhe",
                 "plural": "puheet"
@@ -17573,7 +17573,7 @@
     "393": {
         "word": "seutu",
         "translation": "region",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "seutu",
                 "plural": "seudut"
@@ -17615,7 +17615,7 @@
     "394": {
         "word": "raportti",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "raportti",
                 "plural": "raportit"
@@ -17657,7 +17657,7 @@
     "395": {
         "word": "eläin",
         "translation": "animal",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "eläin",
                 "plural": "eläimet"
@@ -17702,7 +17702,7 @@
     "396": {
         "word": "viikonloppu",
         "translation": "weekend",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "viikonloppu",
                 "plural": "viikonloput"
@@ -17744,7 +17744,7 @@
     "397": {
         "word": "seurakunta",
         "translation": "parish",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "seurakunta",
                 "plural": "seurakunnat"
@@ -17789,7 +17789,7 @@
     "398": {
         "word": "piha",
         "translation": "yard",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "piha",
                 "plural": "pihat"
@@ -17834,7 +17834,7 @@
     "399": {
         "word": "organisaatio",
         "translation": "organization",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "organisaatio",
                 "plural": "organisaatiot"
@@ -17879,7 +17879,7 @@
     "400": {
         "word": "versio",
         "translation": "version",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "versio",
                 "plural": "versiot"
@@ -17924,7 +17924,7 @@
     "401": {
         "word": "aste",
         "translation": "degree",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "aste",
                 "plural": "asteet"
@@ -17972,7 +17972,7 @@
     "402": {
         "word": "teko",
         "translation": "act",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "teko",
                 "plural": "teot"
@@ -18014,7 +18014,7 @@
     "403": {
         "word": "tappio",
         "translation": "defeat",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tappio",
                 "plural": "tappiot"
@@ -18059,7 +18059,7 @@
     "404": {
         "word": "valvonta",
         "translation": "monitoring",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "valvonta",
                 "plural": "valvonnat"
@@ -18104,7 +18104,7 @@
     "405": {
         "word": "terveydenhuolto",
         "translation": "health care",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "terveydenhuolto",
                 "plural": "terveydenhuollot"
@@ -18146,7 +18146,7 @@
     "406": {
         "word": "totuus",
         "translation": "truth",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "totuus",
                 "plural": "totuudet"
@@ -18188,7 +18188,7 @@
     "407": {
         "word": "käsitys",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "käsitys",
                 "plural": "käsitykset"
@@ -18233,7 +18233,7 @@
     "408": {
         "word": "jalka",
         "translation": "foot",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "jalka",
                 "plural": "jalat"
@@ -18278,7 +18278,7 @@
     "409": {
         "word": "tutkinto",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tutkinto",
                 "plural": "tutkinnot"
@@ -18320,7 +18320,7 @@
     "410": {
         "word": "virhe",
         "translation": "error",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "virhe",
                 "plural": "virheet"
@@ -18368,7 +18368,7 @@
     "411": {
         "word": "näyttely",
         "translation": "show",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "näyttely",
                 "plural": "näyttelyt"
@@ -18417,7 +18417,7 @@
     "412": {
         "word": "väri",
         "translation": "color",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "väri",
                 "plural": "värit"
@@ -18459,7 +18459,7 @@
     "413": {
         "word": "rauha",
         "translation": "peace",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "rauha",
                 "plural": "rauhat"
@@ -18504,7 +18504,7 @@
     "414": {
         "word": "kriisi",
         "translation": "crisis",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kriisi",
                 "plural": "kriisit"
@@ -18546,7 +18546,7 @@
     "415": {
         "word": "ilma",
         "translation": "air",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ilma",
                 "plural": "ilmat"
@@ -18591,7 +18591,7 @@
     "416": {
         "word": "ohjaus",
         "translation": "control",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ohjaus",
                 "plural": "ohjaukset"
@@ -18636,7 +18636,7 @@
     "417": {
         "word": "sivusto",
         "translation": "site",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sivusto",
                 "plural": "sivustot"
@@ -18678,7 +18678,7 @@
     "418": {
         "word": "järjestäminen",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "järjestäminen",
                 "plural": "järjestämiset"
@@ -18723,7 +18723,7 @@
     "419": {
         "word": "talousarvio",
         "translation": "budget",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "talousarvio",
                 "plural": "talousarviot"
@@ -18768,7 +18768,7 @@
     "420": {
         "word": "prosessi",
         "translation": "process",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "prosessi",
                 "plural": "prosessit"
@@ -18810,7 +18810,7 @@
     "421": {
         "word": "kuljettaja",
         "translation": "driver",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kuljettaja",
                 "plural": "kuljettajat"
@@ -18855,7 +18855,7 @@
     "422": {
         "word": "heinäkuu",
         "translation": "july",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "heinäkuu",
                 "plural": "heinäkuut"
@@ -18900,7 +18900,7 @@
     "423": {
         "word": "korvaus",
         "translation": "compensation",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "korvaus",
                 "plural": "korvaukset"
@@ -18945,7 +18945,7 @@
     "424": {
         "word": "tekniikka",
         "translation": "technique",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tekniikka",
                 "plural": "tekniikat"
@@ -18998,7 +18998,7 @@
     "425": {
         "word": "todellisuus",
         "translation": "reality",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "todellisuus",
                 "plural": "todellisuudet"
@@ -19040,7 +19040,7 @@
     "426": {
         "word": "vaara",
         "translation": "danger",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "vaara",
                 "plural": "vaarat"
@@ -19085,7 +19085,7 @@
     "427": {
         "word": "museo",
         "translation": "museum",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "museo",
                 "plural": "museot"
@@ -19130,7 +19130,7 @@
     "428": {
         "word": "kysyntä",
         "translation": "demand",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kysyntä",
                 "plural": "kysynnät"
@@ -19175,7 +19175,7 @@
     "429": {
         "word": "hakemus",
         "translation": "application",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "hakemus",
                 "plural": "hakemukset"
@@ -19220,7 +19220,7 @@
     "430": {
         "word": "kuvaus",
         "translation": "description",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kuvaus",
                 "plural": "kuvaukset"
@@ -19265,7 +19265,7 @@
     "431": {
         "word": "olo",
         "translation": "",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "olo",
                 "plural": "olot"
@@ -19307,7 +19307,7 @@
     "432": {
         "word": "ikä",
         "translation": "age",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ikä",
                 "plural": "iät"
@@ -19352,7 +19352,7 @@
     "433": {
         "word": "ohjaaja",
         "translation": "director",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "ohjaaja",
                 "plural": "ohjaajat"
@@ -19397,7 +19397,7 @@
     "434": {
         "word": "sähkö",
         "translation": "electricity",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "sähkö",
                 "plural": "sähöt"
@@ -19439,7 +19439,7 @@
     "435": {
         "word": "neuvottelu",
         "translation": "negotiation",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "neuvottelu",
                 "plural": "neuvottelut"
@@ -19488,7 +19488,7 @@
     "436": {
         "word": "puhelin",
         "translation": "phone",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "puhelin",
                 "plural": "puhelimet"
@@ -19533,7 +19533,7 @@
     "437": {
         "word": "pallo",
         "translation": "ball",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "pallo",
                 "plural": "pallot"
@@ -19575,7 +19575,7 @@
     "438": {
         "word": "tunne",
         "translation": "feeling",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tunne",
                 "plural": "tunteet"
@@ -19623,7 +19623,7 @@
     "439": {
         "word": "oppiminen",
         "translation": "learning",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "oppiminen",
                 "plural": "oppimiset"
@@ -19668,7 +19668,7 @@
     "440": {
         "word": "kulu",
         "translation": "expense",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "kulu",
                 "plural": "kulut"
@@ -19710,7 +19710,7 @@
     "441": {
         "word": "tietokone",
         "translation": "computer",
-        "declination": {
+        "data": {
             "nominative": {
                 "singular": "tietokone",
                 "plural": "tietokoneet"

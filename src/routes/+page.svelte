@@ -18,10 +18,10 @@
 <div class="page-section">
     <h2><i class="fas fa-book"></i> Study</h2>
     <div class="category-div">
-        <CategoryBlock name={"Declination"} color={"var(--blue-color)"} lesson_path="study/textinput?lang=fi&lesson=decl" settings_path="study/textinput/settings?lang=fi&lesson=decl" description={"Practise the declination of nouns and adjectives"}/>
-        <CategoryBlock name={"Conjugation"} color={"var(--red-color)"} lesson_path="study/textinput?lang=fi&lesson=conj" settings_path="study/textinput/settings?lang=fi&lesson=conj" description={"Practise the conjugation of verbs"}/>
-        <!-- <CategoryBlock name={"Rections"} color={"var(--green-color)"} lesson_path="study/fi/rections" description={"Practise the rections for a variety of different verbs"}/>
-        <CategoryBlock name={"Time"} color={"var(--purple-color)"} lesson_path="study/fi/time" description={"Practise different ways of expressing time"}/> -->
+        <CategoryBlock name={"Nouns"} color={"var(--blue-color)"} lesson_path="study/textinput?lang=fi&lesson=decl" settings_path="study/textinput/settings?lang=fi&lesson=decl" description={"Practise the declination of nouns"}/>
+        <CategoryBlock name={"Verbs"} color={"var(--red-color)"} lesson_path="study/textinput?lang=fi&lesson=conj" settings_path="study/textinput/settings?lang=fi&lesson=conj" description={"Practise the conjugation of verbs"}/>
+        <CategoryBlock name={"Pronouns"} color={"var(--green-color)"} lesson_path="study/textinput?lang=fi&lesson=pronoun-declination" settings_path="study/textinput/settings?lang=fi&lesson=pronoun-declination" description={"Practise the declination of pronouns"}/>
+        <CategoryBlock name={"Adjectives"} color={"var(--purple-color)"} lesson_path="study/textinput?lang=fi&lesson=adjective-declination" settings_path="study/textinput/settings?lang=fi&lesson=adjective-declination" description={"Practise the declination of adjectives"}/>
     </div>
 </div>
 
