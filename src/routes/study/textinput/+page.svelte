@@ -12,7 +12,7 @@
     let lessonParam = $state("");
 
     let lesson_data = nouns;
-    let current_lesson_conf = $state(lesson_conf["decl"]);
+    let current_lesson_conf = $state(lesson_conf["noun-declination"]);
 
     // Variables holding information about the current question
     let current_word = $state("");
@@ -44,7 +44,7 @@
             lessonParam = searchParams.get("lesson");
         }
 
-        if (lessonParam == "decl" && languageParam == "fi") {
+        if (lessonParam == "noun-declination" && languageParam == "fi") {
             lesson_data = nouns;
             current_lesson_conf = lesson_conf[lessonParam];
             current_lesson_conf.category_data = JSON.parse(localStorage.getItem(current_lesson_conf.lesson_type + "Config",),) || lesson_conf[lessonParam].category_data;
@@ -52,7 +52,7 @@
             lesson_data = adjectives;
             current_lesson_conf = lesson_conf[lessonParam];
             current_lesson_conf.category_data = JSON.parse(localStorage.getItem(current_lesson_conf.lesson_type + "Config",),) || lesson_conf[lessonParam].category_data;
-        } else if (lessonParam == "conj" && languageParam == "fi") {
+        } else if (lessonParam == "verb-conjugation" && languageParam == "fi") {
             lesson_data = verbs;
             current_lesson_conf = lesson_conf[lessonParam];
             current_lesson_conf.category_data = JSON.parse(localStorage.getItem(current_lesson_conf.lesson_type + "Config",),) || lesson_conf[lessonParam].category_data;

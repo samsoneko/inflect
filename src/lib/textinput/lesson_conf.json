@@ -1,7 +1,7 @@
 {
-    "decl" : {
+    "noun-declination" : {
         "data_file" : "nouns.json",
-        "lesson_type" : "declination",
+        "lesson_type" : "noun-declination",
         "categories" : ["cases", "classes"],
         "category_data" : [["nominative", "partitive", "genitive", "illative", "inessive", "elative", "allative", "adessive", "ablative"],
         ["singular", "plural"]],
@@ -39,9 +39,9 @@
             "plural": "plural"
         }
     },
-    "conj" : {
+    "verb-conjugation" : {
         "data_file" : "verbs.json",
-        "lesson_type" : "conjugation",
+        "lesson_type" : "verb-conjugation",
         "categories" : ["tense", "person", "polarity"],
         "category_data" : [["present", "imperfect", "perfect", "pluperfect"],
         ["1st sing.", "2nd sing.", "3rd sing.", "1st plur.", "2nd plur.", "3rd plur."],

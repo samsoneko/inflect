@@ -6,7 +6,7 @@
     let languageParam = $state("");
     let lessonParam = $state("");
 
-    let current_lesson_conf = $state(lesson_conf["decl"]);
+    let current_lesson_conf = $state(lesson_conf["noun-declination"]);
     let available_categories = $state();
     let available_category_data = $state();
 
@@ -68,7 +68,7 @@
     {capitalize(current_lesson_conf.lesson_type)} Settings
 </h1>
 
-<div class="page-section">
+<div class="saber-panel-default">
     Select as many entries for each category as you want to practise in the
     lesson. However, you have to select at least one entry per category to get a
     viable configuration.
