@@ -102,15 +102,19 @@
     // Check if the answer is correct
     function checkAnswer() {
         if (current_solution.includes(current_answer)) {
+            if (answer_state == "unanswered") {
+                total_answer_count += 1;
+                correct_answer_count += 1;
+            }
             answer_state = "correct";
-            total_answer_count += 1;
-            correct_answer_count += 1;
             tick();
             nextQuestionButton.focus();
         } else {
-            answer_state = "wrong";
             answerInputField.focus();
-            total_answer_count += 1;
+            if (answer_state == "unanswered") {
+                total_answer_count += 1;
+            }
+            answer_state = "wrong";
         }
     }
 </script>

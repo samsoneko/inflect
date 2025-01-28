@@ -24,9 +24,9 @@
         </div>
     </div>
     {#if percentage > 0}
-        <p class="accuracy-percentage center-text">{percentage}%</p>
+        <p class="accuracy-percentage center-text">{correct_answer_count}/{total_answer_count} - {percentage}%</p>
     {:else}
-    <p class="accuracy-percentage center-text">0%</p>
+        <p class="accuracy-percentage center-text">{correct_answer_count}/{total_answer_count} - 0%</p>
     {/if}
 </div>
 

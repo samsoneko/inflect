@@ -9,7 +9,7 @@
             "nominative": "nominative",
             "partitive": "partitive",
             "genitive" : "genitive",
-            "illative": "illative (-hVn, -Vh, seen)",
+            "illative": "illative (-hVn, -Vh, -seen)",
             "inessive": "inessive (-ssa, -ssä)",
             "elative": "elative (-sta, -stä)",
             "allative": "allative (-lle)",
