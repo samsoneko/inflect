@@ -131,7 +131,7 @@
     {#each current_category_desc as category_entry}
         <p>{category_entry}</p>
     {/each}
-    <form onsubmit={checkAnswer}>
+    <form autocomplete="off" onsubmit={checkAnswer}>
         <input
             class="saber-input-default answer-input"
             type="text"

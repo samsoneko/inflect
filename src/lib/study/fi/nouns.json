@@ -8601,10 +8601,10 @@
         "data": {
             "nominative": {
                 "singular": "äiti",
-                "plural": "äitit"
+                "plural": "äidit"
             },
             "genitive": {
-                "singular": "äitin",
+                "singular": "äidin",
                 "plural": "äitien"
             },
             "partitive": {
@@ -8612,28 +8612,28 @@
                 "plural": "äitejä"
             },
             "inessive": {
-                "singular": "äitissä",
-                "plural": "äiteissä"
+                "singular": "äidissä",
+                "plural": "äideissä"
             },
             "elative": {
-                "singular": "äitistä",
-                "plural": "äiteistä"
+                "singular": "äidistä",
+                "plural": "äideistä"
             },
             "illative": {
                 "singular": "äitiin",
                 "plural": "äiteihin"
             },
             "adessive": {
-                "singular": "äitillä",
-                "plural": "äiteillä"
+                "singular": "äidillä",
+                "plural": "äideillä"
             },
             "ablative": {
-                "singular": "äitiltä",
-                "plural": "äiteiltä"
+                "singular": "äidiltä",
+                "plural": "äideiltä"
             },
             "allative": {
-                "singular": "äitille",
-                "plural": "äiteille"
+                "singular": "äidille",
+                "plural": "äideille"
             }
         }
     },
