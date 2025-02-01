@@ -1,13 +1,13 @@
 <script>
-	let {total_answer_count = 0, correct_answer_count = 0} = $props();
-    let accuracy = $derived(correct_answer_count / total_answer_count);
+	let {totalAnswerCount = 0, correctAnswerCount = 0} = $props();
+    let accuracy = $derived(correctAnswerCount / totalAnswerCount);
     let percentage = $derived(Math.round(accuracy*100));
     
     let color = $derived.by(() => {
-        if (correct_answer_count / total_answer_count >= 0.66) {
+        if (correctAnswerCount / totalAnswerCount >= 0.66) {
             return "var(--green-color)";
         }
-        else if (correct_answer_count / total_answer_count >= 0.33) {
+        else if (correctAnswerCount / totalAnswerCount >= 0.33) {
             return "var(--yellow-color)";
         }
         else {
@@ -24,9 +24,9 @@
         </div>
     </div>
     {#if percentage > 0}
-        <p class="accuracy-percentage center-text">{correct_answer_count}/{total_answer_count} - {percentage}%</p>
+        <p class="accuracy-percentage center-text">{correctAnswerCount}/{totalAnswerCount} - {percentage}%</p>
     {:else}
-        <p class="accuracy-percentage center-text">{correct_answer_count}/{total_answer_count} - 0%</p>
+        <p class="accuracy-percentage center-text">{correctAnswerCount}/{totalAnswerCount} - 0%</p>
     {/if}
 </div>
 

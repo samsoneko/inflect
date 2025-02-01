@@ -1,68 +1,37 @@
 <script>
     import { onMount, tick } from "svelte";
-    import nouns from "$lib/study/fi/nouns.json";
-    import verbs from "$lib/study/fi/verbs.json";
-    import pronouns from "$lib/study/fi/pronouns.json";
-    import adjectives from "$lib/study/fi/adjectives.json";
-    import lesson_conf from "$lib/textinput/lesson_conf.json";
     import AccuracyDisplay from "$lib/AccuracyDisplay.svelte";
-    import { page } from "$app/stores";
 
-    let languageParam = $state("");
-    let lessonParam = $state("");
+    let { data } = $props();
 
-    let lesson_data = nouns;
-    let current_lesson_conf = $state(lesson_conf["noun-declination"]);
+    let lessonData = data.lesson;
+    let currentLessonConfig = $state(data.conf);
 
     // Variables holding information about the current question
-    let current_word = $state("");
-    let current_translation = $state("");
+    let currentWord = $state("");
+    let currentTranslation = $state("");
 
-    let current_categories = $state([]);
-    let current_category_desc = $state([]);
+    let currentCategories = $state([]);
+    let currentCategoryDescs = $state([]);
 
-    let current_solution = $state([]);
+    let currentSolution = $state([]);
 
     // Variables holding information about the current answer
-    let current_answer = $state("");
-    let answer_state = $state("unanswered");
+    let currentAnswer = $state("");
+    let answerState = $state("unanswered");
 
-    let total_answer_count = $state(0);
-    let correct_answer_count = $state(0);
+    let totalAnswerCount = $state(0);
+    let correctAnswerCount = $state(0);
 
     // On page load, initialize data and load first question
     onMount(() => {
-        loadLessonData();
+        loadLessonConfig();
         nextQuestion();
     });
 
     // Load the data for the current lesson based on the url parameters
-    async function loadLessonData() {
-        const searchParams = $page.url.searchParams;
-        if (languageParam == "" && lessonParam == "") {
-            languageParam = searchParams.get("lang");
-            lessonParam = searchParams.get("lesson");
-        }
-
-        if (lessonParam == "noun-declination" && languageParam == "fi") {
-            lesson_data = nouns;
-            current_lesson_conf = lesson_conf[lessonParam];
-            current_lesson_conf.category_data = JSON.parse(localStorage.getItem(current_lesson_conf.lesson_type + "Config",),) || lesson_conf[lessonParam].category_data;
-        } else if (lessonParam == "adjective-declination" && languageParam == "fi") {
-            lesson_data = adjectives;
-            current_lesson_conf = lesson_conf[lessonParam];
-            current_lesson_conf.category_data = JSON.parse(localStorage.getItem(current_lesson_conf.lesson_type + "Config",),) || lesson_conf[lessonParam].category_data;
-        } else if (lessonParam == "verb-conjugation" && languageParam == "fi") {
-            lesson_data = verbs;
-            current_lesson_conf = lesson_conf[lessonParam];
-            current_lesson_conf.category_data = JSON.parse(localStorage.getItem(current_lesson_conf.lesson_type + "Config",),) || lesson_conf[lessonParam].category_data;
-        } else if (lessonParam == "pronoun-declination" && languageParam == "fi") {
-            lesson_data = pronouns;
-            current_lesson_conf = lesson_conf[lessonParam];
-            current_lesson_conf.category_data = JSON.parse(localStorage.getItem(current_lesson_conf.lesson_type + "Config",),) || lesson_conf[lessonParam].category_data;
-        } else {
-            window.location.href = "/";
-        }
+    function loadLessonConfig() {
+        currentLessonConfig.category_data = JSON.parse(localStorage.getItem(currentLessonConfig.lesson_type + "Config",),) || currentLessonConfig.category_data;
     }
 
     // Variables for handling the input and confirm button
@@ -72,49 +41,50 @@
     // Loading the next question based on a random index
     function nextQuestion() {
         answerInputField.focus();
-        current_answer = "";
-        answer_state = "unanswered";
-        let index = Math.floor(Math.random() * Object.keys(lesson_data).length);
-        current_word = lesson_data[index]["word"];
-        current_translation = lesson_data[index]["translation"];
-        current_categories = [];
-        current_category_desc = [];
+        currentAnswer = "";
+        answerState = "unanswered";
+        let index = Math.floor(Math.random() * Object.keys(lessonData).length);
+        currentWord = lessonData[index]["word"];
+        currentTranslation = lessonData[index]["translation"];
+        currentCategories = [];
+        currentCategoryDescs = [];
 
-        for (let i = 0; i < current_lesson_conf.categories.length; i++) {
-            let category_index = Math.floor(Math.random() * current_lesson_conf.category_data[i].length,);
-            current_categories.push(current_lesson_conf.category_data[i][category_index],);
-            current_category_desc.push(current_lesson_conf.category_desc[current_lesson_conf.category_data[i][category_index]],);
+        for (let i = 0; i < currentLessonConfig.categories.length; i++) {
+            let category_index = Math.floor(Math.random() * currentLessonConfig.category_data[i].length,);
+            currentCategories.push(currentLessonConfig.category_data[i][category_index],);
+            currentCategoryDescs.push(currentLessonConfig.category_desc[currentLessonConfig.category_data[i][category_index]],);
         }
 
-        let solution_entry = lesson_data[index]["data"];
-        for (let i = 0; i < current_categories.length; i++) {
-            solution_entry = solution_entry[current_categories[i]];
+        let solutionEntry = lessonData[index]["data"];
+        for (let i = 0; i < currentCategories.length; i++) {
+            solutionEntry = solutionEntry[currentCategories[i]];
         }
-        solution_entry = String(solution_entry);
+        solutionEntry = String(solutionEntry);
 
-        if (solution_entry.indexOf(",") != -1) {
-            current_solution = String(solution_entry).split(",");
+        if (solutionEntry.indexOf(",") != -1) {
+            currentSolution = String(solutionEntry).split(",");
         } else {
-            current_solution = [solution_entry];
+            currentSolution = [solutionEntry];
         }
     }
 
     // Check if the answer is correct
-    function checkAnswer() {
-        if (current_solution.includes(current_answer)) {
-            if (answer_state == "unanswered") {
-                total_answer_count += 1;
-                correct_answer_count += 1;
+    function checkAnswer(e) {
+        e.preventDefault();
+        if (currentSolution.includes(currentAnswer)) {
+            if (answerState == "unanswered") {
+                totalAnswerCount += 1;
+                correctAnswerCount += 1;
             }
-            answer_state = "correct";
+            answerState = "correct";
             tick();
             nextQuestionButton.focus();
         } else {
             answerInputField.focus();
-            if (answer_state == "unanswered") {
-                total_answer_count += 1;
+            if (answerState == "unanswered") {
+                totalAnswerCount += 1;
             }
-            answer_state = "wrong";
+            answerState = "wrong";
         }
     }
 </script>
@@ -123,12 +93,12 @@
     <h1 class="page-title">Noun Declination</h1>
 </div>
 
-<AccuracyDisplay {total_answer_count} {correct_answer_count} />
+<AccuracyDisplay totalAnswerCount={totalAnswerCount} correctAnswerCount={correctAnswerCount} />
 
 <div class="saber-panel-default flashcard center-text">
-    <h1 class="word">{current_word}</h1>
-    <p class="translation">{current_translation}</p>
-    {#each current_category_desc as category_entry}
+    <h1 class="word">{currentWord}</h1>
+    <p class="translation">{currentTranslation}</p>
+    {#each currentCategoryDescs as category_entry}
         <p>{category_entry}</p>
     {/each}
     <form autocomplete="off" onsubmit={checkAnswer}>
@@ -137,7 +107,7 @@
             type="text"
             bind:this={answerInputField}
             id="query"
-            bind:value={current_answer}
+            bind:value={currentAnswer}
             placeholder="Enter your answer"
         />
         <button
@@ -151,22 +121,22 @@
     </form>
 </div>
 
-{#if answer_state == "correct"}
+{#if answerState == "correct"}
     <div class="saber-panel-default saber-border-confirm center-text">
         <h2>Correct!</h2>
-        {#if current_solution.length > 1}
+        {#if currentSolution.length > 1}
             <p>All variants of this word are:</p>
-            <h3>{current_solution}</h3>
+            <h3>{currentSolution}</h3>
         {/if}
         <button class="saber-button-default saber-color-confirm" aria-label="Search" bind:this={nextQuestionButton} onclick={() => nextQuestion()} autofocus>
             <i class="fas fa-arrow-right"></i>
         </button>
     </div>
-{:else if answer_state == "wrong"}
+{:else if answerState == "wrong"}
     <div class="saber-panel-default saber-border-error center-text">
         <h2>Wrong!</h2>
         <p>The right answer would have been:</p>
-        <h3>{current_solution}</h3>
+        <h3>{currentSolution}</h3>
     </div>
 {/if}
 <div class="center-text">
