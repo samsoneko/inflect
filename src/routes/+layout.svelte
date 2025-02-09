@@ -1,12 +1,30 @@
 <script lang="ts">
-    
-    let isLightMode = $state(false);
+    import { onMount } from "svelte";
 
-    // Load the saved theme from localStorage
-    if (typeof window !== 'undefined') {
-        isLightMode = localStorage.getItem('theme') === 'light';
-        document.body.classList.toggle('light-theme', isLightMode);
-    }
+    onMount(() => {
+        let theme = localStorage.getItem('theme');
+        if (theme == "black") {
+            document.body.classList.add('black-theme');
+            document.body.classList.remove('light-theme');
+            document.body.classList.remove('jungle-theme');
+            localStorage.setItem('theme', theme);
+        } else if (theme == "dark") {
+            document.body.classList.remove('light-theme');
+            document.body.classList.remove('black-theme');
+            document.body.classList.remove('jungle-theme');
+            localStorage.setItem('theme', theme);
+        } else if (theme == "light") {
+            document.body.classList.add('light-theme');
+            document.body.classList.remove('black-theme');
+            document.body.classList.remove('jungle-theme');
+            localStorage.setItem('theme', theme);
+        } else if (theme == "jungle") {
+            document.body.classList.add('jungle-theme');
+            document.body.classList.remove('black-theme');
+            document.body.classList.remove('light-theme');
+            localStorage.setItem('theme', theme);
+        }
+    });
 
 </script>
 
