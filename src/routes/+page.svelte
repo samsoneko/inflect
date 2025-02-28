@@ -1,6 +1,8 @@
 <script>
     import CategoryBlock from "$lib/CategoryBlock.svelte";
     import WiktionarySearch from "$lib/WiktionarySearch.svelte";
+
+    let current_tab = "declination";
 </script>
 
 <h1 class="homepage-title">Hyvää Päivää!☀️</h1>
@@ -13,16 +15,32 @@
     </div>
 </div>
 
-<WiktionarySearch/>
+<!-- <WiktionarySearch/> -->
 
 <div class="page-section">
     <h2><i class="fas fa-book"></i> Study</h2>
-    <div class="category-div">
-        <CategoryBlock name={"Nouns"} color={"var(--blue-color)"} lesson_path="study/textinput?lang=fi&lesson=noun-declination" settings_path="study/textinput/settings?lang=fi&lesson=noun-declination" description={"Practise the declination of nouns"}/>
-        <CategoryBlock name={"Verbs"} color={"var(--red-color)"} lesson_path="study/textinput?lang=fi&lesson=verb-conjugation" settings_path="study/textinput/settings?lang=fi&lesson=verb-conjugation" description={"Practise the conjugation of verbs"}/>
-        <CategoryBlock name={"Pronouns"} color={"var(--green-color)"} lesson_path="study/textinput?lang=fi&lesson=pronoun-declination" settings_path="study/textinput/settings?lang=fi&lesson=pronoun-declination" description={"Practise the declination of pronouns"}/>
-        <CategoryBlock name={"Adjectives"} color={"var(--purple-color)"} lesson_path="study/textinput?lang=fi&lesson=adjective-declination" settings_path="study/textinput/settings?lang=fi&lesson=adjective-declination" description={"Practise the declination of adjectives"}/>
+    <div class="tab-buttons">
+        <button class={current_tab === "declination" ? "saber-tab-button-default-active" : "saber-tab-button-default"} onclick={() => current_tab = "declination"}>Declination</button>
+        <button class={current_tab === "conjugation" ? "saber-tab-button-default-active" : "saber-tab-button-default"} onclick={() => current_tab = "conjugation"}>Conjugation</button>
+        <button class={current_tab === "other" ? "saber-tab-button-default-active" : "saber-tab-button-default"} onclick={() => current_tab = "other"}>Other</button>
     </div>
+    {#if current_tab == "declination"}
+        <div class="category-div">
+            <CategoryBlock name={"Nouns"} color={"var(--blue-color)"} lesson_path="study/textinput?lang=fi&lesson=noun-declination" settings_path="study/textinput/settings?lang=fi&lesson=noun-declination" description={"Practise the declination of nouns"}/>
+            <CategoryBlock name={"Pronouns"} color={"var(--green-color)"} lesson_path="study/textinput?lang=fi&lesson=pronoun-declination" settings_path="study/textinput/settings?lang=fi&lesson=pronoun-declination" description={"Practise the declination of pronouns"}/>
+            <CategoryBlock name={"Adjectives"} color={"var(--purple-color)"} lesson_path="study/textinput?lang=fi&lesson=adjective-declination" settings_path="study/textinput/settings?lang=fi&lesson=adjective-declination" description={"Practise the declination of adjectives"}/>
+            <CategoryBlock name={"Gradation⌛"} color={"var(--inactive-color)"} lesson_path="" settings_path="" description={"Practise adjective gradation"}/>
+        </div>
+    {:else if current_tab == "conjugation"}
+        <div class="category-div">
+            <CategoryBlock name={"Verbs"} color={"var(--red-color)"} lesson_path="study/textinput?lang=fi&lesson=verb-conjugation" settings_path="study/textinput/settings?lang=fi&lesson=verb-conjugation" description={"Practise the conjugation of verbs"}/>
+        </div>
+    {:else if current_tab == "other"}
+        <div class="category-div">
+            <CategoryBlock name={"Time⌛"} color={"var(--inactive-color)"} lesson_path="" settings_path="" description={"Practise temporal expressions"}/>
+            <CategoryBlock name={"Counters⌛"} color={"var(--inactive-color)"} lesson_path="" settings_path="" description={"Practise counting"}/>
+        </div>
+    {/if}
 </div>
 
 <style>
@@ -32,6 +50,15 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 10px;
         row-gap: 10px;
+    }
+
+    .tab-buttons {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+        margin-bottom: 10px;
     }
 
     .homepage-title {

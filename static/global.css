@@ -1,6 +1,7 @@
 :root {
     --layer-0: #181920;
     --layer-1: #24252b;
+    --layer-1-select: #8c97b8;
 
     --border-radius: 16px;
     --border: none;
@@ -20,11 +21,13 @@
     --yellow-color: #e4c542;
     --green-color: #66cdbe;
     --blue-color: #5c8bd7;
+    --inactive-color: gray;
 }
 
 .light-theme {
     --layer-0: #e5e7f6;
     --layer-1: white;
+    --layer-1-select: #8c97b8;
 
     --border-radius: 16px;
     --border: none;
@@ -48,6 +51,7 @@
 .black-theme {
     --layer-0: black;
     --layer-1: #181920;
+    --layer-1-select: #69769b;
 
     --border-radius: 16px;
     --border: none;
@@ -72,6 +76,7 @@
 .jungle-theme {
     --layer-0: #0a130b;
     --layer-1: #112213;
+    --layer-1-select: #8cb89b;
 
     --border-radius: 16px;
     --border: none;
@@ -95,7 +100,7 @@
 
 body {
     font-family: "Arial", sans-serif;
-    background-color: black;
+    background-color: rgb(66, 66, 66);
     color: var(--text-color);
     display: flex;
     justify-content: center;
@@ -184,6 +189,28 @@ h2 {
     color: var(--text-color);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
+}
+
+.saber-tab-button-default {
+    padding: 10px;
+    border: var(--border);
+    background-color: var(--layer-1);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+    border-radius: calc(var(--border-radius) - 4px);
+}
+
+.saber-tab-button-default:hover, .saber-tab-button-default:active {
+    background-color: var(--layer-1-select);
+}
+
+.saber-tab-button-default-active {
+    padding: 10px;
+    border: 2px solid var(--layer-1-select);
+    background-color: var(--layer-1);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+    border-radius: calc(var(--border-radius) - 4px);
 }
 
 .saber-input-default {

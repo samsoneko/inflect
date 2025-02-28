@@ -13,9 +13,9 @@
 
 <style>
     .category-panel {
-        padding: 12px;
+        padding: 10px;
         box-sizing: border-box;
-        height: 120px;
+        height: 116px;
         background-color: var(--category-color);
         border-radius: var(--border-radius);
         box-shadow: var(--box-shadow);
@@ -41,7 +41,7 @@
     .category-button {
         padding: 6px;
         font-size: 1em;
-        border-radius: 12px;
+        border-radius: 8px;
         color: white;
         background-color: rgba(0, 0, 0, 0.2);
     }
@@ -49,6 +49,6 @@
     .category-button-wrapper {
         position: absolute;
         bottom: 0;
-        margin-bottom: 18px;
+        margin-bottom: 16px;
     }
 </style>
