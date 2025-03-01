@@ -2,4 +2,8 @@
     import WiktionarySearch from "$lib/WiktionarySearch.svelte";
 </script>
 
-<WiktionarySearch/>
+<h1>Search</h1>
+
+<div class="page-section">
+    <WiktionarySearch/>
+</div>

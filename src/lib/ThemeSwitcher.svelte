@@ -17,20 +17,20 @@
         if (theme == "black") {
             document.body.classList.add('black-theme');
             document.body.classList.remove('light-theme');
-            document.body.classList.remove('jungle-theme');
+            document.body.classList.remove('saber-theme');
             localStorage.setItem('theme', theme);
         } else if (theme == "dark") {
             document.body.classList.remove('light-theme');
             document.body.classList.remove('black-theme');
-            document.body.classList.remove('jungle-theme');
+            document.body.classList.remove('saber-theme');
             localStorage.setItem('theme', theme);
         } else if (theme == "light") {
             document.body.classList.add('light-theme');
             document.body.classList.remove('black-theme');
-            document.body.classList.remove('jungle-theme');
+            document.body.classList.remove('saber-theme');
             localStorage.setItem('theme', theme);
-        } else if (theme == "jungle") {
-            document.body.classList.add('jungle-theme');
+        } else if (theme == "saber") {
+            document.body.classList.add('saber-theme');
             document.body.classList.remove('black-theme');
             document.body.classList.remove('light-theme');
             localStorage.setItem('theme', theme);
@@ -39,26 +39,39 @@
     }
 </script>
 
+<div class="theme-selector">
+    <button class={currentTheme === "black" ? "theme-button-active" : "theme-button"} onclick={() => setTheme("black")}>Black</button>
+    <button class={currentTheme === "dark" ? "theme-button-active" : "theme-button"} onclick={() => setTheme("dark")}>Dark</button>
+    <button class={currentTheme === "light" ? "theme-button-active" : "theme-button"} onclick={() => setTheme("light")}>Light</button>
+    <button class={currentTheme === "saber" ? "theme-button-active" : "theme-button"} onclick={() => setTheme("saber")}>Saber</button>  
+</div>
 
-<h3>🎨Theme</h3>
-
-<form class="theme-selector">
-    <input type="radio" id="black" name="theme" value="black" checked={currentTheme=="black"} onclick={() => setTheme("black")}/>
-    <label for="black">Black</label>
-
-    <input type="radio" id="dark" name="theme" value="dark" checked={currentTheme=="dark"} onclick={() => setTheme("dark")}/>
-    <label for="dark">Dark</label>
-
-    <input type="radio" id="light" name="theme" value="light" checked={currentTheme=="light"} onclick={() => setTheme("light")}/>
-    <label for="light">Light</label>
-
-    <input type="radio" id="jungle" name="theme" value="jungle" checked={currentTheme=="jungle"} onclick={() => setTheme("jungle")}/>
-    <label for="jungle">Jungle</label>
-</form>
-
-<hr>
 
 <style>
     .theme-selector {
+        display: flex;
+        justify-content: space-around;
+        gap: 8px;
     }
+
+    .theme-button {
+        text-align: center;
+        border: var(--border);
+        background-color: var(--layer-2);
+        width: 100%;
+        padding: 8px;
+        border-radius: calc(var(--border-radius) - 4px);
+        color: var(--text-color);
+    }
+
+    .theme-button-active {
+        text-align: center;
+        border: var(--border);
+        background-color: var(--layer-1-active);
+        width: 100%;
+        padding: 8px;
+        border-radius: calc(var(--border-radius) - 4px);
+        color: var(--text-color);
+    }
+
 </style>

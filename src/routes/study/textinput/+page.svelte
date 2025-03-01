@@ -1,8 +1,10 @@
 <script>
     import { onMount, tick } from "svelte";
     import AccuracyDisplay from "$lib/AccuracyDisplay.svelte";
+    import defaultAppConfig from "$lib/app_config.json";
 
     let { data } = $props();
+    let appConfig = $state(defaultAppConfig);
 
     let lessonData = data.lesson;
     let currentLessonConfig = $state(data.conf);
@@ -27,6 +29,7 @@
     onMount(() => {
         loadLessonConfig();
         nextQuestion();
+        appConfig = JSON.parse(localStorage.getItem("appConfig")) || defaultAppConfig;
     });
 
     // Load the data for the current lesson based on the url parameters
@@ -78,6 +81,7 @@
             }
             answerState = "correct";
             tick();
+            answerInputField.blur();
             nextQuestionButton.focus();
         } else {
             answerInputField.focus();
@@ -93,7 +97,9 @@
     <h1 class="page-title">Noun Declination</h1>
 </div>
 
-<AccuracyDisplay totalAnswerCount={totalAnswerCount} correctAnswerCount={correctAnswerCount} />
+{#if appConfig["showAccuracy"] == true}
+    <AccuracyDisplay totalAnswerCount={totalAnswerCount} correctAnswerCount={correctAnswerCount} />
+{/if}
 
 <div class="saber-panel-default flashcard center-text">
     <h1 class="word">{currentWord}</h1>
@@ -139,13 +145,15 @@
         <h3>{currentSolution}</h3>
     </div>
 {/if}
-<div class="center-text">
-    <button class="saber-button-default saber-color-warn" aria-label="Search" onclick={() => nextQuestion()}>
-        Skip Question
-        <i class="fas fa-forward"></i>
-    </button>
-</div>
 
+{#if appConfig["showSkipButton"] == true}
+    <div class="center-text">
+        <button class="saber-button-default saber-color-warn" aria-label="Search" onclick={() => nextQuestion()}>
+            Skip Question
+            <i class="fas fa-forward"></i>
+        </button>
+    </div>
+{/if}
 
 <style>
     .flashcard {

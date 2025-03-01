@@ -1,7 +1,9 @@
 :root {
     --layer-0: #181920;
     --layer-1: #24252b;
-    --layer-1-select: #8c97b8;
+    --layer-1-hover: #303136;
+    --layer-1-active: #47484c;
+    --layer-2: #34353a;
 
     --border-radius: 16px;
     --border: none;
@@ -9,7 +11,7 @@
     --box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.15);
 
     --text-color: white;
-    --subtle-text-color: #7d7f85;
+    --subtle-text-color: #b3b3b3;
     --icon-color: white;
     
     --primary-color: #bb86fc;
@@ -27,7 +29,9 @@
 .light-theme {
     --layer-0: #e5e7f6;
     --layer-1: white;
-    --layer-1-select: #8c97b8;
+    --layer-1-hover: #ccd2e6;
+    --layer-1-active: #adb6d1;
+    --layer-2: #ececec;
 
     --border-radius: 16px;
     --border: none;
@@ -35,6 +39,7 @@
     --box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.25);
 
     --text-color: black;
+    --subtle-text-color: #494949;
     --icon-color: black;
 
     --primary-color: #6200ee;
@@ -51,7 +56,9 @@
 .black-theme {
     --layer-0: black;
     --layer-1: #181920;
-    --layer-1-select: #69769b;
+    --layer-1-hover: #26272c;
+    --layer-1-active: #36373d;
+    --layer-2: #23242c;
 
     --border-radius: 16px;
     --border: none;
@@ -59,7 +66,6 @@
     --box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.15);
 
     --text-color: white;
-    --subtle-text-color: #7d7f85;
     --icon-color: white;
     
     --primary-color: #bb86fc;
@@ -73,18 +79,19 @@
     --blue-color: #5c8bd7;
 }
 
-.jungle-theme {
-    --layer-0: #0a130b;
-    --layer-1: #112213;
-    --layer-1-select: #8cb89b;
+.saber-theme {
+    --layer-0: black;
+    --layer-1: #181920;
+    --layer-1-hover: #26272c;
+    --layer-1-active: #36373d;
+    --layer-2: #23242c;
 
     --border-radius: 16px;
-    --border: none;
+    --border: 1px solid #323338;
     --primary-border: none;
     --box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.15);
 
     --text-color: white;
-    --subtle-text-color: #7d7f85;
     --icon-color: white;
     
     --primary-color: #bb86fc;
@@ -114,6 +121,10 @@ a {
 
 button, form {
     display: inline;
+}
+
+hr {
+    border: 1px solid var(--subtle-text-color);
 }
 
 /*CSS for the general layout of the app*/
@@ -201,13 +212,13 @@ h2 {
 }
 
 .saber-tab-button-default:hover, .saber-tab-button-default:active {
-    background-color: var(--layer-1-select);
+    background-color: var(--layer-1-hover);
 }
 
 .saber-tab-button-default-active {
     padding: 10px;
-    border: 2px solid var(--layer-1-select);
-    background-color: var(--layer-1);
+    border: var(--border);
+    background-color: var(--layer-1-active);
     color: var(--text-color);
     box-shadow: var(--box-shadow);
     border-radius: calc(var(--border-radius) - 4px);
@@ -220,6 +231,11 @@ h2 {
     color: var(--text-color);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
+}
+
+.saber-color-default {
+    background-color: var(--layer-1);
+    color: var(--text-color);
 }
 
 .saber-color-confirm {
@@ -243,19 +259,19 @@ h2 {
 }
 
 .saber-border-confirm {
-    border: 4px solid var(--green-color);
+    border: 2px solid var(--green-color);
 }
 
 .saber-border-warn {
-    border: 4px solid var(--yellow-color);
+    border: 2px solid var(--yellow-color);
 }
 
 .saber-border-error {
-    border: 4px solid var(--red-color);
+    border: 2px solid var(--red-color);
 }
 
 .saber-border-info {
-    border: 4px solid var(--blue-color);
+    border: 2px solid var(--blue-color);
 }
 
 .center-text {
@@ -285,8 +301,8 @@ h2 {
     color: var(--subtle-text-color);
 }
 
-.button-image {
-    height: 1.5rem;
+.image-button {
+    height: 1rem;
 }
 
 .image-button {

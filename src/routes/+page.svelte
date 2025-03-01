@@ -29,7 +29,6 @@
             <CategoryBlock name={"Nouns"} color={"var(--blue-color)"} lesson_path="study/textinput?lang=fi&lesson=noun-declination" settings_path="study/textinput/settings?lang=fi&lesson=noun-declination" description={"Practise the declination of nouns"}/>
             <CategoryBlock name={"Pronouns"} color={"var(--green-color)"} lesson_path="study/textinput?lang=fi&lesson=pronoun-declination" settings_path="study/textinput/settings?lang=fi&lesson=pronoun-declination" description={"Practise the declination of pronouns"}/>
             <CategoryBlock name={"Adjectives"} color={"var(--purple-color)"} lesson_path="study/textinput?lang=fi&lesson=adjective-declination" settings_path="study/textinput/settings?lang=fi&lesson=adjective-declination" description={"Practise the declination of adjectives"}/>
-            <CategoryBlock name={"Gradation⌛"} color={"var(--inactive-color)"} lesson_path="" settings_path="" description={"Practise adjective gradation"}/>
         </div>
     {:else if current_tab == "conjugation"}
         <div class="category-div">
@@ -39,6 +38,7 @@
         <div class="category-div">
             <CategoryBlock name={"Time⌛"} color={"var(--inactive-color)"} lesson_path="" settings_path="" description={"Practise temporal expressions"}/>
             <CategoryBlock name={"Counters⌛"} color={"var(--inactive-color)"} lesson_path="" settings_path="" description={"Practise counting"}/>
+            <CategoryBlock name={"Gradation⌛"} color={"var(--inactive-color)"} lesson_path="" settings_path="" description={"Practise adjective gradation"}/>
         </div>
     {/if}
 </div>
