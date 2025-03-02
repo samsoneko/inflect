@@ -60,6 +60,7 @@
         background-color: var(--layer-2);
         width: 100%;
         padding: 8px;
+        box-shadow: var(--box-shadow);
         border-radius: calc(var(--border-radius) - 4px);
         color: var(--text-color);
     }
@@ -70,6 +71,7 @@
         background-color: var(--layer-1-active);
         width: 100%;
         padding: 8px;
+        box-shadow: var(--box-shadow);
         border-radius: calc(var(--border-radius) - 4px);
         color: var(--text-color);
     }
