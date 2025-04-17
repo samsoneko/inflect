@@ -41,9 +41,7 @@
         availableCategoryData = currentLessonConfig.category_data;
         activeCategorySelectors =
             JSON.parse(
-                localStorage.getItem(
-                    currentLessonConfig.lesson_type + "Config",
-                ),
+                localStorage.getItem(currentLessonConfig.lesson_type + "Config",),
             ) || currentLessonConfig.category_data.slice();
     }
 

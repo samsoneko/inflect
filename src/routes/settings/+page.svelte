@@ -7,11 +7,11 @@
     let appConfig = $state(defaultAppConfig);
 
     onMount(() => {
-        appConfig = JSON.parse(localStorage.getItem("appConfig")) || defaultAppConfig;
+        appConfig = JSON.parse(localStorage.getItem("app:config")) || defaultAppConfig;
     });
 
     $effect(() => {
-        localStorage.setItem("appConfig", JSON.stringify(appConfig));
+        localStorage.setItem("app:config", JSON.stringify(appConfig));
     });
 </script>
 
@@ -44,7 +44,7 @@
         <div class="app-logo-div">
             <div class="app-title">
                 <h3><img class="image-button" src="favicon.png" alt="App Logo"> Sabercards</h3>
-                <p>Version 0.7.3</p>
+                <p>Version {PKG.version}</p>
             </div>
             <div class="app-language">
                 <img class="flag" src="/fi.svg" alt="Language"/>

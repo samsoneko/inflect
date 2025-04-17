@@ -9,7 +9,7 @@
     });
 
     function updateCurrentTheme() {
-        let placeholder = localStorage.getItem('theme');
+        let placeholder = localStorage.getItem('app:theme');
         currentTheme = placeholder != null ? placeholder : "dark";
     }
   
@@ -18,22 +18,22 @@
             document.body.classList.add('black-theme');
             document.body.classList.remove('light-theme');
             document.body.classList.remove('saber-theme');
-            localStorage.setItem('theme', theme);
+            localStorage.setItem('app:theme', theme);
         } else if (theme == "dark") {
             document.body.classList.remove('light-theme');
             document.body.classList.remove('black-theme');
             document.body.classList.remove('saber-theme');
-            localStorage.setItem('theme', theme);
+            localStorage.setItem('app:theme', theme);
         } else if (theme == "light") {
             document.body.classList.add('light-theme');
             document.body.classList.remove('black-theme');
             document.body.classList.remove('saber-theme');
-            localStorage.setItem('theme', theme);
+            localStorage.setItem('app:theme', theme);
         } else if (theme == "saber") {
             document.body.classList.add('saber-theme');
             document.body.classList.remove('black-theme');
             document.body.classList.remove('light-theme');
-            localStorage.setItem('theme', theme);
+            localStorage.setItem('app:theme', theme);
         }
         updateCurrentTheme();
     }

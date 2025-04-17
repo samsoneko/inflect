@@ -2,29 +2,53 @@
     import { onMount } from "svelte";
 
     onMount(() => {
-        let theme = localStorage.getItem('theme');
+        let theme = localStorage.getItem('app:theme');
         if (theme == "black") {
             document.body.classList.add('black-theme');
             document.body.classList.remove('light-theme');
             document.body.classList.remove('saber-theme');
-            localStorage.setItem('theme', theme);
+            localStorage.setItem('app:theme', theme);
         } else if (theme == "dark") {
             document.body.classList.remove('light-theme');
             document.body.classList.remove('black-theme');
             document.body.classList.remove('saber-theme');
-            localStorage.setItem('theme', theme);
+            localStorage.setItem('app:theme', theme);
         } else if (theme == "light") {
             document.body.classList.add('light-theme');
             document.body.classList.remove('black-theme');
             document.body.classList.remove('saber-theme');
-            localStorage.setItem('theme', theme);
+            localStorage.setItem('app:theme', theme);
         } else if (theme == "saber") {
             document.body.classList.add('saber-theme');
             document.body.classList.remove('black-theme');
             document.body.classList.remove('light-theme');
-            localStorage.setItem('theme', theme);
+            localStorage.setItem('app:theme', theme);
         }
+
+        checkVersion();
     });
+
+    let showUpdateNotice = false;
+    let appServerVersion = PKG.version;
+    let appLocalVersion = "";
+
+    function checkVersion() {
+        appLocalVersion = localStorage.getItem('app:localVersion');
+        if (appLocalVersion != null) {
+            if (appLocalVersion != appServerVersion) {
+                showUpdateNotice = true;
+            }
+        }
+        else {
+            showUpdateNotice = true;
+        }
+    }
+
+    function purgeLocalStorage() {
+        localStorage.clear();
+        localStorage.setItem('app:localVersion', appServerVersion);
+        showUpdateNotice = false;
+    }
 
 </script>
 
@@ -33,6 +57,27 @@
         <slot />
     </div>
 
+    {#if showUpdateNotice}
+    <div class="update-overlay">
+        <div class="update-info-container">
+            <h1>🎉Update Notice🎉</h1>
+            <p>A new version of the app has been released: Version {appServerVersion}</p>
+            <hr>
+            <p>For the full changelog and further information, please visit:</p>
+            <a href="https://github.com/samsoneko/sabercards">https://github.com/samsoneko/sabercards</a>
+            <hr>
+            <p>Please notice that your local settings may need to be reset due to changes in the background.</p>
+            <div class="center-text">
+                <button class="saber-button-default saber-color-confirm" aria-label="Search" onclick={() => purgeLocalStorage()}>
+                    I got it, continue to the App
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    {/if}
+
+    {#if !showUpdateNotice}
     <nav class="navbar">
         <button class="icon-button" aria-label="Home">
             <a class="navbar-icon" href="/" aria-label="Home"><i class="fas fa-home"></i></a>
@@ -51,6 +96,7 @@
             <!-- <p class="icon-button-label">Settings</p> -->
         </button>
     </nav>
+    {/if}
 </div>
 
 <style>
@@ -58,5 +104,27 @@
         color: var(--color);
         width: 100%;
         height: 100%;
+    }
+
+    .update-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .update-info-container {
+        padding: 16px;
+        margin: 20px;
+        height: max-content;
+        border: var(--border);
+        background-color: var(--layer-1);
+        color: var(--text-color);
+        box-shadow: var(--box-shadow);
+        border-radius: var(--border-radius);
     }
 </style>
