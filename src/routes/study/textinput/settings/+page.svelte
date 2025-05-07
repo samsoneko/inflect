@@ -1,59 +1,183 @@
-<script>
+<script lang="ts">
     import { onMount, tick } from "svelte";
     import { page } from "$app/stores";
     import lessonConfig from "$lib/fi/conf/textinput/lesson_conf.json";
+    import InflectionTree from "$lib/InflectionTree.svelte";
 
-    let languageParam = $state("");
-    let lessonParam = $state("");
+    let { data } = $props();
+    let lessonData = data.lesson;
 
-    let currentLessonConfig = $state(lessonConfig["noun-declination"]); // only default value
-    let availableCategories = $state();
-    let availableCategoryData = $state();
-
-    let activeCategorySelectors = $state([[]]);
+    let currentSelection = $state(new Set<string>());
     let isViableConfiguration = $state(true);
 
     $effect(() => {
-        const searchParams = $page.url.searchParams;
-        if (languageParam == "" && lessonParam == "") {
-            languageParam = searchParams.get("lang");
-            lessonParam = searchParams.get("lesson");
-        }
-    });
-
-    $effect(() => {
         isViableConfiguration = true;
-        for (let i = 0; i < activeCategorySelectors.length; i++) {
-            if (activeCategorySelectors[i].length < 1) {
-                isViableConfiguration = false;
-            }
+        if (currentSelection.size < 1) {
+            isViableConfiguration = false;
         }
     });
 
     onMount(() => {
         // Your function to execute on page load
-        currentLessonConfig = lessonConfig[lessonParam];
-        loadActiveCategories();
+        buildMaps(lessonData[0]["inflection"][data.conf.sub_object]);
+        loadConfig();
     });
 
-    function loadActiveCategories() {
-        availableCategories = currentLessonConfig.categories;
-        availableCategoryData = currentLessonConfig.category_data;
-        activeCategorySelectors = JSON.parse(localStorage.getItem(currentLessonConfig.lesson_type + "Config",),) || currentLessonConfig.category_data.slice();
+    function collectAllPaths(node: object, path: string[] = []): string[] {
+        let paths: string[] = [];
+
+        for (const [key, value] of Object.entries(node)) {
+            const fullPath = [...path, key];
+            const fullPathStr = fullPath.join('.');
+
+            paths.push(fullPathStr); // Every key, regardless of children, is selectable
+
+            // Recurse only into non-array objects with keys
+            if (typeof value === 'object' && !Array.isArray(value) && Object.keys(value).length > 0) {
+                paths = paths.concat(collectAllPaths(value, fullPath));
+            }
+        }
+
+        return paths;
+    }
+
+    let parentMap = new Map<string, string | undefined>();
+    let childrenMap = new Map<string, string[]>();
+
+    function buildMaps(node: object, path: string[] = [], parentPath?: string) {
+        for (const [key, value] of Object.entries(node)) {
+            const fullPath = [...path, key];
+            const fullPathStr = fullPath.join('.');
+
+            // Track parent
+            parentMap.set(fullPathStr, parentPath);
+
+            // Track children
+            if (!childrenMap.has(parentPath ?? '')) {
+                childrenMap.set(parentPath ?? '', []);
+            }
+            childrenMap.get(parentPath ?? '')!.push(fullPathStr);
+
+            // Recurse if object (not array)
+            if (typeof value === 'object' && !Array.isArray(value) && Object.keys(value).length > 0) {
+                buildMaps(value, fullPath, fullPathStr);
+            }
+        }
+    }
+
+    function loadConfig() {
+        let storedSelection = localStorage.getItem(data.conf.lesson_type + "Config",);
+        if (storedSelection) {
+            try {
+                const selectedLeaves: string[] = JSON.parse(storedSelection);
+                currentSelection = new Set();
+
+                // Select each leaf (auto-select parents too)
+                for (const leaf of selectedLeaves) {
+                    let current = leaf;
+                    while (current !== undefined) {
+                        currentSelection.add(current);
+                        current = parentMap.get(current);
+                    }
+                }
+                currentSelection = new Set(currentSelection);
+            } catch (e) {
+                console.error('Failed to load config:', e);
+                loadDefaultConfig();
+            }
+        }
+
+        if(currentSelection.size == 0) {
+            loadDefaultConfig();
+        }
+    }
+
+    function loadDefaultConfig() {
+        const allPaths = collectAllPaths(lessonData[0]["inflection"][data.conf.sub_object]);
+        currentSelection = new Set(allPaths);
+    }
+
+    function toggle(path: string, isChecked: boolean) {
+        if (isChecked) {
+            // Check this node
+            currentSelection.add(path);
+
+            // Check all ancestors
+            let current = parentMap.get(path);
+            while (current !== undefined) {
+                currentSelection.add(current);
+                current = parentMap.get(current);
+            }
+
+            // Also check all children (optional, but you said you'd like that)
+            const toCheck = [path];
+            while (toCheck.length > 0) {
+                const current = toCheck.pop();
+                if (current) {
+                    currentSelection.add(current);
+                    const children = childrenMap.get(current) || [];
+                    toCheck.push(...children);
+                }
+            }
+
+        } else {
+            // Uncheck this node
+            currentSelection.delete(path);
+
+            // Uncheck all descendants
+            const toUncheck = [path];
+            while (toUncheck.length > 0) {
+                const current = toUncheck.pop();
+                if (current) {
+                    currentSelection.delete(current);
+                    const children = childrenMap.get(current) || [];
+                    toUncheck.push(...children);
+                }
+            }
+
+            // After unchecking → recursively check if parent(s) should be unchecked
+            let current = parentMap.get(path);
+            while (current !== undefined) {
+                const siblings = childrenMap.get(current) || [];
+
+                // If none of the siblings (including this node) are selected → uncheck parent
+                const anySiblingSelected = siblings.some(child => currentSelection.has(child));
+
+                if (!anySiblingSelected) {
+                    currentSelection.delete(current);
+                    current = parentMap.get(current);
+                } else {
+                    // Stop climbing — parent stays checked
+                    break;
+                }
+            }
+        }
+
+        currentSelection = new Set(currentSelection);
     }
 
     function saveConfig() {
-        localStorage.setItem(currentLessonConfig.lesson_type + "Config", JSON.stringify(activeCategorySelectors),);
+        const selectedLeaves = Array.from(currentSelection).filter(path => {
+            const children = childrenMap.get(path);
+            return !children || children.length === 0; // No children = leaf
+        });
+
+        localStorage.setItem(data.conf.lesson_type + "Config", JSON.stringify(selectedLeaves),);
         window.location.href = "/";
     }
 
-    function resetSelection() {
-        activeCategorySelectors = currentLessonConfig.category_data.slice();
+    function deselectAll() {
+        currentSelection = new Set();
+    }
+
+    function selectAll() {
+        const allPaths = collectAllPaths(lessonData[0]["inflection"][data.conf.sub_object]);
+        currentSelection = new Set(allPaths);
     }
 </script>
 
 <h1 class="page-title">
-    {currentLessonConfig.lesson_name} <i class="fas fa-cog"></i>
+    {data.conf.lesson_name} <i class="fas fa-cog"></i>
 </h1>
 
 <div class="saber-panel-default">
@@ -62,21 +186,12 @@
     viable configuration.
 </div>
 
+{#each currentSelection as entry}
+    {entry}
+{/each}
+
 <div class="saber-panel-default">
-    {#each availableCategories as category, i}
-        <h2 class="section-title">{category}</h2>
-        {#each availableCategoryData[i] as category_data}
-            <div>
-                <input
-                    type="checkbox"
-                    name={category_data}
-                    value={category_data}
-                    bind:group={activeCategorySelectors[i]}
-                />
-                <label for={category_data}>{category_data}</label>
-            </div>
-        {/each}
-    {/each}
+    <InflectionTree node={lessonData[0]["inflection"][data.conf.sub_object]} {currentSelection} {toggle}/>
 </div>
 
 <div class="center-text bottom-buttons">
@@ -88,12 +203,11 @@
         Select at least one entry for each category.
     {/if}
 
-    <button
-        class="saber-button-default saber-color-error"
-        aria-label="Reset Selection"
-        onclick={resetSelection}
-    >
-        <i class="fas fa-rotate-left"></i> Reset Selection
+    <button class="saber-button-default saber-color-error" aria-label="Deselect All" onclick={deselectAll}>
+        <i class="fas fa-rotate-left"></i> Deselect All
+    </button>
+    <button class="saber-button-default saber-color-info" aria-label="Select All" onclick={selectAll}>
+        <i class="fas fa-rotate-left"></i> Select All
     </button>
 </div>
 
