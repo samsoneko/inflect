@@ -1,0 +1,191 @@
+{
+    "0": {
+        "word": "minä",
+        "translation": "I",
+        "data": {
+            "nominative": "minä",
+            "genitive": "minun",
+            "partitive": "minua",
+            "inessive": "minussa",
+            "elative": "minusta",
+            "illative": "minuun",
+            "adessive": "minulla",
+            "ablative": "minulta",
+            "allative": "minulle"
+        }
+    },
+    "1": {
+        "word": "sinä",
+        "translation": "you (singular)",
+        "data": {
+            "nominative": "sinä",
+            "genitive": "sinun",
+            "partitive": "sinua",
+            "inessive": "sinussa",
+            "elative": "sinusta",
+            "illative": "sinuun",
+            "adessive": "sinulla",
+            "ablative": "sinulta",
+            "allative": "sinulle"
+        }
+    },
+    "2": {
+        "word": "hän",
+        "translation": "he/she",
+        "data": {
+            "nominative": "hän",
+            "genitive": "hänen",
+            "partitive": "häntä",
+            "inessive": "hänessä",
+            "elative": "hänestä",
+            "illative": "häneen",
+            "adessive": "hänellä",
+            "ablative": "häneltä",
+            "allative": "hänelle"
+        }
+    },
+    "3": {
+        "word": "me",
+        "translation": "we",
+        "data": {
+            "nominative": "me",
+            "genitive": "meidän",
+            "partitive": "meitä",
+            "inessive": "meissä",
+            "elative": "meistä",
+            "illative": "meihin",
+            "adessive": "meillä",
+            "ablative": "meiltä",
+            "allative": "meille"
+        }
+    },
+    "4": {
+        "word": "te",
+        "translation": "you (plural)",
+        "data": {
+            "nominative": "te",
+            "genitive": "teidän",
+            "partitive": "teitä",
+            "inessive": "teissä",
+            "elative": "teistä",
+            "illative": "teihin",
+            "adessive": "teillä",
+            "ablative": "teiltä",
+            "allative": "teille"
+        }
+    },
+    "5": {
+        "word": "he",
+        "translation": "they",
+        "data": {
+            "nominative": "he",
+            "genitive": "heidän",
+            "partitive": "heitä",
+            "inessive": "heissä",
+            "elative": "heistä",
+            "illative": "heihin",
+            "adessive": "heillä",
+            "ablative": "heiltä",
+            "allative": "heille"
+        }
+    },
+    "6": {
+        "word": "tämä",
+        "translation": "this",
+        "data": {
+            "nominative": "tämä",
+            "genitive": "tämän",
+            "partitive": "tätä",
+            "inessive": "tässä",
+            "elative": "tästä",
+            "illative": "tähän",
+            "adessive": "tällä",
+            "ablative": "tältä",
+            "allative": "tälle"
+        }
+    },
+    "7": {
+        "word": "tuo",
+        "translation": "that",
+        "data": {
+            "nominative": "tuo",
+            "genitive": "tuon",
+            "partitive": "tuota",
+            "inessive": "tuossa",
+            "elative": "tuosta",
+            "illative": "tuohon",
+            "adessive": "tuolla",
+            "ablative": "tuolta",
+            "allative": "tuolle"
+        }
+    },
+    "8": {
+        "word": "se",
+        "translation": "it",
+        "data": {
+            "nominative": "se",
+            "genitive": "sen",
+            "partitive": "sitä",
+            "inessive": "siinä",
+            "elative": "siitä",
+            "illative": "siihen",
+            "adessive": "sillä",
+            "ablative": "siltä",
+            "allative": "sille"
+        }
+    },
+    "9": {
+        "word": "nämä",
+        "translation": "these",
+        "data": {
+            "nominative": "nämä",
+            "genitive": [
+                "näiden",
+                "näitten"
+            ],
+            "partitive": "näitä",
+            "inessive": "näissä",
+            "elative": "näistä",
+            "illative": "näihin",
+            "adessive": "näillä",
+            "ablative": "näiltä",
+            "allative": "näille"
+        }
+    },
+    "10": {
+        "word": "nuo",
+        "translation": "those",
+        "data": {
+            "nominative": "nuo",
+            "genitive": [
+                "noiden",
+                "noitten"
+            ],
+            "partitive": "noita",
+            "inessive": "noissa",
+            "elative": "noista",
+            "illative": "noihin",
+            "adessive": "noilla",
+            "ablative": "noilta",
+            "allative": "noille"
+        }
+    },
+    "11": {
+        "word": "ne",
+        "translation": "they",
+        "data": {
+            "nominative": "ne",
+            "genitive": [
+                "niiden",
+                "niitten"
+            ],
+            "partitive": "niitä",
+            "inessive": "niissä",
+            "elative": "niistä",
+            "illative": "niihin",
+            "adessive": "niillä",
+            "ablative": "niiltä",
+            "allative": "niille"
+        }
+    }
+}

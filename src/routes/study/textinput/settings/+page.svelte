@@ -1,12 +1,12 @@
 <script>
     import { onMount, tick } from "svelte";
     import { page } from "$app/stores";
-    import lessonConfig from "$lib/textinput/lesson_conf.json";
+    import lessonConfig from "$lib/fi/conf/textinput/lesson_conf.json";
 
     let languageParam = $state("");
     let lessonParam = $state("");
 
-    let currentLessonConfig = $state(lessonConfig["noun-declination"]);
+    let currentLessonConfig = $state(lessonConfig["noun-declination"]); // only default value
     let availableCategories = $state();
     let availableCategoryData = $state();
 
@@ -39,31 +39,21 @@
     function loadActiveCategories() {
         availableCategories = currentLessonConfig.categories;
         availableCategoryData = currentLessonConfig.category_data;
-        activeCategorySelectors =
-            JSON.parse(
-                localStorage.getItem(currentLessonConfig.lesson_type + "Config",),
-            ) || currentLessonConfig.category_data.slice();
+        activeCategorySelectors = JSON.parse(localStorage.getItem(currentLessonConfig.lesson_type + "Config",),) || currentLessonConfig.category_data.slice();
     }
 
     function saveConfig() {
-        localStorage.setItem(
-            currentLessonConfig.lesson_type + "Config",
-            JSON.stringify(activeCategorySelectors),
-        );
+        localStorage.setItem(currentLessonConfig.lesson_type + "Config", JSON.stringify(activeCategorySelectors),);
         window.location.href = "/";
     }
 
     function resetSelection() {
         activeCategorySelectors = currentLessonConfig.category_data.slice();
     }
-
-    function capitalize(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-    }
 </script>
 
 <h1 class="page-title">
-    {capitalize(currentLessonConfig.lesson_type)} Settings
+    {currentLessonConfig.lesson_name} <i class="fas fa-cog"></i>
 </h1>
 
 <div class="saber-panel-default">
@@ -74,7 +64,7 @@
 
 <div class="saber-panel-default">
     {#each availableCategories as category, i}
-        <h2 class="section-title">{capitalize(category)}</h2>
+        <h2 class="section-title">{category}</h2>
         {#each availableCategoryData[i] as category_data}
             <div>
                 <input

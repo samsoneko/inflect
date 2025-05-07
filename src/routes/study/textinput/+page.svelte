@@ -46,23 +46,24 @@
         answerInputField.focus();
         currentAnswer = "";
         answerState = "unanswered";
-        let index = Math.floor(Math.random() * Object.keys(lessonData).length);
-        currentWord = lessonData[index]["word"];
-        currentTranslation = lessonData[index]["translation"];
+        let index = Math.floor(Math.random() * Object.keys(lessonData).length); // Pick a random index from all available words in the lesson source file
+        currentWord = lessonData[index]["word"]; // Load the word
+        currentTranslation = lessonData[index]["translation"]; // Load the translation
         currentCategories = [];
         currentCategoryDescs = [];
 
-        for (let i = 0; i < currentLessonConfig.categories.length; i++) {
+        for (let i = 0; i < currentLessonConfig.categories.length; i++) { // Load all indexable categories from the lesson config and pick a random index for each one
             let category_index = Math.floor(Math.random() * currentLessonConfig.category_data[i].length,);
             currentCategories.push(currentLessonConfig.category_data[i][category_index],);
             currentCategoryDescs.push(currentLessonConfig.category_desc[currentLessonConfig.category_data[i][category_index]],);
         }
 
-        let solutionEntry = lessonData[index]["data"];
-        for (let i = 0; i < currentCategories.length; i++) {
+        let solutionEntry = lessonData[index]["inflection"][currentLessonConfig.sub_object]; // Load all entries from the word
+
+        for (let i = 0; i < currentCategories.length; i++) { // Step into the entries using the random indices from before
             solutionEntry = solutionEntry[currentCategories[i]];
         }
-        solutionEntry = String(solutionEntry);
+        solutionEntry = String(solutionEntry); // Convert the entry to a string
 
         if (solutionEntry.indexOf(",") != -1) {
             currentSolution = String(solutionEntry).split(",");
@@ -93,9 +94,7 @@
     }
 </script>
 
-<div class="center-text">
-    <h1 class="page-title">Noun Declination</h1>
-</div>
+<h1 class="page-title">{currentLessonConfig.lesson_name}</h1>
 
 {#if appConfig["showAccuracy"] == true}
     <AccuracyDisplay totalAnswerCount={totalAnswerCount} correctAnswerCount={correctAnswerCount} />
@@ -104,26 +103,14 @@
 <div class="saber-panel-default flashcard center-text">
     <h1 class="word">{currentWord}</h1>
     <p class="translation">{currentTranslation}</p>
-    {#each currentCategoryDescs as category_entry}
-        <p>{category_entry}</p>
-    {/each}
+    <div class="category-holder">
+        {#each currentCategoryDescs as category_entry}
+            <p class="category-tag">{category_entry}</p>
+        {/each}
+    </div>
     <form autocomplete="off" onsubmit={checkAnswer}>
-        <input
-            class="saber-input-default answer-input"
-            type="text"
-            bind:this={answerInputField}
-            id="query"
-            bind:value={currentAnswer}
-            placeholder="Enter your answer"
-        />
-        <button
-            class="saber-button-default saber-color-confirm"
-            aria-label="Search"
-            type="submit"
-        >
-            Check
-            <i class="fas fa-check"></i>
-        </button>
+        <input class="saber-input-default answer-input" type="text" bind:this={answerInputField} id="query" bind:value={currentAnswer} placeholder="Enter your answer"/>
+        <button class="saber-button-default saber-color-confirm" aria-label="Search" type="submit">Check<i class="fas fa-check"></i></button>
     </form>
 </div>
 
@@ -162,6 +149,21 @@
 
     .word {
         margin-bottom: 0px;
+    }
+
+    .category-holder {
+        margin-bottom: 30px;
+    }
+
+    .category-tag {
+        background-color: var(--layer-2);
+        width: max-content;
+        display: inline-block;
+        margin: 4px;
+        padding: 8px;
+        border: 1px solid var(--layer-1-active);
+        border-radius: var(--border-radius);
+        /* white-space: nowrap; */
     }
 
     .translation {

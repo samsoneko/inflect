@@ -27,12 +27,14 @@
     {#if current_tab == "declination"}
         <div class="category-div">
             <CategoryBlock name={"Nouns"} color={"var(--blue-color)"} lesson_path="study/textinput?lang=fi&lesson=noun-declination" settings_path="study/textinput/settings?lang=fi&lesson=noun-declination" description={"Practise the declination of nouns"}/>
+            <CategoryBlock name={"Possessives"} color={"var(--blue-color)"} lesson_path="study/textinput?lang=fi&lesson=noun-possessives" settings_path="study/textinput/settings?lang=fi&lesson=noun-possessives" description={"Practise the possessives of nouns"}/>
             <CategoryBlock name={"Pronouns"} color={"var(--green-color)"} lesson_path="study/textinput?lang=fi&lesson=pronoun-declination" settings_path="study/textinput/settings?lang=fi&lesson=pronoun-declination" description={"Practise the declination of pronouns"}/>
             <CategoryBlock name={"Adjectives"} color={"var(--purple-color)"} lesson_path="study/textinput?lang=fi&lesson=adjective-declination" settings_path="study/textinput/settings?lang=fi&lesson=adjective-declination" description={"Practise the declination of adjectives"}/>
         </div>
     {:else if current_tab == "conjugation"}
         <div class="category-div">
             <CategoryBlock name={"Verbs"} color={"var(--red-color)"} lesson_path="study/textinput?lang=fi&lesson=verb-conjugation" settings_path="study/textinput/settings?lang=fi&lesson=verb-conjugation" description={"Practise the conjugation of verbs"}/>
+            <CategoryBlock name={"Conditional"} color={"var(--red-color)"} lesson_path="study/textinput?lang=fi&lesson=verb-conditional" settings_path="study/textinput/settings?lang=fi&lesson=verb-conditional" description={"Practise the conditional of verbs"}/>
         </div>
     {:else if current_tab == "other"}
         <div class="category-div">
