@@ -3,146 +3,41 @@
         "data_file" : "finnish_common_2000_nouns.json",
         "sub_object" : "base form",
         "lesson_name" : "Noun Declination",
-        "lesson_type" : "noun-declination",
-        "category_desc" : {
-            "nominative": "nominative",
-            "partitive": "partitive",
-            "genitive" : "genitive",
-            "illative": "illative (-hVn, -Vh, -seen)",
-            "inessive": "inessive (-ssa, -ssä)",
-            "elative": "elative (-sta, -stä)",
-            "allative": "allative (-lle)",
-            "adessive": "adessive (-lla, -llä)",
-            "ablative": "ablative (-lta, -ltä)",
-            "essive" : "essive",
-            "translative" : "translative",
-            "abessive" : "abessive",
-            "singular": "singular",
-            "plural": "plural"
-        }
+        "lesson_type" : "noun-declination"
     },
     "noun-possessives" : {
         "data_file" : "finnish_common_2000_nouns.json",
         "sub_object" : "possessive forms",
         "lesson_name" : "Noun Possessives",
-        "lesson_type" : "noun-possessives",
-        "category_desc" : {
-            "1st sing.": "1. person singular",
-            "2nd sing.": "2. person singular",
-            "1st plur.": "1. person plural",
-            "2nd plur.": "2. person plural",
-            "3rd": "3. person",
-            "nominative": "nominative",
-            "partitive": "partitive",
-            "genitive" : "genitive",
-            "illative": "illative (-hVn, -Vh, -seen)",
-            "inessive": "inessive (-ssa, -ssä)",
-            "elative": "elative (-sta, -stä)",
-            "allative": "allative (-lle)",
-            "adessive": "adessive (-lla, -llä)",
-            "ablative": "ablative (-lta, -ltä)",
-            "essive" : "essive",
-            "translative" : "translative",
-            "abessive" : "abessive",
-            "singular": "singular",
-            "plural": "plural"
-        }
+        "lesson_type" : "noun-possessives"
     },
     "adjective-declination" : {
         "data_file" : "finnish_common_500_adjectives.json",
         "sub_object" : "base form",
         "lesson_name" : "Adjective Declination",
-        "lesson_type" : "adjective-declination",
-        "category_desc" : {
-            "nominative": "nominative",
-            "partitive": "partitive",
-            "genitive" : "genitive",
-            "illative": "illative (-hVn, -Vh, seen)",
-            "inessive": "inessive (-ssa, -ssä)",
-            "elative": "elative (-sta, -stä)",
-            "allative": "allative (-lle)",
-            "adessive": "adessive (-lla, -llä)",
-            "ablative": "ablative (-lta, -ltä)",
-            "essive" : "essive",
-            "translative" : "translative",
-            "abessive" : "abessive",
-            "singular": "singular",
-            "plural": "plural"
-        }
+        "lesson_type" : "adjective-declination"
     },
     "verb-conjugation" : {
         "data_file" : "finnish_common_500_verbs.json",
         "sub_object" : "indicative",
         "lesson_name" : "Verb Conjugation",
-        "lesson_type" : "verb-conjugation",
-        "category_desc" : {
-            "present": "present",
-            "imperfect": "imperfect",
-            "perfect": "perfect",
-            "pluperfect": "pluperfect",
-            "1st sing.": "1. person singular",
-            "2nd sing.": "2. person singular",
-            "3rd sing.": "3. person singular",
-            "1st plur.": "1. person plural",
-            "2nd plur.": "2. person plural",
-            "3rd plur.": "3. person plural",
-            "passive" : "passive",
-            "positive": "positive",
-            "negative": "negative"
-        }
+        "lesson_type" : "verb-conjugation"
     },
     "verb-conditional" : {
         "data_file" : "finnish_common_500_verbs.json",
         "sub_object" : "conditional",
         "lesson_name" : "Verb Conditional",
-        "lesson_type" : "verb-conditional",
-        "category_desc" : {
-            "present": "present",
-            "imperfect": "imperfect",
-            "1st sing.": "1. person singular",
-            "2nd sing.": "2. person singular",
-            "3rd sing.": "3. person singular",
-            "1st plur.": "1. person plural",
-            "2nd plur.": "2. person plural",
-            "3rd plur.": "3. person plural",
-            "passive" : "passive",
-            "positive": "positive",
-            "negative": "negative"
-        }
+        "lesson_type" : "verb-conditional"
     },
     "verb-infinitives" : {
         "data_file" : "finnish_common_500_verbs.json",
         "sub_object" : "infinitives",
         "lesson_name" : "Verb Infinitives",
-        "lesson_type" : "verb-infinitives",
-        "category_desc" : {
-            "present": "present",
-            "imperfect": "imperfect",
-            "1st sing.": "1. person singular",
-            "2nd sing.": "2. person singular",
-            "3rd sing.": "3. person singular",
-            "1st plur.": "1. person plural",
-            "2nd plur.": "2. person plural",
-            "3rd plur.": "3. person plural",
-            "passive" : "passive",
-            "positive": "positive",
-            "negative": "negative"
-        }
+        "lesson_type" : "verb-infinitives"
     },
     "pronoun-declination" : {
         "data_file" : "pronouns.json",
         "lesson_name" : "Pronoun Declination",
-        "lesson_type" : "pronoun-declination",
-        "category_desc" : {
-            "nominative": "nominative",
-            "partitive": "partitive",
-            "genitive" : "genitive",
-            "illative": "illative (-hVn, -Vh, seen)",
-            "inessive": "inessive (-ssa, -ssä)",
-            "elative": "elative (-sta, -stä)",
-            "allative": "allative (-lle)",
-            "adessive": "adessive (-lla, -llä)",
-            "ablative": "ablative (-lta, -ltä)"
-        }
+        "lesson_type" : "pronoun-declination"
     }
 }

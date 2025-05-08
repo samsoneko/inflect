@@ -118,7 +118,11 @@
     <p class="translation">{currentTranslation}</p>
     <div class="category-holder">
         {#each currentPathCategories as category_entry}
-            <p class="category-tag">{category_entry}</p>
+            {#if data.lessonTranslation.hasOwnProperty(category_entry)}
+                <p class="category-tag">{data.lessonTranslation[category_entry]}</p>
+            {:else}
+                <p class="category-tag">{category_entry}</p>
+            {/if}
         {/each}
     </div>
     <form autocomplete="off" onsubmit={checkAnswer}>
