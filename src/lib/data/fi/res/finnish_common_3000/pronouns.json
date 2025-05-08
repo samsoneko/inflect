@@ -2,7 +2,7 @@
     "0": {
         "word": "minä",
         "translation": "I",
-        "data": {
+        "inflection": {
             "nominative": "minä",
             "genitive": "minun",
             "partitive": "minua",
@@ -17,7 +17,7 @@
     "1": {
         "word": "sinä",
         "translation": "you (singular)",
-        "data": {
+        "inflection": {
             "nominative": "sinä",
             "genitive": "sinun",
             "partitive": "sinua",
@@ -32,7 +32,7 @@
     "2": {
         "word": "hän",
         "translation": "he/she",
-        "data": {
+        "inflection": {
             "nominative": "hän",
             "genitive": "hänen",
             "partitive": "häntä",
@@ -47,7 +47,7 @@
     "3": {
         "word": "me",
         "translation": "we",
-        "data": {
+        "inflection": {
             "nominative": "me",
             "genitive": "meidän",
             "partitive": "meitä",
@@ -62,7 +62,7 @@
     "4": {
         "word": "te",
         "translation": "you (plural)",
-        "data": {
+        "inflection": {
             "nominative": "te",
             "genitive": "teidän",
             "partitive": "teitä",
@@ -77,7 +77,7 @@
     "5": {
         "word": "he",
         "translation": "they",
-        "data": {
+        "inflection": {
             "nominative": "he",
             "genitive": "heidän",
             "partitive": "heitä",
@@ -92,7 +92,7 @@
     "6": {
         "word": "tämä",
         "translation": "this",
-        "data": {
+        "inflection": {
             "nominative": "tämä",
             "genitive": "tämän",
             "partitive": "tätä",
@@ -107,7 +107,7 @@
     "7": {
         "word": "tuo",
         "translation": "that",
-        "data": {
+        "inflection": {
             "nominative": "tuo",
             "genitive": "tuon",
             "partitive": "tuota",
@@ -122,7 +122,7 @@
     "8": {
         "word": "se",
         "translation": "it",
-        "data": {
+        "inflection": {
             "nominative": "se",
             "genitive": "sen",
             "partitive": "sitä",
@@ -137,7 +137,7 @@
     "9": {
         "word": "nämä",
         "translation": "these",
-        "data": {
+        "inflection": {
             "nominative": "nämä",
             "genitive": [
                 "näiden",
@@ -155,7 +155,7 @@
     "10": {
         "word": "nuo",
         "translation": "those",
-        "data": {
+        "inflection": {
             "nominative": "nuo",
             "genitive": [
                 "noiden",
@@ -173,7 +173,7 @@
     "11": {
         "word": "ne",
         "translation": "they",
-        "data": {
+        "inflection": {
             "nominative": "ne",
             "genitive": [
                 "niiden",

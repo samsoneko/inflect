@@ -1,11 +1,12 @@
 <script lang="ts">
     import { onMount, tick } from "svelte";
     import { page } from "$app/stores";
-    import lessonConfig from "$lib/fi/conf/textinput/lesson_conf.json";
+    import lessonConfig from "$lib/data/fi/conf/textinput/lesson_conf.json";
     import InflectionTree from "$lib/InflectionTree.svelte";
 
     let { data } = $props();
-    let lessonData = data.lesson;
+    let lessonData = data.lessonData;
+    let dataHead : object = $state(lessonData[0]["inflection"]);
 
     let currentSelection = $state(new Set<string>());
     let isViableConfiguration = $state(true);
@@ -19,7 +20,12 @@
 
     onMount(() => {
         // Your function to execute on page load
-        buildMaps(lessonData[0]["inflection"][data.conf.sub_object]);
+        if (data.lessonConf.hasOwnProperty("sub_object")) {
+            dataHead = lessonData[0]["inflection"][data.lessonConf.sub_object];
+        } else {
+            dataHead = lessonData[0]["inflection"];
+        }
+        buildMaps(dataHead);
         loadConfig();
     });
 
@@ -28,7 +34,7 @@
 
         for (const [key, value] of Object.entries(node)) {
             const fullPath = [...path, key];
-            const fullPathStr = fullPath.join('.');
+            const fullPathStr = fullPath.join('/');
 
             paths.push(fullPathStr); // Every key, regardless of children, is selectable
 
@@ -47,7 +53,7 @@
     function buildMaps(node: object, path: string[] = [], parentPath?: string) {
         for (const [key, value] of Object.entries(node)) {
             const fullPath = [...path, key];
-            const fullPathStr = fullPath.join('.');
+            const fullPathStr = fullPath.join('/');
 
             // Track parent
             parentMap.set(fullPathStr, parentPath);
@@ -66,7 +72,7 @@
     }
 
     function loadConfig() {
-        let storedSelection = localStorage.getItem(data.conf.lesson_type + "Config",);
+        let storedSelection = localStorage.getItem(data.lessonConf.lesson_type + "Config",);
         if (storedSelection) {
             try {
                 const selectedLeaves: string[] = JSON.parse(storedSelection);
@@ -93,7 +99,7 @@
     }
 
     function loadDefaultConfig() {
-        const allPaths = collectAllPaths(lessonData[0]["inflection"][data.conf.sub_object]);
+        const allPaths = collectAllPaths(dataHead);
         currentSelection = new Set(allPaths);
     }
 
@@ -162,7 +168,7 @@
             return !children || children.length === 0; // No children = leaf
         });
 
-        localStorage.setItem(data.conf.lesson_type + "Config", JSON.stringify(selectedLeaves),);
+        localStorage.setItem(data.lessonConf.lesson_type + "Config", JSON.stringify(selectedLeaves),);
         window.location.href = "/";
     }
 
@@ -171,13 +177,13 @@
     }
 
     function selectAll() {
-        const allPaths = collectAllPaths(lessonData[0]["inflection"][data.conf.sub_object]);
+        const allPaths = collectAllPaths(dataHead);
         currentSelection = new Set(allPaths);
     }
 </script>
 
 <h1 class="page-title">
-    {data.conf.lesson_name} <i class="fas fa-cog"></i>
+    {data.lessonConf.lesson_name} <i class="fas fa-cog"></i>
 </h1>
 
 <div class="saber-panel-default">
@@ -191,7 +197,7 @@
 {/each}
 
 <div class="saber-panel-default">
-    <InflectionTree node={lessonData[0]["inflection"][data.conf.sub_object]} {currentSelection} {toggle}/>
+    <InflectionTree node={dataHead} {currentSelection} {toggle}/>
 </div>
 
 <div class="center-text bottom-buttons">

@@ -12,7 +12,7 @@
     {#each Object.entries(node) as [key, value]}
         <li>
             <label>
-                <input type="checkbox" checked={currentSelection.has(path.concat(key).join('.'))} on:change={(e) => toggle(path.concat(key).join('.'), (e.target as HTMLInputElement).checked)} />
+                <input type="checkbox" checked={currentSelection.has(path.concat(key).join('/'))} on:change={(e) => toggle(path.concat(key).join('/'), (e.target as HTMLInputElement).checked)} />
                 {key}
             </label>
     

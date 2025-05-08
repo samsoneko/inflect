@@ -4,9 +4,6 @@
         "sub_object" : "base form",
         "lesson_name" : "Noun Declination",
         "lesson_type" : "noun-declination",
-        "categories" : ["cases", "classes"],
-        "category_data" : [["nominative", "partitive", "genitive", "illative", "inessive", "elative", "allative", "adessive", "ablative", "essive", "translative", "abessive"],
-        ["singular", "plural"]],
         "category_desc" : {
             "nominative": "nominative",
             "partitive": "partitive",
@@ -29,10 +26,6 @@
         "sub_object" : "possessive forms",
         "lesson_name" : "Noun Possessives",
         "lesson_type" : "noun-possessives",
-        "categories" : ["person", "cases", "classes"],
-        "category_data" : [["1st sing.", "2nd sing.", "1st plur.", "2nd plur.", "3rd"],
-        ["nominative", "partitive", "genitive", "illative", "inessive", "elative", "allative", "adessive", "ablative", "essive", "translative", "abessive"],
-        ["singular", "plural"]],
         "category_desc" : {
             "1st sing.": "1. person singular",
             "2nd sing.": "2. person singular",
@@ -60,9 +53,6 @@
         "sub_object" : "base form",
         "lesson_name" : "Adjective Declination",
         "lesson_type" : "adjective-declination",
-        "categories" : ["cases", "classes"],
-        "category_data" : [["nominative", "partitive", "genitive", "illative", "inessive", "elative", "allative", "adessive", "ablative", "essive", "translative", "abessive"],
-        ["singular", "plural"]],
         "category_desc" : {
             "nominative": "nominative",
             "partitive": "partitive",
@@ -85,10 +75,6 @@
         "sub_object" : "indicative",
         "lesson_name" : "Verb Conjugation",
         "lesson_type" : "verb-conjugation",
-        "categories" : ["tense", "person", "polarity"],
-        "category_data" : [["present", "imperfect", "perfect", "pluperfect"],
-        ["1st sing.", "2nd sing.", "3rd sing.", "1st plur.", "2nd plur.", "3rd plur.", "passive"],
-        ["positive", "negative"]],
         "category_desc" : {
             "present": "present",
             "imperfect": "imperfect",
@@ -110,10 +96,6 @@
         "sub_object" : "conditional",
         "lesson_name" : "Verb Conditional",
         "lesson_type" : "verb-conditional",
-        "categories" : ["tense", "person", "polarity"],
-        "category_data" : [["present", "imperfect"],
-        ["1st sing.", "2nd sing.", "3rd sing.", "1st plur.", "2nd plur.", "3rd plur.", "passive"],
-        ["positive", "negative"]],
         "category_desc" : {
             "present": "present",
             "imperfect": "imperfect",
@@ -133,10 +115,6 @@
         "sub_object" : "infinitives",
         "lesson_name" : "Verb Infinitives",
         "lesson_type" : "verb-infinitives",
-        "categories" : ["tense", "person", "polarity"],
-        "category_data" : [["present", "imperfect"],
-        ["1st sing.", "2nd sing.", "3rd sing.", "1st plur.", "2nd plur.", "3rd plur.", "passive"],
-        ["positive", "negative"]],
         "category_desc" : {
             "present": "present",
             "imperfect": "imperfect",
@@ -155,8 +133,6 @@
         "data_file" : "pronouns.json",
         "lesson_name" : "Pronoun Declination",
         "lesson_type" : "pronoun-declination",
-        "categories" : ["cases"],
-        "category_data" : [["nominative", "partitive", "genitive", "illative", "inessive", "elative", "allative", "adessive", "ablative"]],
         "category_desc" : {
             "nominative": "nominative",
             "partitive": "partitive",

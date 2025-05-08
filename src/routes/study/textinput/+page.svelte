@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { onMount, tick } from "svelte";
     import AccuracyDisplay from "$lib/AccuracyDisplay.svelte";
     import defaultAppConfig from "$lib/app_config.json";
@@ -6,16 +6,17 @@
     let { data } = $props();
     let appConfig = $state(defaultAppConfig);
 
-    let lessonData = data.lesson;
-    let currentLessonConfig = $state(data.conf);
+    let lessonData = data.lessonData;
+    let dataHead = lessonData[0]["inflection"][data.lessonConf.sub_object];
 
     // Variables holding information about the current question
     let currentWord = $state("");
     let currentTranslation = $state("");
 
-    let currentCategories = $state([]);
-    let currentCategoryDescs = $state([]);
+    let selectionConfig = $state();
+    let currentPathCategories = $state([]);
 
+    // Variables for holding information about the solution
     let currentSolution = $state([]);
 
     // Variables holding information about the current answer
@@ -32,9 +33,9 @@
         appConfig = JSON.parse(localStorage.getItem("appConfig")) || defaultAppConfig;
     });
 
-    // Load the data for the current lesson based on the url parameters
+    // Load the data for the current lesson
     function loadLessonConfig() {
-        currentLessonConfig.category_data = JSON.parse(localStorage.getItem(currentLessonConfig.lesson_type + "Config",),) || currentLessonConfig.category_data;
+        selectionConfig = JSON.parse(localStorage.getItem(data.lessonConf.lesson_type + "Config",),);
     }
 
     // Variables for handling the input and confirm button
@@ -45,31 +46,43 @@
     function nextQuestion() {
         answerInputField.focus();
         currentAnswer = "";
+        currentPathCategories = [];
         answerState = "unanswered";
         let index = Math.floor(Math.random() * Object.keys(lessonData).length); // Pick a random index from all available words in the lesson source file
         currentWord = lessonData[index]["word"]; // Load the word
         currentTranslation = lessonData[index]["translation"]; // Load the translation
-        currentCategories = [];
-        currentCategoryDescs = [];
-
-        for (let i = 0; i < currentLessonConfig.categories.length; i++) { // Load all indexable categories from the lesson config and pick a random index for each one
-            let category_index = Math.floor(Math.random() * currentLessonConfig.category_data[i].length,);
-            currentCategories.push(currentLessonConfig.category_data[i][category_index],);
-            currentCategoryDescs.push(currentLessonConfig.category_desc[currentLessonConfig.category_data[i][category_index]],);
+        
+        let randomSelectionPath = selectionConfig[Math.floor(Math.random() * selectionConfig.length,)];
+        
+        if (data.lessonConf.hasOwnProperty("sub_object")) {
+            dataHead = lessonData[index]["inflection"][data.lessonConf.sub_object];
+        } else {
+            dataHead = lessonData[index]["inflection"];
         }
 
-        let solutionEntry = lessonData[index]["inflection"][currentLessonConfig.sub_object]; // Load all entries from the word
+        let solutionEntry = String(getValueFromPath(dataHead, randomSelectionPath)); // Convert the entry to a string
 
-        for (let i = 0; i < currentCategories.length; i++) { // Step into the entries using the random indices from before
-            solutionEntry = solutionEntry[currentCategories[i]];
-        }
-        solutionEntry = String(solutionEntry); // Convert the entry to a string
-
+        // Handle situations where multiple answers exist
         if (solutionEntry.indexOf(",") != -1) {
             currentSolution = String(solutionEntry).split(",");
         } else {
             currentSolution = [solutionEntry];
         }
+    }
+
+    function getValueFromPath(data: any, path: string): any{
+        const keys = path.split('/');
+
+        let value = data;
+        for (const key of keys) {
+            if (value && typeof value == 'object' && key in value) {
+                value = value[key];
+                currentPathCategories.push(key);
+            } else {
+                return undefined;
+            }
+        }
+        return value;
     }
 
     // Check if the answer is correct
@@ -94,7 +107,7 @@
     }
 </script>
 
-<h1 class="page-title">{currentLessonConfig.lesson_name}</h1>
+<h1 class="page-title">{data.lessonConf.lesson_name}</h1>
 
 {#if appConfig["showAccuracy"] == true}
     <AccuracyDisplay totalAnswerCount={totalAnswerCount} correctAnswerCount={correctAnswerCount} />
@@ -104,7 +117,7 @@
     <h1 class="word">{currentWord}</h1>
     <p class="translation">{currentTranslation}</p>
     <div class="category-holder">
-        {#each currentCategoryDescs as category_entry}
+        {#each currentPathCategories as category_entry}
             <p class="category-tag">{category_entry}</p>
         {/each}
     </div>
