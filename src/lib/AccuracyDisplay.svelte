@@ -4,14 +4,17 @@
     let percentage = $derived(Math.round(accuracy*100));
     
     let color = $derived.by(() => {
-        if (correctAnswerCount / totalAnswerCount >= 0.66) {
-            return "var(--green-color)";
+        if (correctAnswerCount / totalAnswerCount >= 0.75) {
+            return "var(--accent-green)";
         }
-        else if (correctAnswerCount / totalAnswerCount >= 0.33) {
-            return "var(--yellow-color)";
+        else if (correctAnswerCount / totalAnswerCount >= 0.50) {
+            return "var(--accent-yellow)";
+        }
+        else if (correctAnswerCount / totalAnswerCount >= 0.25) {
+            return "var(--accent-orange)";
         }
         else {
-            return "var(--red-color)";
+            return "var(--accent-red)";
         }
     });
 </script>

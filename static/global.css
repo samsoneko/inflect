@@ -1,14 +1,13 @@
 :root {
-    --layer-0: #181920;
-    --layer-1: #24252b;
-    --layer-1-hover: #303136;
-    --layer-1-active: #47484c;
-    --layer-2: #34353a;
+    --layer-0: #0d0f15;
+    --layer-1: #1c1e26;
+    --layer-2: #30323c;
+    --layer-3: #444652;
 
     --border-radius: 16px;
-    --border: none;
+    --border: 1px solid #3A3F47;
     --primary-border: none;
-    --box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.15);
+    --box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 
     --text-color: white;
     --subtle-text-color: #b3b3b3;
@@ -18,25 +17,30 @@
     --warn-color: #cf6679;
     --link-color: lightskyblue;
 
-    --red-color: #d1757d;
-    --purple-color: #c087ea;
-    --yellow-color: #e4c542;
-    --green-color: #66cdbe;
-    --blue-color: #5c8bd7;
-    --inactive-color: gray;
+    --accent-neutral: #4A4F57;
+
+    --accent-red: #EF5F5F;
+    --accent-orange: #F19953;
+    --accent-yellow: #FFD66B;
+    --accent-lime: #A9DB69;
+    --accent-green: #6CCF8D;
+    --accent-teal: #4DBDCB;
+    --accent-cyan: #4BAEEA;
+    --accent-blue: #5C77E1;
+    --accent-indigo: #7B61FF;
+    --accent-violet: #A974E1;
+    --accent-pink: #EB6BA8;
+    --accent-brown: #B08968;
 }
 
 .light-theme {
-    --layer-0: #e5e7f6;
-    --layer-1: white;
-    --layer-1-hover: #ccd2e6;
-    --layer-1-active: #adb6d1;
-    --layer-2: #ececec;
+    --layer-0: #e2e2e5;
+    --layer-1: #ffffff;
+    --layer-2: #f0f0f2;
+    --layer-3: #e0e0e5;
 
-    --border-radius: 16px;
-    --border: none;
-    --primary-border: none;
-    --box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.25);
+    --border: 1px solid #CCD3DC;
+    --box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 
     --text-color: black;
     --subtle-text-color: #494949;
@@ -45,69 +49,26 @@
     --primary-color: #6200ee;
     --warn-color: #b00020;
     --link-color: darkblue;
-
-    --red-color: #d1757d;
-    --purple-color: #c087ea;
-    --yellow-color: #e4c542;
-    --green-color: #66cdbe;
-    --blue-color: #5c8bd7;
-}
-
-.black-theme {
-    --layer-0: black;
-    --layer-1: #181920;
-    --layer-1-hover: #26272c;
-    --layer-1-active: #36373d;
-    --layer-2: #23242c;
-
-    --border-radius: 16px;
-    --border: none;
-    --primary-border: none;
-    --box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.15);
-
-    --text-color: white;
-    --icon-color: white;
     
-    --primary-color: #bb86fc;
-    --warn-color: #cf6679;
-    --link-color: lightskyblue;
+    --accent-neutral: #B0B6BE;
 
-    --red-color: #d1757d;
-    --purple-color: #c087ea;
-    --yellow-color: #e4c542;
-    --green-color: #66cdbe;
-    --blue-color: #5c8bd7;
-}
-
-.saber-theme {
-    --layer-0: black;
-    --layer-1: #181920;
-    --layer-1-hover: #26272c;
-    --layer-1-active: #36373d;
-    --layer-2: #23242c;
-
-    --border-radius: 16px;
-    --border: 1px solid #323338;
-    --primary-border: none;
-    --box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.15);
-
-    --text-color: white;
-    --icon-color: white;
-    
-    --primary-color: #bb86fc;
-    --warn-color: #cf6679;
-    --link-color: lightskyblue;
-
-    --red-color: #d1757d;
-    --purple-color: #c087ea;
-    --yellow-color: #e4c542;
-    --green-color: #66cdbe;
-    --blue-color: #5c8bd7;
+    --accent-red: #D64545;
+    --accent-orange: #DC7F34;
+    --accent-yellow: #E3B93F;
+    --accent-lime: #8BC24A;
+    --accent-green: #4CAF7A;
+    --accent-teal: #36A8B2;
+    --accent-cyan: #3599D5;
+    --accent-blue: #4A5FCC;
+    --accent-indigo: #6B4DFF;
+    --accent-violet: #9461D4;
+    --accent-pink: #D85C99;
+    --accent-brown: #A47149;
 }
 
 body {
     font-family: "Arial", sans-serif;
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(61, 61, 61);
     color: var(--text-color);
     display: flex;
     justify-content: center;
@@ -179,10 +140,6 @@ h2 {
     color: var(--subtle-text-color);
 }
 
-.page-section {
-
-}
-
 .saber-panel-default {
     padding: 16px;
     border: var(--border);
@@ -196,32 +153,36 @@ h2 {
 .saber-button-default {
     padding: 16px;
     border: var(--border);
-    background-color: var(--layer-1);
+    background-color: var(--layer-2);
     color: var(--text-color);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
+    cursor: pointer;
 }
 
 .saber-tab-button-default {
     padding: 10px;
     border: var(--border);
-    background-color: var(--layer-1);
+    background-color: var(--layer-2);
     color: var(--text-color);
     box-shadow: var(--box-shadow);
     border-radius: calc(var(--border-radius) - 4px);
+    cursor: pointer;
 }
 
 .saber-tab-button-default:hover, .saber-tab-button-default:active {
-    background-color: var(--layer-1-hover);
+    background-color: color-mix(in srgb, var(--layer-2) 95%, white);
 }
 
 .saber-tab-button-default-active {
     padding: 10px;
-    border: var(--border);
-    background-color: var(--layer-1-active);
+    border: 2px solid var(--accent-blue);
+    background-color: color-mix(in srgb, var(--layer-2) 95%, black);
     color: var(--text-color);
     box-shadow: var(--box-shadow);
     border-radius: calc(var(--border-radius) - 4px);
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 .saber-input-default {
@@ -239,39 +200,39 @@ h2 {
 }
 
 .saber-color-confirm {
-    background-color: var(--green-color);
+    background-color: var(--accent-green);
     color: black;
 }
 
 .saber-color-warn {
-    background-color: var(--yellow-color);
+    background-color: var(--accent-orange);
     color: black;
 }
 
 .saber-color-error {
-    background-color: var(--red-color);
+    background-color: var(--accent-red);
     color: black;
 }
 
 .saber-color-info {
-    background-color: var(--blue-color);
+    background-color: var(--accent-blue);
     color: black;
 }
 
 .saber-border-confirm {
-    border: 2px solid var(--green-color);
+    border: 2px solid var(--accent-green);
 }
 
 .saber-border-warn {
-    border: 2px solid var(--yellow-color);
+    border: 2px solid var(--accent-orange);
 }
 
 .saber-border-error {
-    border: 2px solid var(--red-color);
+    border: 2px solid var(--accent-red);
 }
 
 .saber-border-info {
-    border: 2px solid var(--blue-color);
+    border: 2px solid var(--accent-blue);
 }
 
 .center-text {

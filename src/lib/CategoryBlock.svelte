@@ -21,6 +21,11 @@
         box-shadow: var(--box-shadow);
         display: inline-block;
         position: relative;
+        transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    }
+
+    .category-panel:hover {
+        transform: scale(1.02);
     }
 
     .category-title {
@@ -44,6 +49,10 @@
         border-radius: 8px;
         color: white;
         background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .category-button:hover {
+        transform: scale(1.03);
     }
 
     .category-button-wrapper {

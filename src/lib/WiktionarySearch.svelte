@@ -72,7 +72,7 @@
     .clear-button {
         border-radius: 15px;
         margin-left: 6px;
-        background-color: var(--red-color);
+        background-color: var(--accent-red);
     }
 
     .inflection-table {

@@ -3,26 +3,14 @@
 
     onMount(() => {
         let theme = localStorage.getItem('app:theme');
-        if (theme == "black") {
-            document.body.classList.add('black-theme');
+        if (theme == "dark") {
             document.body.classList.remove('light-theme');
-            document.body.classList.remove('saber-theme');
-            localStorage.setItem('app:theme', theme);
-        } else if (theme == "dark") {
-            document.body.classList.remove('light-theme');
-            document.body.classList.remove('black-theme');
-            document.body.classList.remove('saber-theme');
             localStorage.setItem('app:theme', theme);
         } else if (theme == "light") {
             document.body.classList.add('light-theme');
-            document.body.classList.remove('black-theme');
-            document.body.classList.remove('saber-theme');
             localStorage.setItem('app:theme', theme);
-        } else if (theme == "saber") {
-            document.body.classList.add('saber-theme');
-            document.body.classList.remove('black-theme');
-            document.body.classList.remove('light-theme');
-            localStorage.setItem('app:theme', theme);
+        } else {
+            localStorage.setItem('app:theme', "dark");
         }
 
         checkVersion();
