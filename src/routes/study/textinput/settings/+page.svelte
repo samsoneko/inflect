@@ -168,10 +168,6 @@
     viable configuration.
 </div>
 
-{#each currentSelection as entry}
-    {entry}
-{/each}
-
 <div class="saber-panel-default">
     <InflectionTree node={dataHead} {currentSelection} {toggle}/>
 </div>

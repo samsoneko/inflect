@@ -21,10 +21,7 @@ export function collectAllLeafs(node: object, path: string[] = []): string[] {
 
     if (Array.isArray(node) || typeof node === 'string') {
         // Add the full path of the leaf to the Array
-        if (path.length > 0) {
-            // Only push if path is not empty
-            paths.push(path.join('/'));
-        }
+        paths.push(path.join('/'));
     } else if (node && typeof node === 'object') {
         for (const key in node) {
             const child = node[key];

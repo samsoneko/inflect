@@ -35,6 +35,7 @@
         <div class="category-div">
             <CategoryBlock name={"Verbs"} color={"var(--red-color)"} lesson_path="study/textinput?lang=fi&lesson=verb-conjugation" settings_path="study/textinput/settings?lang=fi&lesson=verb-conjugation" description={"Practise the conjugation of verbs"}/>
             <CategoryBlock name={"Conditional"} color={"var(--red-color)"} lesson_path="study/textinput?lang=fi&lesson=verb-conditional" settings_path="study/textinput/settings?lang=fi&lesson=verb-conditional" description={"Practise the conditional of verbs"}/>
+            <CategoryBlock name={"Infinitives"} color={"var(--red-color)"} lesson_path="study/textinput?lang=fi&lesson=verb-infinitives" settings_path="study/textinput/settings?lang=fi&lesson=verb-infinitives" description={"Practise the infinitives of verbs"}/>
         </div>
     {:else if current_tab == "other"}
         <div class="category-div">

@@ -19,7 +19,6 @@
 
     // Variables for holding information about the solution
     let currentSolution = $state([]);
-    let debug = $state(collectAllLeafs(dataHead));
 
     // Variables holding information about the current answer
     let currentAnswer = $state("");
@@ -30,6 +29,11 @@
 
     // On page load, initialize data and load first question
     onMount(() => {
+        if (data.lessonConf.hasOwnProperty("sub_object")) {
+            dataHead = lessonData[0]["inflection"][data.lessonConf.sub_object];
+        } else {
+            dataHead = lessonData[0]["inflection"];
+        }
         loadLessonConfig();
         nextQuestion();
         appConfig = JSON.parse(localStorage.getItem("appConfig")) || defaultAppConfig;
@@ -110,8 +114,6 @@
 </script>
 
 <h1 class="page-title">{data.lessonConf.lesson_name}</h1>
-
-{debug}
 
 {#if appConfig["showAccuracy"] == true}
     <AccuracyDisplay totalAnswerCount={totalAnswerCount} correctAnswerCount={correctAnswerCount} />
