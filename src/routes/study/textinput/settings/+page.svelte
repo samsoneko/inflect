@@ -1,8 +1,7 @@
 <script lang="ts">
     import { onMount, tick } from "svelte";
-    import { page } from "$app/stores";
-    import lessonConfig from "$lib/data/fi/conf/textinput/lesson_conf.json";
     import InflectionTree from "$lib/InflectionTree.svelte";
+    import { collectAllPaths } from '$lib/utils/json-utils.ts';
 
     let { data } = $props();
     let lessonData = data.lessonData;
@@ -28,24 +27,6 @@
         buildMaps(dataHead);
         loadConfig();
     });
-
-    function collectAllPaths(node: object, path: string[] = []): string[] {
-        let paths: string[] = [];
-
-        for (const [key, value] of Object.entries(node)) {
-            const fullPath = [...path, key];
-            const fullPathStr = fullPath.join('/');
-
-            paths.push(fullPathStr); // Every key, regardless of children, is selectable
-
-            // Recurse only into non-array objects with keys
-            if (typeof value === 'object' && !Array.isArray(value) && Object.keys(value).length > 0) {
-                paths = paths.concat(collectAllPaths(value, fullPath));
-            }
-        }
-
-        return paths;
-    }
 
     let parentMap = new Map<string, string | undefined>();
     let childrenMap = new Map<string, string[]>();
@@ -89,18 +70,13 @@
                 currentSelection = new Set(currentSelection);
             } catch (e) {
                 console.error('Failed to load config:', e);
-                loadDefaultConfig();
+                selectAll();
             }
         }
 
         if(currentSelection.size == 0) {
-            loadDefaultConfig();
+            selectAll();
         }
-    }
-
-    function loadDefaultConfig() {
-        const allPaths = collectAllPaths(dataHead);
-        currentSelection = new Set(allPaths);
     }
 
     function toggle(path: string, isChecked: boolean) {

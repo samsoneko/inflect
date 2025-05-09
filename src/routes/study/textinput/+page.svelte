@@ -2,6 +2,7 @@
     import { onMount, tick } from "svelte";
     import AccuracyDisplay from "$lib/AccuracyDisplay.svelte";
     import defaultAppConfig from "$lib/app_config.json";
+    import { collectAllLeafs } from '$lib/utils/json-utils.ts';
 
     let { data } = $props();
     let appConfig = $state(defaultAppConfig);
@@ -18,6 +19,7 @@
 
     // Variables for holding information about the solution
     let currentSolution = $state([]);
+    let debug = $state(collectAllLeafs(dataHead));
 
     // Variables holding information about the current answer
     let currentAnswer = $state("");
@@ -35,7 +37,7 @@
 
     // Load the data for the current lesson
     function loadLessonConfig() {
-        selectionConfig = JSON.parse(localStorage.getItem(data.lessonConf.lesson_type + "Config",),);
+        selectionConfig = JSON.parse(localStorage.getItem(data.lessonConf.lesson_type + "Config",),) || collectAllLeafs(dataHead);
     }
 
     // Variables for handling the input and confirm button
@@ -109,6 +111,8 @@
 
 <h1 class="page-title">{data.lessonConf.lesson_name}</h1>
 
+{debug}
+
 {#if appConfig["showAccuracy"] == true}
     <AccuracyDisplay totalAnswerCount={totalAnswerCount} correctAnswerCount={correctAnswerCount} />
 {/if}
@@ -118,8 +122,8 @@
     <p class="translation">{currentTranslation}</p>
     <div class="category-holder">
         {#each currentPathCategories as category_entry}
-            {#if data.lessonTranslation.hasOwnProperty(category_entry)}
-                <p class="category-tag">{data.lessonTranslation[category_entry]}</p>
+            {#if data.lessonLabels.hasOwnProperty(category_entry)}
+                <p class="category-tag">{data.lessonLabels[category_entry]}</p>
             {:else}
                 <p class="category-tag">{category_entry}</p>
             {/if}

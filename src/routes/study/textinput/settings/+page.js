@@ -9,12 +9,16 @@ export const load = async ({ url }) => {
     const lessonConf = await import("$lib/data/fi/conf/textinput/lesson_conf.json");
     const currentLessonConf = lessonConf.default[lessonParam];
 
-    const path = "/src/lib/data/fi/res/finnish_common_3000/" + currentLessonConf.data_file;
-    const loadLessonData = lessonFiles[path];
+    const lessonPath = "/src/lib/data/fi/res/finnish_common_3000/" + currentLessonConf.data_file;
+    const labelPath = "/src/lib/data/fi/res/finnish_common_3000/labels.json";
+    const loadLessonData = lessonFiles[lessonPath];
+    const loadLessonLabels = lessonFiles[labelPath];
 
     const lessonData = await loadLessonData();
+    const lessonLabels = await loadLessonLabels();
     return {
         lessonData: lessonData.default,
-        lessonConf: currentLessonConf
+        lessonConf: currentLessonConf,
+        lessonLabels: lessonLabels.default
     }
 }

@@ -10,15 +10,15 @@ export const load = async ({ url }) => {
     const currentLessonConf = lessonConf.default[lessonParam];
 
     const lessonPath = "/src/lib/data/fi/res/finnish_common_3000/" + currentLessonConf.data_file;
-    const translationPath = "/src/lib/data/fi/res/finnish_common_3000/translations.json";
+    const labelPath = "/src/lib/data/fi/res/finnish_common_3000/labels.json";
     const loadLessonData = lessonFiles[lessonPath];
-    const loadLessonTranslation = lessonFiles[translationPath];
+    const loadLessonLabels = lessonFiles[labelPath];
 
     const lessonData = await loadLessonData();
-    const lessonTranslation = await loadLessonTranslation();
+    const lessonLabels = await loadLessonLabels();
     return {
         lessonData: lessonData.default,
         lessonConf: currentLessonConf,
-        lessonTranslation: lessonTranslation
+        lessonLabels: lessonLabels.default
     }
 }
