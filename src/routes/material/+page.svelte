@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Inflect - Material</title>
+</svelte:head>
+
 <h1 class="page-title">Material</h1>
 
 <div class="page-section">

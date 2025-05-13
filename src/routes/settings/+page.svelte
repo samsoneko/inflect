@@ -16,6 +16,10 @@
     });
 </script>
 
+<svelte:head>
+    <title>Inflect - Settings</title>
+</svelte:head>
+
 <h1>Settings</h1>
 
 <div class="page-section">
@@ -51,7 +55,7 @@
     <div class="saber-panel-default">
         <div class="app-logo-div">
             <div class="app-title">
-                <h3><img class="image-button" src="favicon.png" alt="App Logo"> Sabercards</h3>
+                <h3><img class="image-button" src="favicon.png" alt="App Logo"> Inflect</h3>
                 <p>Version {PKG.version}</p>
             </div>
             <div class="app-language">

@@ -113,6 +113,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>Inflect - {data.lessonConf.lesson_name}</title>
+</svelte:head>
+
 <h1 class="page-title">{data.lessonConf.lesson_name}</h1>
 
 {#if appConfig["showAccuracy"] == true}

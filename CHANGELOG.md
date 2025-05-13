@@ -1,6 +1,6 @@
-# sabercards
+# inflect
 
-## 0.7.3
+## 0.7.4
 
 ### Bugfixes
 

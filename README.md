@@ -1,4 +1,4 @@
-# Sabercards
+# Inflect
 
 A simple webapp for studying vocabulary, mainly aimed at practicing inflection patterns and other word forms.
 

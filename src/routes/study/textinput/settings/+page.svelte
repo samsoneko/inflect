@@ -158,6 +158,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>Inflect - {data.lessonConf.lesson_name} Settings</title>
+</svelte:head>
+
 <h1 class="page-title">
     {data.lessonConf.lesson_name} <i class="fas fa-cog"></i>
 </h1>

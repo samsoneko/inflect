@@ -4,6 +4,10 @@
     let current_tab = "declination";
 </script>
 
+<svelte:head>
+    <title>Inflect - Home</title>
+</svelte:head>
+
 <h1 class="homepage-title">Hyvää Päivää!☀️</h1>
 
 <div class="page-section">
