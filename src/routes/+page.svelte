@@ -1,6 +1,5 @@
 <script>
-    import CategoryBlock from "$lib/CategoryBlock.svelte";
-    import WiktionarySearch from "$lib/WiktionarySearch.svelte";
+    import CategoryBlock from "$lib/components/CategoryBlock.svelte";
 
     let current_tab = "declination";
 </script>
@@ -14,8 +13,6 @@
         <p>Although basic functions do exist, no guarantee for the correctness of information can be given.</p>
     </div>
 </div>
-
-<!-- <WiktionarySearch/> -->
 
 <div class="page-section">
     <h2><i class="fas fa-book"></i> Study</h2>

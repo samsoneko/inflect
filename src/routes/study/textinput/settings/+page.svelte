@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount, tick } from "svelte";
-    import InflectionTree from "$lib/InflectionTree.svelte";
+    import InflectionTree from "$lib/components/InflectionTree.svelte";
     import { collectAllPaths } from '$lib/utils/json-utils.ts';
 
     let { data } = $props();

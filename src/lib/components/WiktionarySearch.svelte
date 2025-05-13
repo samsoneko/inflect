@@ -1,5 +1,5 @@
 <script>
-    import { fetchWikiTableData } from './utils/async-utils.js';
+    import { fetchWikiTableData } from '$lib/utils/async-utils.js';
 
     let query = '';
     let result = '';

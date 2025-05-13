@@ -1,5 +1,5 @@
 <script lang="ts">
-    import InflectionTree from "$lib/InflectionTree.svelte";
+    import InflectionTree from "$lib/components/InflectionTree.svelte";
 
     export let node: object;
     export let path: string[] = []; // for unique keys and labeling

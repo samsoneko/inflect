@@ -1,7 +1,7 @@
 <script>
     import {onMount} from "svelte";
-    import ThemeSwitcher from "$lib/ThemeSwitcher.svelte";
-    import ToggleSwitch from "$lib/ToggleSwitch.svelte";
+    import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
+    import ToggleSwitch from "$lib/components/ToggleSwitch.svelte";
     import defaultAppConfig from "$lib/app_config.json";
 
     let appConfig = $state(defaultAppConfig);
@@ -22,7 +22,7 @@
     <div class="saber-panel-default">
         <h3>🎨App Theme</h3>
         <ThemeSwitcher/>
-        <h3>📖Practise</h3>
+        <h3>📚Practise</h3>
         <div class="settings-option">
             <p class="settings-option-desc">Show accuracy during practise.</p>
             <div class="settings-option-toggle">

@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount, tick } from "svelte";
-    import AccuracyDisplay from "$lib/AccuracyDisplay.svelte";
+    import AccuracyDisplay from "$lib/components/AccuracyDisplay.svelte";
     import defaultAppConfig from "$lib/app_config.json";
     import { collectAllLeafs } from '$lib/utils/json-utils.ts';
 
@@ -36,7 +36,7 @@
         }
         loadLessonConfig();
         nextQuestion();
-        appConfig = JSON.parse(localStorage.getItem("appConfig")) || defaultAppConfig;
+        appConfig = JSON.parse(localStorage.getItem("app:config")) || defaultAppConfig;
     });
 
     // Load the data for the current lesson

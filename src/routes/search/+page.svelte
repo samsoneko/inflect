@@ -1,5 +1,5 @@
 <script>
-    import WiktionarySearch from "$lib/WiktionarySearch.svelte";
+    import WiktionarySearch from "$lib/components/WiktionarySearch.svelte";
 </script>
 
 <h1>Search</h1>
