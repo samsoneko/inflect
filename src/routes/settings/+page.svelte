@@ -3,6 +3,7 @@
     import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
     import ToggleSwitch from "$lib/components/ToggleSwitch.svelte";
     import defaultAppConfig from "$lib/app_config.json";
+    import DropDownMenu from "$lib/components/DropDownMenu.svelte";
 
     let appConfig = $state(defaultAppConfig);
 
@@ -22,6 +23,13 @@
     <div class="saber-panel-default">
         <h3>🎨App Theme</h3>
         <ThemeSwitcher/>
+        <h3>🌐Language</h3>
+        <div class="settings-option">
+            <p class="settings-option-desc">Set the app language:</p>
+            <div class="settings-option-toggle">
+                <DropDownMenu options={["Finnish", "German", "Japanese"]}/>
+            </div>
+        </div>
         <h3>📚Practise</h3>
         <div class="settings-option">
             <p class="settings-option-desc">Show accuracy during practise.</p>
