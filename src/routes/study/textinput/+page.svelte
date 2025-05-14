@@ -1,11 +1,11 @@
 <script lang="ts">
     import { onMount, tick } from "svelte";
     import AccuracyDisplay from "$lib/components/AccuracyDisplay.svelte";
-    import defaultAppConfig from "$lib/app_config.json";
+    import defaultLanguageConfig from "$lib/fi_config.json";
     import { collectAllLeafs } from '$lib/utils/json-utils.ts';
 
     let { data } = $props();
-    let appConfig = $state(defaultAppConfig);
+    let languageConfig = $state(defaultLanguageConfig);
 
     let lessonData = data.lessonData;
     let dataHead = lessonData[0]["inflection"][data.lessonConf.sub_object];
@@ -36,7 +36,7 @@
         }
         loadLessonConfig();
         nextQuestion();
-        appConfig = JSON.parse(localStorage.getItem("app:config")) || defaultAppConfig;
+        languageConfig = JSON.parse(localStorage.getItem("fi:config")) || defaultLanguageConfig;
     });
 
     // Load the data for the current lesson
@@ -119,7 +119,7 @@
 
 <h1 class="page-title">{data.lessonConf.lesson_name}</h1>
 
-{#if appConfig["showAccuracy"] == true}
+{#if languageConfig["showAccuracy"] == true}
     <AccuracyDisplay totalAnswerCount={totalAnswerCount} correctAnswerCount={correctAnswerCount} />
 {/if}
 
@@ -160,7 +160,7 @@
     </div>
 {/if}
 
-{#if appConfig["showSkipButton"] == true}
+{#if languageConfig["showSkipButton"] == true}
     <div class="center-text">
         <button class="saber-button-default saber-color-warn" aria-label="Search" onclick={() => nextQuestion()}>
             Skip Question

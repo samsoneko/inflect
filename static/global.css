@@ -5,6 +5,7 @@
     --layer-3: #444652;
 
     --border-radius: 16px;
+    --padding: 16px;
     --border: 1px solid #3A3F47;
     --primary-border: none;
     --box-shadow: 0 2px 6px rgba(0,0,0,0.4);
@@ -94,7 +95,7 @@ hr {
     .app-frame {
         width: 400px;
         height: 800px;
-        border-radius: 32px;;
+        border-radius: 24px;;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -110,7 +111,7 @@ hr {
 }
 
 .app-content {
-    padding: 16px 16px 80px 16px;
+    padding: var(--padding) var(--padding) 80px var(--padding);
     overflow-y: auto;
 }
 
@@ -128,7 +129,7 @@ hr {
 /*CSS for the overarching design of the app elements*/
 
 h1 {
-    margin-top: 16px;
+    margin-top: var(--padding);
     margin-bottom: 32px;
     font-size: 2em;
     text-align: center;
@@ -141,17 +142,17 @@ h2 {
 }
 
 .saber-panel-default {
-    padding: 16px;
+    padding: var(--padding);
     border: var(--border);
     background-color: var(--layer-1);
     color: var(--text-color);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
-    margin-bottom: 16px;
+    margin-bottom: var(--padding);
 }
 
 .saber-button-default {
-    padding: 16px;
+    padding: var(--padding);
     border: var(--border);
     background-color: var(--layer-2);
     color: var(--text-color);
@@ -186,7 +187,7 @@ h2 {
 }
 
 .saber-input-default {
-    padding: 16px;
+    padding: var(--padding);
     border: var(--border);
     background-color: var(--layer-1);
     color: var(--text-color);

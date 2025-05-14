@@ -3,16 +3,20 @@
     import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
     import ToggleSwitch from "$lib/components/ToggleSwitch.svelte";
     import defaultAppConfig from "$lib/app_config.json";
+    import defaultLanguageConfig from "$lib/fi_config.json";
     import DropDownMenu from "$lib/components/DropDownMenu.svelte";
 
     let appConfig = $state(defaultAppConfig);
+    let languageConfig = $state(defaultLanguageConfig);
 
     onMount(() => {
         appConfig = JSON.parse(localStorage.getItem("app:config")) || defaultAppConfig;
+        languageConfig = JSON.parse(localStorage.getItem("fi:config")) || defaultLanguageConfig;
     });
 
     $effect(() => {
         localStorage.setItem("app:config", JSON.stringify(appConfig));
+        localStorage.setItem("fi:config", JSON.stringify(languageConfig));
     });
 </script>
 
@@ -23,7 +27,7 @@
 <h1>Settings</h1>
 
 <div class="page-section">
-    <h2><i class="fas fa-gears"></i> General</h2>
+    <h2><i class="fas fa-gear"></i> General</h2>
     <div class="saber-panel-default">
         <h3>🎨App Theme</h3>
         <ThemeSwitcher/>
@@ -31,20 +35,26 @@
         <div class="settings-option">
             <p class="settings-option-desc">Set the app language:</p>
             <div class="settings-option-toggle">
-                <DropDownMenu options={["Finnish", "German", "Japanese"]}/>
+                <DropDownMenu options={["fi", "de", "jp"]} bind:selected={appConfig["language"]}/>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="page-section">
+    <h2><i class="fas fa-globe"></i> Language - {appConfig["language"]}</h2>
+    <div class="saber-panel-default">
         <h3>📚Practise</h3>
         <div class="settings-option">
             <p class="settings-option-desc">Show accuracy during practise.</p>
             <div class="settings-option-toggle">
-                <ToggleSwitch bind:checked={appConfig["showAccuracy"]}/>
+                <ToggleSwitch bind:checked={languageConfig["showAccuracy"]}/>
             </div>
         </div>
         <div class="settings-option">
             <p class="settings-option-desc">Allow questions to be skipped.</p>
             <div class="settings-option-toggle">
-                <ToggleSwitch bind:checked={appConfig["showSkipButton"]}/>
+                <ToggleSwitch bind:checked={languageConfig["showSkipButton"]}/>
             </div>
         </div>
     </div>

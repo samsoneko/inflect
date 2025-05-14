@@ -1,18 +1,9 @@
 <script lang="ts">
     import { onMount } from "svelte";
+    import defaultAppConfig from "$lib/app_config.json";
 
     onMount(() => {
-        let theme = localStorage.getItem('app:theme');
-        if (theme == "dark") {
-            document.body.classList.remove('light-theme');
-            localStorage.setItem('app:theme', theme);
-        } else if (theme == "light") {
-            document.body.classList.add('light-theme');
-            localStorage.setItem('app:theme', theme);
-        } else {
-            localStorage.setItem('app:theme', "dark");
-        }
-
+        loadConfig();
         checkVersion();
     });
 
@@ -32,10 +23,25 @@
         }
     }
 
+    function loadConfig() {
+        let appConfig = JSON.parse(localStorage.getItem("app:config")) || defaultAppConfig;
+        let theme = appConfig["theme"];
+        if (theme == "dark") {
+            document.body.classList.remove('light-theme');
+            appConfig["theme"] = theme;
+            localStorage.setItem("app:config", JSON.stringify(appConfig));
+        } else if (theme == "light") {
+            document.body.classList.add('light-theme');
+            appConfig["theme"] = theme;
+            localStorage.setItem("app:config", JSON.stringify(appConfig));
+        }
+    }
+
     function purgeLocalStorage() {
         localStorage.clear();
         localStorage.setItem('app:localVersion', appServerVersion);
         showUpdateNotice = false;
+        loadConfig();
     }
 
 </script>

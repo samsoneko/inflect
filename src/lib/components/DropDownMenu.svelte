@@ -1,21 +1,10 @@
 <script>
-    import { createEventDispatcher } from 'svelte';
-    import { writable } from 'svelte/store';
-  
     export let options = []; // Array of strings
-    export let defaultOption = '';
   
-    export let selected = writable(defaultOption || options[0]);
-  
-    const dispatch = createEventDispatcher();
-  
-    function handleChange(event) {
-        selected.set(event.target.value);
-        dispatch('change', { value: event.target.value });
-    }
+    export let selected = options[0] || "fi";
 </script>
 
-<select on:change={handleChange}>
+<select bind:value={selected}>
     {#each options as option}
         <option value={option}>{option}</option>
     {/each}

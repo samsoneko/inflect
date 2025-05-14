@@ -6,7 +6,7 @@ export const load = async ({ url }) => {
 
     const lessonFiles = import.meta.glob("$lib/data/fi/res/finnish_common_3000/*.json");
 
-    const lessonConf = await import("$lib/data/fi/conf/textinput/lesson_conf.json");
+    const lessonConf = await import("$lib/data/fi/conf/textinput/lesson_config.json");
     const currentLessonConf = lessonConf.default[lessonParam];
 
     const lessonPath = "/src/lib/data/fi/res/finnish_common_3000/" + currentLessonConf.data_file;

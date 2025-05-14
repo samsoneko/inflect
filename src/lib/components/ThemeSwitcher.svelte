@@ -1,25 +1,30 @@
 <script>
     import { onMount } from "svelte";
+    import defaultAppConfig from "$lib/app_config.json";
 
+    let appConfig = $state(defaultAppConfig);
     let currentTheme = $state();
 
     onMount(() => {
+        appConfig = JSON.parse(localStorage.getItem("app:config")) || defaultAppConfig;
         updateCurrentTheme()
         setTheme(currentTheme);
     });
 
     function updateCurrentTheme() {
-        let placeholder = localStorage.getItem('app:theme');
+        let placeholder = appConfig["theme"];
         currentTheme = placeholder != null ? placeholder : "dark";
     }
   
     function setTheme(theme) {
         if (theme == "dark") {
             document.body.classList.remove('light-theme');
-            localStorage.setItem('app:theme', theme);
+            appConfig["theme"] = theme;
+            localStorage.setItem("app:config", JSON.stringify(appConfig));
         } else if (theme == "light") {
             document.body.classList.add('light-theme');
-            localStorage.setItem('app:theme', theme);
+            appConfig["theme"] = theme;
+            localStorage.setItem("app:config", JSON.stringify(appConfig));
         }
         updateCurrentTheme();
     }
