@@ -1,12 +1,12 @@
 <script>
-    export let options = []; // Array of strings
+    export let options = {"placeholder": {"name": "placeholder"}}; // Array of strings
   
-    export let selected = options[0] || "fi";
+    export let selected = Object.keys(options)[0] || "fi";
 </script>
 
 <select bind:value={selected}>
-    {#each options as option}
-        <option value={option}>{option}</option>
+    {#each Object.keys(options) as option}
+        <option value={option}>{options[option].name}</option>
     {/each}
 </select>
 
@@ -18,5 +18,6 @@
         border: var(--border);
         background-color: var(--layer-2);
         color: var(--color);
+        margin-top: -6px;
     }
 </style>

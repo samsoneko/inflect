@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
     import {onMount} from "svelte";
     import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
     import ToggleSwitch from "$lib/components/ToggleSwitch.svelte";
+    import languageIndex from "$lib/data/language_index.json";
     import defaultAppConfig from "$lib/app_config.json";
-    import defaultLanguageConfig from "$lib/fi_config.json";
+    import defaultLanguageConfig from "$lib/language_config.json";
     import DropDownMenu from "$lib/components/DropDownMenu.svelte";
 
     let appConfig = $state(defaultAppConfig);
@@ -11,13 +12,28 @@
 
     onMount(() => {
         appConfig = JSON.parse(localStorage.getItem("app:config")) || defaultAppConfig;
-        languageConfig = JSON.parse(localStorage.getItem("fi:config")) || defaultLanguageConfig;
+        languageConfig = JSON.parse(localStorage.getItem(appConfig["language"] + ":config")) || defaultLanguageConfig;
     });
 
+    let previousLanguage = appConfig.language;
+
     $effect(() => {
+        // Save app config
         localStorage.setItem("app:config", JSON.stringify(appConfig));
-        localStorage.setItem("fi:config", JSON.stringify(languageConfig));
+
+        // Only reload language config if language changed
+        if (appConfig.language !== previousLanguage) {
+            previousLanguage = appConfig.language;
+            loadLanguageConfig(appConfig.language);
+        }
+
+        // Save current language config
+        localStorage.setItem(appConfig.language + ":config", JSON.stringify(languageConfig));
     });
+
+    function loadLanguageConfig(languageCode: string) {
+        languageConfig = JSON.parse(localStorage.getItem(languageCode + ":config")) || defaultLanguageConfig;
+    }
 </script>
 
 <svelte:head>
@@ -30,19 +46,19 @@
     <h2><i class="fas fa-gear"></i> General</h2>
     <div class="saber-panel-default">
         <h3>🎨App Theme</h3>
-        <ThemeSwitcher/>
+        <ThemeSwitcher bind:theme={appConfig["theme"]}/>
         <h3>🌐Language</h3>
         <div class="settings-option">
             <p class="settings-option-desc">Set the app language:</p>
             <div class="settings-option-toggle">
-                <DropDownMenu options={["fi", "de", "jp"]} bind:selected={appConfig["language"]}/>
+                <DropDownMenu options={languageIndex} bind:selected={appConfig["language"]}/>
             </div>
         </div>
     </div>
 </div>
 
 <div class="page-section">
-    <h2><i class="fas fa-globe"></i> Language - {appConfig["language"]}</h2>
+    <h2><i class="fas fa-globe"></i> Language - {languageIndex[appConfig["language"]]["name"]}</h2>
     <div class="saber-panel-default">
         <h3>📚Practise</h3>
         <div class="settings-option">

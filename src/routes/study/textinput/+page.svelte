@@ -1,7 +1,7 @@
 <script lang="ts">
     import { onMount, tick } from "svelte";
     import AccuracyDisplay from "$lib/components/AccuracyDisplay.svelte";
-    import defaultLanguageConfig from "$lib/fi_config.json";
+    import defaultLanguageConfig from "$lib/language_config.json";
     import { collectAllLeafs } from '$lib/utils/json-utils.ts';
 
     let { data } = $props();
