@@ -1,37 +1,37 @@
 {
     "noun-declination" : {
         "data_file" : "finnish_common_2000_nouns.json",
-        "sub_object" : "base form",
+        "sub_dir" : "base form",
         "lesson_name" : "Noun Declination",
         "lesson_type" : "noun-declination"
     },
     "noun-possessives" : {
         "data_file" : "finnish_common_2000_nouns.json",
-        "sub_object" : "possessive forms",
+        "sub_dir" : "possessive forms",
         "lesson_name" : "Noun Possessives",
         "lesson_type" : "noun-possessives"
     },
     "adjective-declination" : {
         "data_file" : "finnish_common_500_adjectives.json",
-        "sub_object" : "base form",
+        "sub_dir" : "base form",
         "lesson_name" : "Adjective Declination",
         "lesson_type" : "adjective-declination"
     },
     "verb-conjugation" : {
         "data_file" : "finnish_common_500_verbs.json",
-        "sub_object" : "indicative",
+        "sub_dir" : "indicative",
         "lesson_name" : "Verb Conjugation",
         "lesson_type" : "verb-conjugation"
     },
     "verb-conditional" : {
         "data_file" : "finnish_common_500_verbs.json",
-        "sub_object" : "conditional",
+        "sub_dir" : "conditional",
         "lesson_name" : "Verb Conditional",
         "lesson_type" : "verb-conditional"
     },
     "verb-infinitives" : {
         "data_file" : "finnish_common_500_verbs.json",
-        "sub_object" : "infinitives",
+        "sub_dir" : "infinitives",
         "lesson_name" : "Verb Infinitives",
         "lesson_type" : "verb-infinitives"
     },

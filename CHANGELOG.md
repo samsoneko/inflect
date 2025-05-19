@@ -22,3 +22,15 @@
 - Updated the design to be more coherent and feature more colors.
 - Revamped the entire data structure for the finnish resources to include full inflection data.
 - Cleaned up the directory structure
+
+## 0.7.5
+
+### Bugfixes
+
+- 
+
+### Features
+
+- Implemented dynamic fetching of json inflection entries from the server to improve modularity and decrease data transfer.
+- Implemented new prefix system when saving configs to prepare for multi language support.
+- Removed case sensitivity from solution checking to improve usability.

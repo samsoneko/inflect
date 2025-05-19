@@ -1,11 +1,15 @@
 <script lang="ts">
     import { onMount, tick } from "svelte";
     import InflectionTree from "$lib/components/InflectionTree.svelte";
+    import defaultAppConfig from "$lib/app_config.json";
     import { collectAllPaths } from '$lib/utils/json-utils.ts';
+    import type { WordEntry } from "$lib/types";
 
     let { data } = $props();
-    let lessonData = data.lessonData;
-    let dataHead : object = $state(lessonData[0]["inflection"]);
+    let serversideEntry : WordEntry;
+    let inflectionSubDir : object = $state({});
+
+    let appConfig = $state(defaultAppConfig);
 
     let currentSelection = $state(new Set<string>());
     let isViableConfiguration = $state(true);
@@ -17,16 +21,24 @@
         }
     });
 
-    onMount(() => {
+    onMount(async () => {
         // Your function to execute on page load
-        if (data.lessonConf.hasOwnProperty("sub_object")) {
-            dataHead = lessonData[0]["inflection"][data.lessonConf.sub_object];
+        serversideEntry = await getJSONEntryFromServer("fi", "finnish_common_3000", data.lessonConf.data_file, 0) as WordEntry;
+        appConfig = JSON.parse(localStorage.getItem("app:config")) || defaultAppConfig;
+        if (data.lessonConf.hasOwnProperty("sub_dir")) {
+            inflectionSubDir = serversideEntry["inflection"][data.lessonConf.sub_dir];
         } else {
-            dataHead = lessonData[0]["inflection"];
+            inflectionSubDir = serversideEntry["inflection"];
         }
-        buildMaps(dataHead);
+        buildMaps(inflectionSubDir);
         loadConfig();
     });
+
+    async function getJSONEntryFromServer(language : string, set : string, lesson : string, id) {
+        let response = await fetch(`/api/data/${language}/${set}/${lesson}/${id}`);
+        let entry = await response.json();
+        return entry
+    }
 
     let parentMap = new Map<string, string | undefined>();
     let childrenMap = new Map<string, string[]>();
@@ -53,7 +65,7 @@
     }
 
     function loadConfig() {
-        let storedSelection = localStorage.getItem(data.lessonConf.lesson_type + "Config",);
+        let storedSelection = localStorage.getItem(appConfig.language + ":" + data.lessonConf.lesson_type + ":" + "config",);
         if (storedSelection) {
             try {
                 const selectedLeaves: string[] = JSON.parse(storedSelection);
@@ -144,7 +156,7 @@
             return !children || children.length === 0; // No children = leaf
         });
 
-        localStorage.setItem(data.lessonConf.lesson_type + "Config", JSON.stringify(selectedLeaves),);
+        localStorage.setItem(appConfig.language + ":" + data.lessonConf.lesson_type + ":" + "config", JSON.stringify(selectedLeaves),);
         window.location.href = "/";
     }
 
@@ -153,7 +165,7 @@
     }
 
     function selectAll() {
-        const allPaths = collectAllPaths(dataHead);
+        const allPaths = collectAllPaths(inflectionSubDir);
         currentSelection = new Set(allPaths);
     }
 </script>
@@ -173,7 +185,7 @@
 </div>
 
 <div class="saber-panel-default">
-    <InflectionTree node={dataHead} {currentSelection} {toggle}/>
+    <InflectionTree node={inflectionSubDir} {currentSelection} {toggle}/>
 </div>
 
 <div class="center-text bottom-buttons">

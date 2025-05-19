@@ -1,14 +1,19 @@
 <script lang="ts">
     import { onMount, tick } from "svelte";
     import AccuracyDisplay from "$lib/components/AccuracyDisplay.svelte";
+    import defaultAppConfig from "$lib/app_config.json";
     import defaultLanguageConfig from "$lib/language_config.json";
     import { collectAllLeafs } from '$lib/utils/json-utils.ts';
+    import type { WordEntry } from "$lib/types";
 
     let { data } = $props();
     let languageConfig = $state(defaultLanguageConfig);
 
-    let lessonData = data.lessonData;
-    let dataHead = lessonData[0]["inflection"][data.lessonConf.sub_object];
+    let appConfig = $state(defaultAppConfig);
+
+    let serversideEntry : WordEntry;
+    let lessonLabels;
+    let inflectionSubDir = {};
 
     // Variables holding information about the current question
     let currentWord = $state("");
@@ -28,11 +33,14 @@
     let correctAnswerCount = $state(0);
 
     // On page load, initialize data and load first question
-    onMount(() => {
-        if (data.lessonConf.hasOwnProperty("sub_object")) {
-            dataHead = lessonData[0]["inflection"][data.lessonConf.sub_object];
+    onMount(async () => {
+        lessonLabels = await getLabelsFromServer("fi", "finnish_common_3000");
+        serversideEntry = await getJSONEntryFromServer("fi", "finnish_common_3000", data.lessonConf.data_file, "random") as WordEntry;
+        appConfig = JSON.parse(localStorage.getItem("app:config")) || defaultAppConfig;
+        if (data.lessonConf.hasOwnProperty("sub_dir")) {
+            inflectionSubDir = serversideEntry["inflection"][data.lessonConf.sub_dir];
         } else {
-            dataHead = lessonData[0]["inflection"];
+            inflectionSubDir = serversideEntry["inflection"];
         }
         loadLessonConfig();
         nextQuestion();
@@ -41,32 +49,44 @@
 
     // Load the data for the current lesson
     function loadLessonConfig() {
-        selectionConfig = JSON.parse(localStorage.getItem(data.lessonConf.lesson_type + "Config",),) || collectAllLeafs(dataHead);
+        selectionConfig = JSON.parse(localStorage.getItem(appConfig.language + ":" + data.lessonConf.lesson_type + ":" + "config",)) || collectAllLeafs(inflectionSubDir);
     }
 
     // Variables for handling the input and confirm button
     let answerInputField;
     let nextQuestionButton;
 
+    async function getJSONEntryFromServer(language : string, set : string, lesson : string, id) {
+        let response = await fetch(`/api/data/${language}/${set}/${lesson}/${id}`);
+        let entry = await response.json();
+        return entry
+    }
+
+    async function getLabelsFromServer(language : string, set : string) {
+        let response = await fetch(`/api/labels/${language}/${set}`);
+        let labels = await response.json();
+        return labels
+    }
+
     // Loading the next question based on a random index
-    function nextQuestion() {
+    async function nextQuestion() {
+        // Get a (random) entry from the lesson resouce file
+        serversideEntry = await getJSONEntryFromServer("fi", "finnish_common_3000", data.lessonConf.data_file, "random") as WordEntry;
         answerInputField.focus();
         currentAnswer = "";
         currentPathCategories = [];
         answerState = "unanswered";
-        let index = Math.floor(Math.random() * Object.keys(lessonData).length); // Pick a random index from all available words in the lesson source file
-        currentWord = lessonData[index]["word"]; // Load the word
-        currentTranslation = lessonData[index]["translation"]; // Load the translation
+        currentWord = serversideEntry["word"]; // Load the word
+        currentTranslation = serversideEntry["translation"]; // Load the translation
         
+        // Get a random inflection from the entry
         let randomSelectionPath = selectionConfig[Math.floor(Math.random() * selectionConfig.length,)];
-        
-        if (data.lessonConf.hasOwnProperty("sub_object")) {
-            dataHead = lessonData[index]["inflection"][data.lessonConf.sub_object];
+        if (data.lessonConf.hasOwnProperty("sub_dir")) {
+            inflectionSubDir = serversideEntry["inflection"][data.lessonConf.sub_dir];
         } else {
-            dataHead = lessonData[index]["inflection"];
+            inflectionSubDir = serversideEntry["inflection"];
         }
-
-        let solutionEntry = String(getValueFromPath(dataHead, randomSelectionPath)); // Convert the entry to a string
+        let solutionEntry = String(getValueFromPath(inflectionSubDir, randomSelectionPath)); // Convert the entry to a string
 
         // Handle situations where multiple answers exist
         if (solutionEntry.indexOf(",") != -1) {
@@ -94,7 +114,7 @@
     // Check if the answer is correct
     function checkAnswer(e) {
         e.preventDefault();
-        if (currentSolution.includes(currentAnswer)) {
+        if (currentSolution.includes(currentAnswer.toLowerCase())) {
             if (answerState == "unanswered") {
                 totalAnswerCount += 1;
                 correctAnswerCount += 1;
@@ -128,8 +148,8 @@
     <p class="translation">{currentTranslation}</p>
     <div class="category-holder">
         {#each currentPathCategories as category_entry}
-            {#if data.lessonLabels.hasOwnProperty(category_entry)}
-                <p class="category-tag">{data.lessonLabels[category_entry]}</p>
+            {#if lessonLabels.hasOwnProperty(category_entry)}
+                <p class="category-tag">{lessonLabels[category_entry]}</p>
             {:else}
                 <p class="category-tag">{category_entry}</p>
             {/if}
