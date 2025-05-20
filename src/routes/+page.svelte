@@ -1,7 +1,21 @@
-<script>
+<script lang='ts'>
+    import { onMount } from "svelte";
     import CategoryBlock from "$lib/components/CategoryBlock.svelte";
+    import defaultAppConfig from "$lib/app_config.json";
 
-    let current_tab = "declination";
+    let appConfig = $state(defaultAppConfig);
+    let lessonConf = $state();
+
+    onMount(async () => {
+        appConfig = JSON.parse(localStorage.getItem("app:config")) || defaultAppConfig;
+        lessonConf = await getLessonConfFromServer(appConfig.language);
+    });
+
+    async function getLessonConfFromServer(language : string) {
+        let response = await fetch(`/api/lessons/${language}`);
+        let lessons = await response.json();
+        return lessons
+    }
 </script>
 
 <svelte:head>
@@ -20,38 +34,26 @@
 
 <div class="page-section">
     <h2><i class="fas fa-book"></i> Study</h2>
-    <div class="tab-buttons">
-        <button class={current_tab === "declination" ? "saber-tab-button-default-active" : "saber-tab-button-default"} onclick={() => current_tab = "declination"}>Declination</button>
-        <button class={current_tab === "conjugation" ? "saber-tab-button-default-active" : "saber-tab-button-default"} onclick={() => current_tab = "conjugation"}>Conjugation</button>
-        <button class={current_tab === "other" ? "saber-tab-button-default-active" : "saber-tab-button-default"} onclick={() => current_tab = "other"}>Other</button>
+    <div class="category-div">
+        {#if lessonConf}
+            {#each Object.entries(lessonConf) as [lesson, content]}
+                <CategoryBlock
+                    name={content.lesson_name}
+                    color={content.color}
+                    lesson_path={"study/textinput?lesson="+content.lesson_type}
+                    settings_path={"study/textinput/settings?lesson="+content.lesson_type}
+                    description={content.description}
+                    tags={content.tags}
+                />
+            {/each}
+        {/if}
     </div>
-    {#if current_tab == "declination"}
-        <div class="category-div">
-            <CategoryBlock name={"Nouns"} color={"var(--accent-blue)"} lesson_path="study/textinput?lang=fi&lesson=noun-declination" settings_path="study/textinput/settings?lang=fi&lesson=noun-declination" description={"Practise the declination of nouns"}/>
-            <CategoryBlock name={"Possessives"} color={"var(--accent-indigo)"} lesson_path="study/textinput?lang=fi&lesson=noun-possessives" settings_path="study/textinput/settings?lang=fi&lesson=noun-possessives" description={"Practise the possessives of nouns"}/>
-            <CategoryBlock name={"Pronouns"} color={"var(--accent-violet)"} lesson_path="study/textinput?lang=fi&lesson=pronoun-declination" settings_path="study/textinput/settings?lang=fi&lesson=pronoun-declination" description={"Practise the declination of pronouns"}/>
-            <CategoryBlock name={"Adjectives"} color={"var(--accent-pink)"} lesson_path="study/textinput?lang=fi&lesson=adjective-declination" settings_path="study/textinput/settings?lang=fi&lesson=adjective-declination" description={"Practise the declination of adjectives"}/>
-        </div>
-    {:else if current_tab == "conjugation"}
-        <div class="category-div">
-            <CategoryBlock name={"Verbs"} color={"var(--accent-lime)"} lesson_path="study/textinput?lang=fi&lesson=verb-conjugation" settings_path="study/textinput/settings?lang=fi&lesson=verb-conjugation" description={"Practise the conjugation of verbs"}/>
-            <CategoryBlock name={"Conditional"} color={"var(--accent-green)"} lesson_path="study/textinput?lang=fi&lesson=verb-conditional" settings_path="study/textinput/settings?lang=fi&lesson=verb-conditional" description={"Practise the conditional of verbs"}/>
-            <CategoryBlock name={"Infinitives"} color={"var(--accent-teal)"} lesson_path="study/textinput?lang=fi&lesson=verb-infinitives" settings_path="study/textinput/settings?lang=fi&lesson=verb-infinitives" description={"Practise the infinitives of verbs"}/>
-        </div>
-    {:else if current_tab == "other"}
-        <div class="category-div">
-            <CategoryBlock name={"Time⌛"} color={"var(--accent-neutral)"} lesson_path="" settings_path="" description={"Practise temporal expressions"}/>
-            <CategoryBlock name={"Counters⌛"} color={"var(--accent-neutral)"} lesson_path="" settings_path="" description={"Practise counting"}/>
-            <CategoryBlock name={"Gradation⌛"} color={"var(--accent-neutral)"} lesson_path="" settings_path="" description={"Practise adjective gradation"}/>
-        </div>
-    {/if}
 </div>
 
 <style>
     .category-div {
         max-width: 100%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         column-gap: 10px;
         row-gap: 10px;
     }

@@ -4,9 +4,11 @@
     import defaultAppConfig from "$lib/app_config.json";
     import { collectAllPaths } from '$lib/utils/json-utils.ts';
     import type { WordEntry } from "$lib/types";
+    import { page } from '$app/stores';
 
-    let { data } = $props();
     let serversideEntry : WordEntry;
+    let current_lesson = $state();
+    let lessonParam;
     let inflectionSubDir : object = $state({});
 
     let appConfig = $state(defaultAppConfig);
@@ -22,11 +24,14 @@
     });
 
     onMount(async () => {
-        // Your function to execute on page load
-        serversideEntry = await getJSONEntryFromServer("fi", "finnish_common_3000", data.lessonConf.data_file, 0) as WordEntry;
         appConfig = JSON.parse(localStorage.getItem("app:config")) || defaultAppConfig;
-        if (data.lessonConf.hasOwnProperty("sub_dir")) {
-            inflectionSubDir = serversideEntry["inflection"][data.lessonConf.sub_dir];
+        const searchParams = $page.url.searchParams;
+        lessonParam = searchParams.get('lesson');
+        let lessonConf = await getLessonConfFromServer(appConfig.language);
+        current_lesson = lessonConf[lessonParam];
+        serversideEntry = await getJSONEntryFromServer(appConfig.language, current_lesson.set, current_lesson.data_file, 0) as WordEntry;
+        if (current_lesson.hasOwnProperty("sub_dir")) {
+            inflectionSubDir = serversideEntry["inflection"][current_lesson.sub_dir];
         } else {
             inflectionSubDir = serversideEntry["inflection"];
         }
@@ -38,6 +43,12 @@
         let response = await fetch(`/api/data/${language}/${set}/${lesson}/${id}`);
         let entry = await response.json();
         return entry
+    }
+
+    async function getLessonConfFromServer(language : string) {
+        let response = await fetch(`/api/lessons/${language}`);
+        let lessons = await response.json();
+        return lessons
     }
 
     let parentMap = new Map<string, string | undefined>();
@@ -65,7 +76,7 @@
     }
 
     function loadConfig() {
-        let storedSelection = localStorage.getItem(appConfig.language + ":" + data.lessonConf.lesson_type + ":" + "config",);
+        let storedSelection = localStorage.getItem(appConfig.language + ":" + current_lesson.lesson_type + ":" + "config",);
         if (storedSelection) {
             try {
                 const selectedLeaves: string[] = JSON.parse(storedSelection);
@@ -156,7 +167,7 @@
             return !children || children.length === 0; // No children = leaf
         });
 
-        localStorage.setItem(appConfig.language + ":" + data.lessonConf.lesson_type + ":" + "config", JSON.stringify(selectedLeaves),);
+        localStorage.setItem(appConfig.language + ":" + current_lesson.lesson_type + ":" + "config", JSON.stringify(selectedLeaves),);
         window.location.href = "/";
     }
 
@@ -171,12 +182,16 @@
 </script>
 
 <svelte:head>
-    <title>Inflect - {data.lessonConf.lesson_name} Settings</title>
+    {#if current_lesson}
+    <title>Inflect - {current_lesson.lesson_name} Settings</title>
+    {/if}
 </svelte:head>
 
+{#if current_lesson}
 <h1 class="page-title">
-    {data.lessonConf.lesson_name} <i class="fas fa-cog"></i>
+    {current_lesson.lesson_name} <i class="fas fa-cog"></i>
 </h1>
+{/if}
 
 <div class="saber-panel-default">
     Select as many entries for each category as you want to practise in the

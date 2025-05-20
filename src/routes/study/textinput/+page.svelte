@@ -5,14 +5,16 @@
     import defaultLanguageConfig from "$lib/language_config.json";
     import { collectAllLeafs } from '$lib/utils/json-utils.ts';
     import type { WordEntry } from "$lib/types";
+    import { page } from '$app/stores';
 
-    let { data } = $props();
     let languageConfig = $state(defaultLanguageConfig);
 
     let appConfig = $state(defaultAppConfig);
 
     let serversideEntry : WordEntry;
     let lessonLabels;
+    let current_lesson = $state();
+    let lessonParam;
     let inflectionSubDir = {};
 
     // Variables holding information about the current question
@@ -34,22 +36,26 @@
 
     // On page load, initialize data and load first question
     onMount(async () => {
-        lessonLabels = await getLabelsFromServer("fi", "finnish_common_3000");
-        serversideEntry = await getJSONEntryFromServer("fi", "finnish_common_3000", data.lessonConf.data_file, "random") as WordEntry;
         appConfig = JSON.parse(localStorage.getItem("app:config")) || defaultAppConfig;
-        if (data.lessonConf.hasOwnProperty("sub_dir")) {
-            inflectionSubDir = serversideEntry["inflection"][data.lessonConf.sub_dir];
+        const searchParams = $page.url.searchParams;
+        lessonParam = searchParams.get('lesson');
+        let lessonConf = await getLessonConfFromServer(appConfig.language);
+        current_lesson = lessonConf[lessonParam];
+        lessonLabels = await getLabelsFromServer(appConfig.language, current_lesson.set);
+        serversideEntry = await getJSONEntryFromServer(appConfig.language, current_lesson.set, current_lesson.data_file, "random") as WordEntry;
+        if (current_lesson.hasOwnProperty("sub_dir")) {
+            inflectionSubDir = serversideEntry["inflection"][current_lesson.sub_dir];
         } else {
             inflectionSubDir = serversideEntry["inflection"];
         }
         loadLessonConfig();
         nextQuestion();
-        languageConfig = JSON.parse(localStorage.getItem("fi:config")) || defaultLanguageConfig;
+        languageConfig = JSON.parse(localStorage.getItem(appConfig.language + ":config")) || defaultLanguageConfig;
     });
 
     // Load the data for the current lesson
     function loadLessonConfig() {
-        selectionConfig = JSON.parse(localStorage.getItem(appConfig.language + ":" + data.lessonConf.lesson_type + ":" + "config",)) || collectAllLeafs(inflectionSubDir);
+        selectionConfig = JSON.parse(localStorage.getItem(appConfig.language + ":" + current_lesson.lesson_type + ":" + "config",)) || collectAllLeafs(inflectionSubDir);
     }
 
     // Variables for handling the input and confirm button
@@ -68,10 +74,16 @@
         return labels
     }
 
+    async function getLessonConfFromServer(language : string) {
+        let response = await fetch(`/api/lessons/${language}`);
+        let lessons = await response.json();
+        return lessons
+    }
+
     // Loading the next question based on a random index
     async function nextQuestion() {
         // Get a (random) entry from the lesson resouce file
-        serversideEntry = await getJSONEntryFromServer("fi", "finnish_common_3000", data.lessonConf.data_file, "random") as WordEntry;
+        serversideEntry = await getJSONEntryFromServer(appConfig.language, current_lesson.set, current_lesson.data_file, "random") as WordEntry;
         answerInputField.focus();
         currentAnswer = "";
         currentPathCategories = [];
@@ -81,8 +93,8 @@
         
         // Get a random inflection from the entry
         let randomSelectionPath = selectionConfig[Math.floor(Math.random() * selectionConfig.length,)];
-        if (data.lessonConf.hasOwnProperty("sub_dir")) {
-            inflectionSubDir = serversideEntry["inflection"][data.lessonConf.sub_dir];
+        if (current_lesson.hasOwnProperty("sub_dir")) {
+            inflectionSubDir = serversideEntry["inflection"][current_lesson.sub_dir];
         } else {
             inflectionSubDir = serversideEntry["inflection"];
         }
@@ -93,6 +105,11 @@
             currentSolution = String(solutionEntry).split(",");
         } else {
             currentSolution = [solutionEntry];
+        }
+
+        // Skip to next question if the solution is not valid, TODO: what if all solutions are not valid?
+        if (solutionEntry == "" || solutionEntry =="—") {
+            nextQuestion();
         }
     }
 
@@ -134,10 +151,14 @@
 </script>
 
 <svelte:head>
-    <title>Inflect - {data.lessonConf.lesson_name}</title>
+    {#if current_lesson}
+    <title>Inflect - {current_lesson.lesson_name}</title>
+    {/if}
 </svelte:head>
 
-<h1 class="page-title">{data.lessonConf.lesson_name}</h1>
+{#if current_lesson}
+<h1 class="page-title">{current_lesson.lesson_name}</h1>
+{/if}
 
 {#if languageConfig["showAccuracy"] == true}
     <AccuracyDisplay totalAnswerCount={totalAnswerCount} correctAnswerCount={correctAnswerCount} />

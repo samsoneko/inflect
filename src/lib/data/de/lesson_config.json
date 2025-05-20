@@ -1,0 +1,11 @@
+{
+    "german-test" : {
+        "data_file" : "german_test.json",
+        "set" : "german_common_3000",
+        "lesson_name" : "German Test",
+        "lesson_type" : "german-test",
+        "color" : "var(--accent-blue)",
+        "description" : "A test lesson for German",
+        "tags" : ["test"]
+    }
+}

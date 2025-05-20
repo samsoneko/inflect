@@ -1,0 +1,80 @@
+{
+    "noun-declination" : {
+        "data_file" : "finnish_common_2000_nouns.json",
+        "set" : "finnish_common_3000",
+        "sub_dir" : "base form",
+        "lesson_name" : "Noun Declination",
+        "lesson_type" : "noun-declination",
+        "color" : "var(--accent-blue)",
+        "description" : "Practise the declination of nouns",
+        "tags" : ["nouns", "cases"]
+    },
+    "noun-possessives" : {
+        "data_file" : "finnish_common_2000_nouns.json",
+        "set" : "finnish_common_3000",
+        "sub_dir" : "possessive forms",
+        "lesson_name" : "Noun Possessives",
+        "lesson_type" : "noun-possessives",
+        "color" : "var(--accent-indigo)",
+        "description" : "Practise the possessives of nouns",
+        "tags" : ["nouns", "possessives"]
+    },
+    "pronoun-declination" : {
+        "data_file" : "pronouns.json",
+        "set" : "finnish_extras",
+        "lesson_name" : "Pronoun Declination",
+        "lesson_type" : "pronoun-declination",
+        "color" : "var(--accent-violet)",
+        "description" : "Practise the declination of pronouns",
+        "tags" : ["pronouns", "cases"]
+    },
+    "adjective-declination" : {
+        "data_file" : "finnish_common_500_adjectives.json",
+        "set" : "finnish_common_3000",
+        "sub_dir" : "base form",
+        "lesson_name" : "Adjective Declination",
+        "lesson_type" : "adjective-declination",
+        "color" : "var(--accent-pink)",
+        "description" : "Practise the declination of adjectives",
+        "tags" : ["adjectives", "cases"]
+    },
+    "verb-indicative" : {
+        "data_file" : "finnish_common_500_verbs.json",
+        "set" : "finnish_common_3000",
+        "sub_dir" : "indicative",
+        "lesson_name" : "Verb Indicative",
+        "lesson_type" : "verb-indicative",
+        "color" : "var(--accent-lime)",
+        "description" : "Practise the conjugation of verbs",
+        "tags" : ["verbs", "indicative"]
+    },
+    "verb-conditional" : {
+        "data_file" : "finnish_common_500_verbs.json",
+        "set" : "finnish_common_3000",
+        "sub_dir" : "conditional",
+        "lesson_name" : "Verb Conditional",
+        "lesson_type" : "verb-conditional",
+        "color" : "var(--accent-green)",
+        "description" : "Practise the conditional of verbs",
+        "tags" : ["verbs", "conditional"]
+    },
+    "verb-infinitives" : {
+        "data_file" : "finnish_common_500_verbs.json",
+        "set" : "finnish_common_3000",
+        "sub_dir" : "infinitives",
+        "lesson_name" : "Verb Infinitives",
+        "lesson_type" : "verb-infinitives",
+        "color" : "var(--accent-teal)",
+        "description" : "Practise the infinitives of verbs",
+        "tags" : ["verbs", "infinitives"]
+    },
+    "verb-conjugation" : {
+        "data_file" : "finnish_common_500_verbs.json",
+        "set" : "finnish_common_3000",
+        "lesson_name" : "Verbs",
+        "lesson_type" : "verb-conjugation",
+        "color" : "var(--accent-brown)",
+        "description" : "Practise all inflections for verbs",
+        "tags" : ["verbs", "inflection"]
+    }
+}

@@ -1,6 +1,18 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import defaultAppConfig from "$lib/app_config.json";
+    import { onNavigate } from '$app/navigation';
+
+    onNavigate((navigation) => {
+        if (!document.startViewTransition) return;
+
+        return new Promise((resolve) => {
+            document.startViewTransition(async () => {
+                resolve();
+                await navigation.complete;
+            });
+        });
+    });
 
     onMount(() => {
         loadConfig();
@@ -121,4 +133,5 @@
         box-shadow: var(--box-shadow);
         border-radius: var(--border-radius);
     }
+
 </style>

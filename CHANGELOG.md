@@ -34,3 +34,16 @@
 - Implemented dynamic fetching of json inflection entries from the server to improve modularity and decrease data transfer.
 - Implemented new prefix system when saving configs to prepare for multi language support.
 - Removed case sensitivity from solution checking to improve usability.
+
+## 0.7.6
+
+### Bugfixes
+
+- Fixed invalid or empty json entries appearing as questions
+
+### Features
+
+- Implemented dynamic config loading through localStorage configs and the server api
+- Implemented dynamic display of lessons on home page
+- Redesigned lesson panels to prepare for upcoming features
+- Implemented working multi language support with automatic config switching and dynamic loading

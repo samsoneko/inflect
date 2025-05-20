@@ -1,0 +1,382 @@
+{
+    "0": {
+        "word": "hallo",
+        "translation": "",
+        "inflection": {
+            "base form": {
+                "nominative": {
+                    "singular": "vuosi",
+                    "plural": "vuodet"
+                },
+                "genitive": {
+                    "singular": "vuoden",
+                    "plural": [
+                        "vuosien",
+                        "vuotten"
+                    ]
+                },
+                "partitive": {
+                    "singular": "vuotta",
+                    "plural": "vuosia"
+                },
+                "inessive": {
+                    "singular": "vuodessa",
+                    "plural": "vuosissa"
+                },
+                "elative": {
+                    "singular": "vuodesta",
+                    "plural": "vuosista"
+                },
+                "illative": {
+                    "singular": "vuoteen",
+                    "plural": "vuosiin"
+                },
+                "adessive": {
+                    "singular": "vuodella",
+                    "plural": "vuosilla"
+                },
+                "ablative": {
+                    "singular": "vuodelta",
+                    "plural": "vuosilta"
+                },
+                "allative": {
+                    "singular": "vuodelle",
+                    "plural": "vuosille"
+                },
+                "essive": {
+                    "singular": "vuotena",
+                    "plural": "vuosina"
+                },
+                "translative": {
+                    "singular": "vuodeksi",
+                    "plural": "vuosiksi"
+                },
+                "abessive": {
+                    "singular": "vuodetta",
+                    "plural": "vuositta"
+                }
+            },
+            "possessive forms": {
+                "1st sing.": {
+                    "nominative": {
+                        "singular": "vuoteni",
+                        "plural": "vuoteni"
+                    },
+                    "genitive": {
+                        "singular": "vuoteni",
+                        "plural": [
+                            "vuosieni",
+                            "vuotteni"
+                        ]
+                    },
+                    "partitive": {
+                        "singular": "vuottani",
+                        "plural": "vuosiani"
+                    },
+                    "inessive": {
+                        "singular": "vuodessani",
+                        "plural": "vuosissani"
+                    },
+                    "elative": {
+                        "singular": "vuodestani",
+                        "plural": "vuosistani"
+                    },
+                    "illative": {
+                        "singular": "vuoteeni",
+                        "plural": "vuosiini"
+                    },
+                    "adessive": {
+                        "singular": "vuodellani",
+                        "plural": "vuosillani"
+                    },
+                    "ablative": {
+                        "singular": "vuodeltani",
+                        "plural": "vuosiltani"
+                    },
+                    "allative": {
+                        "singular": "vuodelleni",
+                        "plural": "vuosilleni"
+                    },
+                    "essive": {
+                        "singular": "vuotenani",
+                        "plural": "vuosinani"
+                    },
+                    "translative": {
+                        "singular": "vuodekseni",
+                        "plural": "vuosikseni"
+                    },
+                    "abessive": {
+                        "singular": "vuodettani",
+                        "plural": "vuosittani"
+                    }
+                },
+                "2nd sing.": {
+                    "nominative": {
+                        "singular": "vuotesi",
+                        "plural": "vuotesi"
+                    },
+                    "genitive": {
+                        "singular": "vuotesi",
+                        "plural": [
+                            "vuosiesi",
+                            "vuottesi"
+                        ]
+                    },
+                    "partitive": {
+                        "singular": "vuottasi",
+                        "plural": "vuosiasi"
+                    },
+                    "inessive": {
+                        "singular": "vuodessasi",
+                        "plural": "vuosissasi"
+                    },
+                    "elative": {
+                        "singular": "vuodestasi",
+                        "plural": "vuosistasi"
+                    },
+                    "illative": {
+                        "singular": "vuoteesi",
+                        "plural": "vuosiisi"
+                    },
+                    "adessive": {
+                        "singular": "vuodellasi",
+                        "plural": "vuosillasi"
+                    },
+                    "ablative": {
+                        "singular": "vuodeltasi",
+                        "plural": "vuosiltasi"
+                    },
+                    "allative": {
+                        "singular": "vuodellesi",
+                        "plural": "vuosillesi"
+                    },
+                    "essive": {
+                        "singular": "vuotenasi",
+                        "plural": "vuosinasi"
+                    },
+                    "translative": {
+                        "singular": "vuodeksesi",
+                        "plural": "vuosiksesi"
+                    },
+                    "abessive": {
+                        "singular": "vuodettasi",
+                        "plural": "vuosittasi"
+                    }
+                },
+                "1st plur.": {
+                    "nominative": {
+                        "singular": "vuotemme",
+                        "plural": "vuotemme"
+                    },
+                    "genitive": {
+                        "singular": "vuotemme",
+                        "plural": [
+                            "vuosiemme",
+                            "vuottemme"
+                        ]
+                    },
+                    "partitive": {
+                        "singular": "vuottamme",
+                        "plural": "vuosiamme"
+                    },
+                    "inessive": {
+                        "singular": "vuodessamme",
+                        "plural": "vuosissamme"
+                    },
+                    "elative": {
+                        "singular": "vuodestamme",
+                        "plural": "vuosistamme"
+                    },
+                    "illative": {
+                        "singular": "vuoteemme",
+                        "plural": "vuosiimme"
+                    },
+                    "adessive": {
+                        "singular": "vuodellamme",
+                        "plural": "vuosillamme"
+                    },
+                    "ablative": {
+                        "singular": "vuodeltamme",
+                        "plural": "vuosiltamme"
+                    },
+                    "allative": {
+                        "singular": "vuodellemme",
+                        "plural": "vuosillemme"
+                    },
+                    "essive": {
+                        "singular": "vuotenamme",
+                        "plural": "vuosinamme"
+                    },
+                    "translative": {
+                        "singular": "vuodeksemme",
+                        "plural": "vuosiksemme"
+                    },
+                    "abessive": {
+                        "singular": "vuodettamme",
+                        "plural": "vuosittamme"
+                    }
+                },
+                "2nd plur.": {
+                    "nominative": {
+                        "singular": "vuotenne",
+                        "plural": "vuotenne"
+                    },
+                    "genitive": {
+                        "singular": "vuotenne",
+                        "plural": [
+                            "vuosienne",
+                            "vuottenne"
+                        ]
+                    },
+                    "partitive": {
+                        "singular": "vuottanne",
+                        "plural": "vuosianne"
+                    },
+                    "inessive": {
+                        "singular": "vuodessanne",
+                        "plural": "vuosissanne"
+                    },
+                    "elative": {
+                        "singular": "vuodestanne",
+                        "plural": "vuosistanne"
+                    },
+                    "illative": {
+                        "singular": "vuoteenne",
+                        "plural": "vuosiinne"
+                    },
+                    "adessive": {
+                        "singular": "vuodellanne",
+                        "plural": "vuosillanne"
+                    },
+                    "ablative": {
+                        "singular": "vuodeltanne",
+                        "plural": "vuosiltanne"
+                    },
+                    "allative": {
+                        "singular": "vuodellenne",
+                        "plural": "vuosillenne"
+                    },
+                    "essive": {
+                        "singular": "vuotenanne",
+                        "plural": "vuosinanne"
+                    },
+                    "translative": {
+                        "singular": "vuodeksenne",
+                        "plural": "vuosiksenne"
+                    },
+                    "abessive": {
+                        "singular": "vuodettanne",
+                        "plural": "vuosittanne"
+                    }
+                },
+                "3rd": {
+                    "nominative": {
+                        "singular": "vuotensa",
+                        "plural": "vuotensa"
+                    },
+                    "genitive": {
+                        "singular": "vuotensa",
+                        "plural": [
+                            "vuosiensa",
+                            "vuottensa"
+                        ]
+                    },
+                    "partitive": {
+                        "singular": [
+                            "vuottaan",
+                            "vuottansa"
+                        ],
+                        "plural": [
+                            "vuosiaan",
+                            "vuosiansa"
+                        ]
+                    },
+                    "inessive": {
+                        "singular": [
+                            "vuodessaan",
+                            "vuodessansa"
+                        ],
+                        "plural": [
+                            "vuosissaan",
+                            "vuosissansa"
+                        ]
+                    },
+                    "elative": {
+                        "singular": [
+                            "vuodestaan",
+                            "vuodestansa"
+                        ],
+                        "plural": [
+                            "vuosistaan",
+                            "vuosistansa"
+                        ]
+                    },
+                    "illative": {
+                        "singular": "vuoteensa",
+                        "plural": "vuosiinsa"
+                    },
+                    "adessive": {
+                        "singular": [
+                            "vuodellaan",
+                            "vuodellansa"
+                        ],
+                        "plural": [
+                            "vuosillaan",
+                            "vuosillansa"
+                        ]
+                    },
+                    "ablative": {
+                        "singular": [
+                            "vuodeltaan",
+                            "vuodeltansa"
+                        ],
+                        "plural": [
+                            "vuosiltaan",
+                            "vuosiltansa"
+                        ]
+                    },
+                    "allative": {
+                        "singular": [
+                            "vuodelleen",
+                            "vuodellensa"
+                        ],
+                        "plural": [
+                            "vuosilleen",
+                            "vuosillensa"
+                        ]
+                    },
+                    "essive": {
+                        "singular": [
+                            "vuotenaan",
+                            "vuotenansa"
+                        ],
+                        "plural": [
+                            "vuosinaan",
+                            "vuosinansa"
+                        ]
+                    },
+                    "translative": {
+                        "singular": [
+                            "vuodekseen",
+                            "vuodeksensa"
+                        ],
+                        "plural": [
+                            "vuosikseen",
+                            "vuosiksensa"
+                        ]
+                    },
+                    "abessive": {
+                        "singular": [
+                            "vuodettaan",
+                            "vuodettansa"
+                        ],
+                        "plural": [
+                            "vuosittaan",
+                            "vuosittansa"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
