@@ -1,10 +1,6 @@
 <script>
     import { onMount } from "svelte";
     export let theme = "dark";
-
-    onMount(() => {
-        setTheme(theme);
-    });
   
     function setTheme(new_theme) {
         theme = new_theme;

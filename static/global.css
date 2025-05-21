@@ -13,6 +13,7 @@
     --text-color: white;
     --subtle-text-color: #b3b3b3;
     --icon-color: white;
+    --contrast-text-color: black;
     
     --primary-color: #bb86fc;
     --warn-color: #cf6679;
@@ -46,6 +47,7 @@
     --text-color: black;
     --subtle-text-color: #494949;
     --icon-color: black;
+    --contrast-text-color: white;
 
     --primary-color: #6200ee;
     --warn-color: #b00020;

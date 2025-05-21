@@ -5,7 +5,7 @@ import path from 'path';
 export async function GET({ params }) {
 	const { language, set, file, id } = params;
 
-	const filePath = path.resolve(`src/lib/data/${language}/res/${set}/${file}`);
+	const filePath = path.resolve(`data/${language}/res/${set}/${file}`);
 	try {
 		const file = await fs.readFile(filePath, 'utf-8');
 		const json = JSON.parse(file);

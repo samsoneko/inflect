@@ -2,10 +2,9 @@ import fs from 'fs/promises';
 import path from 'path';
 
 /** @type {import('./$types').RequestHandler} */
-export async function GET({ params }) {
-    const { language } = params;
+export async function GET() {
 
-    const filePath = path.resolve(`data/${language}/lesson_config.json`);
+    const filePath = path.resolve(`data/language_index.json`);
     try {
         const file = await fs.readFile(filePath, 'utf-8');
         const json = JSON.parse(file);

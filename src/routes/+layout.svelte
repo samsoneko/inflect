@@ -40,12 +40,8 @@
         let theme = appConfig["theme"];
         if (theme == "dark") {
             document.body.classList.remove('light-theme');
-            appConfig["theme"] = theme;
-            localStorage.setItem("app:config", JSON.stringify(appConfig));
         } else if (theme == "light") {
             document.body.classList.add('light-theme');
-            appConfig["theme"] = theme;
-            localStorage.setItem("app:config", JSON.stringify(appConfig));
         }
     }
 

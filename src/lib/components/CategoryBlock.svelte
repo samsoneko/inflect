@@ -59,7 +59,7 @@
         margin: 0;
         font-size: 1.2em;
         font-weight: bold;
-        color: black;
+        color: var(--contrast-text-color);
         text-overflow: ellipsis;
         overflow: hidden;
     }
@@ -67,7 +67,7 @@
     .category-description {
         margin: 4px 0 0 0;
         font-size: 0.8em;
-        color: black;
+        color: var(--contrast-text-color);
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -109,7 +109,7 @@
 
     .category-tag {
         background-color: rgba(0, 0, 0, 0.1);
-        color: black;
+        color: var(--contrast-text-color);
         font-size: 0.7em;
         padding: 2px 8px;
         border-radius: 12px;
