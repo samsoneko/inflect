@@ -2,6 +2,7 @@
     import { onMount } from "svelte";
     import CategoryBlock from "$lib/components/CategoryBlock.svelte";
     import defaultAppConfig from "$lib/app_config.json";
+    import LoadingAnimation from "$lib/components/LoadingAnimation.svelte";
 
     let appConfig = $state(defaultAppConfig);
     let lessonConf = $state();
@@ -46,6 +47,8 @@
                     tags={content.tags}
                 />
             {/each}
+        {:else}
+            <LoadingAnimation/>
         {/if}
     </div>
 </div>
