@@ -6,5 +6,13 @@
     "de": {
         "name": "German",
         "path": "de"
+    },
+    "jp": {
+        "name": "Japanese",
+        "path": "jp"
+    },
+    "no": {
+        "name": "Norwegian",
+        "path": "no"
     }
 }

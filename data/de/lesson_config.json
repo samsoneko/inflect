@@ -1,11 +1,11 @@
 {
-    "german-test" : {
-        "data_file" : "german_test.json",
+    "noun-declination" : {
+        "data_file" : "german_common_1000_nouns.json",
         "set" : "german_common_3000",
-        "lesson_name" : "German Test",
-        "lesson_type" : "german-test",
+        "lesson_name" : "Noun Declination",
+        "lesson_type" : "noun-declination",
         "color" : "var(--accent-blue)",
-        "description" : "A test lesson for German",
-        "tags" : ["test"]
+        "description" : "Practise German noun declination",
+        "tags" : ["nouns", "declination"]
     }
 }

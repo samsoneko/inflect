@@ -61,6 +61,7 @@
                 <DropDownMenu options={languageIndex} bind:selected={appConfig["language"]}/>
             </div>
         </div>
+        <!-- <button><a class="navbar-icon" href="/settings/language" aria-label="Material"><i class="fas fa-globe"></i>Change Language</a></button> -->
     </div>
 </div>
 
@@ -82,6 +83,12 @@
                 <ToggleSwitch bind:checked={languageConfig["showSkipButton"]}/>
             </div>
         </div>
+        <div class="settings-option">
+            <p class="settings-option-desc">Check case sensitivity in answers.</p>
+            <div class="settings-option-toggle">
+                <ToggleSwitch bind:checked={languageConfig["caseSensitiveAnswers"]}/>
+            </div>
+        </div>
     </div>
 </div>
 {/if}
@@ -93,9 +100,6 @@
             <div class="app-title">
                 <h3><img class="image-button" src="favicon.png" alt="App Logo"> Inflect</h3>
                 <p>Version {PKG.version}</p>
-            </div>
-            <div class="app-language">
-                <img class="flag" src="/fi.svg" alt="Language"/>
             </div>
         </div>
         <hr>
@@ -119,19 +123,6 @@
 
     .app-title {
         grid-area: 1 / 1 / 2 / 2;
-    }
-
-    .app-language {
-        grid-area: 1 / 2 / 2 / 3;
-        background-color: none;
-        text-align: right;
-    }
-
-    .flag {
-        height: 4rem;
-        margin-top: 15px;
-        border-radius: 8px;
-        box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.5);
     }
 
     .app-description {

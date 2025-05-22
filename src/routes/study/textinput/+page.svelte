@@ -106,6 +106,11 @@
         } else {
             currentSolution = [solutionEntry];
         }
+        if (languageConfig["caseSensitiveAnswers"] == false) {
+            for (let i = 0; i < currentSolution.length; i++) {
+                currentSolution[i] = currentSolution[i].toLowerCase();
+            }
+        }
 
         // Skip to next question if the solution is not valid, TODO: what if all solutions are not valid?
         if (solutionEntry == "" || solutionEntry =="—") {
@@ -130,8 +135,11 @@
 
     // Check if the answer is correct
     function checkAnswer(e) {
-        e.preventDefault();
-        if (currentSolution.includes(currentAnswer.toLowerCase())) {
+        e.preventDefault(); // Prevent site from reloading when "sending" the form
+        if (languageConfig["caseSensitiveAnswers"] == false) {
+            currentAnswer = currentAnswer.toLowerCase();
+        }
+        if (currentSolution.includes(currentAnswer)) {
             if (answerState == "unanswered") {
                 totalAnswerCount += 1;
                 correctAnswerCount += 1;

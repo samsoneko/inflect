@@ -1,16 +1,8 @@
 {
     "nominative": "nominative",
-    "partitive": "partitive",
     "genitive" : "genitive",
-    "illative": "illative (-hVn, -Vh, -seen)",
-    "inessive": "inessive (-ssa, -ssä)",
-    "elative": "elative (-sta, -stä)",
-    "allative": "allative (-lle)",
-    "adessive": "adessive (-lla, -llä)",
-    "ablative": "ablative (-lta, -ltä)",
-    "essive" : "essive",
-    "translative" : "translative",
-    "abessive" : "abessive",
+    "accusative" : "accusative",
+    "dative" : "dative",
     "singular": "singular",
     "plural": "plural",
     "3rd": "3. person",
@@ -25,6 +17,6 @@
     "2nd plur.": "2. person plural",
     "3rd plur.": "3. person plural",
     "passive" : "passive",
-    "positive": "positive",
-    "negative": "negative"
+    "definite" : "definite",
+    "indefinite" : "indefinite"
 }

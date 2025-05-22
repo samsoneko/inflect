@@ -1,4 +1,5 @@
 {
     "showAccuracy": true,
-    "showSkipButton": true
+    "showSkipButton": true,
+    "caseSensitiveAnswers": false
 }
